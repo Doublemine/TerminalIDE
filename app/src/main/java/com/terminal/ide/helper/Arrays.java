@@ -2777,8 +2777,9 @@ public class Arrays {
      *                                    an array of class <tt>newType</tt>
      * @since 1.6
      */
-    public static <T, U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
-        T[] copy = (newType == Object[].class)
+    public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
+        @SuppressWarnings("unchecked")
+        T[] copy = ((Object)newType == (Object)Object[].class)
                 ? (T[]) new Object[newLength]
                 : (T[]) Array.newInstance(newType.getComponentType(), newLength);
         System.arraycopy(original, 0, copy, 0,
@@ -3006,8 +3007,9 @@ public class Arrays {
      * @throws NullPointerException           if <tt>original</tt> is null
      * @since 1.6
      */
+    @SuppressWarnings("unchecked")
     public static <T> T[] copyOfRange(T[] original, int from, int to) {
-        return copyOfRange(original, from, to, (Class<T[]>) original.getClass());
+        return copyOfRange(original, from, to, (Class<? extends T[]>) original.getClass());
     }
 
     /**
@@ -3045,7 +3047,8 @@ public class Arrays {
         int newLength = to - from;
         if (newLength < 0)
             throw new IllegalArgumentException(from + " > " + to);
-        T[] copy = (newType == Object[].class)
+        @SuppressWarnings("unchecked")
+        T[] copy = ((Object)newType == Object[].class)
                 ? (T[]) new Object[newLength]
                 : (T[]) Array.newInstance(newType.getComponentType(), newLength);
         System.arraycopy(original, from, copy, 0,
