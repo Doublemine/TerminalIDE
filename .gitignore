@@ -4,6 +4,7 @@
 
 # IntelliJ project files
 .idea/
+.idea/libraries/
 *.iml
 out
 gen### Android template
