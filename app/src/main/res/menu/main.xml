@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:doublemine="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_copypaste"
+        android:title="@string/cmd_menu_copypasteemail"
+        android:orderInCategory="100">
+        <menu>
+            <item
+                android:id="@+id/menu_copyemail"
+                android:title="@string/cmd_menu_emailtranscript" />
+            <item
+                android:id="@+id/menu_copyall"
+                android:title="@string/cmd_menu_copyalltext" />
+            <item
+                android:id="@+id/menu_paste"
+                android:title="@string/cmd_menu_paste" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_toggle"
+        android:title="@string/cmd_menu_toggleoptions"
+        android:orderInCategory="100">
+
+        <menu>
+            <item
+                android:id="@+id/menu_back_esc"
+                android:title="@string/cmd_menu_toggle_backesc" />
+            <item
+                android:id="@+id/menu_keylogger"
+                android:title="@string/cmd_menu_toggle_keylogger" />
+            <item
+                android:id="@+id/menu_toggle_soft_keyboard"
+                android:title="@string/cmd_menu_toggle_softkeyboard" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_window_list"
+        android:title="@string/cmd_menu_terminalist"
+        android:icon="@drawable/ic_menu_windows" />
+
+</menu>

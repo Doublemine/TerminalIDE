@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+<resources>
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name">Terminal++ Keyboard</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+
+    <string name="application_terminal">Terminal IDE</string>
+    <string name="preferences">Preferences</string>
+    <string name="new_window">New window</string>
+    <string name="close_window">Close window</string>
+    <string name="window_list">Windows</string>
+    <string name="prev_window">Prev window</string>
+    <string name="next_window">Next window</string>
+    <string name="reset">Reset term</string>
+    <string name="send_email">Email to</string>
+    <string name="special_keys">Special keys</string>
+    <string name="toggle_soft_keyboard">Toggle soft keyboard</string>
+
+    <string name="enable_wakelock">Take WakeLock</string>
+    <string name="disable_wakelock">Drop WakeLock</string>
+    <string name="enable_wifilock">Take WifiLock</string>
+    <string name="disable_wifilock">Drop WifiLock</string>
+
+    <string name="edit_text">Edit text</string>
+    <string name="select_text">Select text</string>
+    <string name="copy_all">Copy all</string>
+    <string name="paste">Paste</string>
+
+    <string name="service_notify_text">Terminal session is running</string>
+
+    <!-- Preference dialog -->
+    <string name="screen_preferences">Screen</string>
+
+    <string name="title_statusbar_preference">Status bar</string>
+    <string name="summary_statusbar_preference">Show/hide status bar.</string>
+    <string name="dialog_title_statusbar_preference">Status bar</string>
+
+    <string name="title_cursorstyle_preference">Cursor style</string>
+    <string name="summary_cursorstyle_preference">Choose cursor style.</string>
+    <string name="dialog_title_cursorstyle_preference">Cursor style</string>
+
+    <string name="title_cursorblink_preference">Cursor blink</string>
+    <string name="summary_cursorblink_preference">Choose cursor blink.</string>
+    <string name="dialog_title_cursorblink_preference">Cursor blink</string>
+
+    <string name="text_preferences">Text</string>
+
+    <string name="title_fontsize_preference">Font size</string>
+    <string name="summary_fontsize_preference">Choose character height in points.</string>
+    <string name="dialog_title_fontsize_preference">Font size</string>
+
+    <string name="title_color_preference">Colors</string>
+    <string name="summary_color_preference">Choose text color.</string>
+    <string name="dialog_title_color_preference">Text color</string>
+
+    <string name="keyboard_preferences">Keyboard</string>
+
+    <string name="title_controlkey_preference">Control key</string>
+    <string name="summary_controlkey_preference">Choose control key.</string>
+    <string name="dialog_title_controlkey_preference">Control key</string>
+
+    <string name="title_fnkey_preference">Fn key</string>
+    <string name="summary_fnkey_preference">Choose Fn key.</string>
+    <string name="dialog_title_fnkey_preference">Fn key</string>
+
+    <string name="title_ime_preference">Input method</string>
+    <string name="summary_ime_preference">Choose input method for soft keyboard.</string>
+    <string name="dialog_title_ime_preference">Input method</string>
+
+    <string name="shell_preferences">Shell</string>
+    <string name="title_shell_preference">Command line</string>
+    <string name="summary_shell_preference">Specify the shell command line.</string>
+    <string name="dialog_title_shell_preference">Shell</string>
+
+    <string name="title_initialcommand_preference">Initial command</string>
+    <string name="summary_initialcommand_preference">Sent to the shell when it starts.</string>
+    <string name="dialog_title_initialcommand_preference">Initial Command</string>
+
+    <!-- Don't localize these default values -->
+    <string name="default_value_statusbar_preference">1</string>
+    <string name="default_value_cursorstyle_preference">0</string>
+    <string name="default_value_cursorblink_preference">0</string>
+    <string name="default_value_fontsize_preference">12</string>
+    <string name="default_value_color_preference">1</string>
+    <string name="default_value_controlkey_preference">7</string>
+    <string name="default_value_fnkey_preference">7</string>
+    <string name="default_value_ime_preference">0</string>
+    <string name="default_value_shell_preference">/system/bin/sh -</string>
+    <string name="default_value_initialcommand_preference">export HOME=/data/data/com.terminal.ide/files;cd $HOME</string>
+
+    <string name="control_key_dialog_title">Control and Function Keys</string>
+    <!-- The word CTRLKEY should be left un-translated. It will be replaced at run-time with the
+         actual control key key name. -->
+    <string name="control_key_dialog_control_text">CTRLKEY Space : Control-@ (NUL)\nCTRLKEY A..Z : Control-A..Z\nCTRLKEY 5 : Control-]\nCTRLKEY 6 : Control-^\nCTRLKEY 7 : Control-_\nCTRLKEY 9 : F11\nCTRLKEY 0 : F12</string>
+    <string name="control_key_dialog_control_disabled_text">No control key set.</string>
+    <!-- The word FNKEY should be left un-translated. It will be replaced at run-time with the
+         actual function key key name. -->
+    <string name="control_key_dialog_fn_text">FNKEY 1..9 : F1-F9\nFNKEY 0 : F10\nFNKEY W : Up\nFNKEY A : Left\nFNKEY S : Down\nFNKEY D : Right\nFNKEY P : PageUp\nFNKEY N : PageDown\nFNKEY T : Tab\nFNKEY L : | (pipe)\nFNKEY U : _ (underscore)\nFNKEY E : Control-[ (ESC)\nFNKEY X : Delete\nFNKEY I : Insert\nFNKEY H : Home\nFNKEY F : End\nFNKEY . : Control-\\\n</string>
+    <string name="control_key_dialog_fn_disabled_text">No function key set.</string>
+    <!-- this is for wanghao -->
+    <string name="readhelp">Read ALL the Help FIRST</string>
+    <string name="main_author">Spartacus Rex..</string>
+    <string name="main_start">Terminal IDE</string>
+    <string name="main_install">install system</string>
+    <string name="main_stop">Shutdown</string>
+    <string name="main_keyboard">keyboard</string>
+    <string name="mian_options">Options</string>
+    <string name="main_help">Help</string>
+
+    <!-- install system Option of main Activity-->
+   <string name="install_system_follow">Terminal IDE has a basic C / binary system. This is installed into this application\'s private memory. You DO NOT NEED ROOT access or any other special permissions. \n
+ \n
+ When this base system needs to be installed/upgraded with a newer version, you can choose to update when you are ready, here.\n
+ \n
+ Just because there is a new version of Terminal IDE in Android Market does NOT mean that there will be a new \'system\' to install. This section applies ONLY to the C binaries.\n
+ \n
+ The ~/system folder will be DELETED and re-written. You should not be storing your work in there. (this is an internal \'system\' folder NOT your main Android system folder.. don\'t worry)\n
+ \n
+ The files ~/.vimrc, ~/.vim, ~/.tmux.conf, ~/.bashrc and mc.ini will NOT BE over-written, but will be created if they don\'t exist.\n
+ \n
+ Also - please make sure you have AT LEAST 150MB of free internal space!\n
+ \n </string>
+    <string name="install_system_overwrite">Overwrite All</string>
+    <string name="install_system_changelog">ChangeLog</string>
+    <string name="install_system_installstart">Install System</string>
+
+    <!-- changLog part -->
+    <string name="changlog_title">Change Log</string>
+ <string name="changlog_log">
+     \n
+v2.0  - NEW BUILD SYSTEM - All dynamic binary files. If it works, I\'ll add more.\n
+      - Added GCC 4.4.0 (arm-eabi-gcc)\n
+      - Added \'make\', \'ctags\', and \'taglist\' vim plugin.\n
+      - Added \'links\' console web browser (DNS works for this)\n
+      - Fixed GIT, so that git-pull, push and merge now work! (Still no ssl, use ssh -L)\n
+      - Added c/cpp examples. READ ALL THE HELP/TUTORIALS\n
+      - Put cd $HOME back in .bashrc.. TMUX prefers it.\n
+\n
+v1.95 - Changed / Fixed ~/.bashrc\n
+      - Paths now set in ~/.init. Not elongated every time you run bash.\n
+      - TERM now set in ~/.init. Not reset when you start tmux (which works best/requires \'export TERM=screen\' to render correctly)\n
+      - cd $HOME now also done in ~/.init and not ~/.bashrc so that it\'s not reset every time you run another bash.\n
+      - This will mean tmux and telnetd starting from the folder you are currently in when you run them.\n
+      - To Update - either save your current config files and choose \'Overwrite all\'.\n
+      - or view the latest ~/.bashrc in ~/system/bashrc , and ~/.init, and then update yours.\n
+      - or [basically] comment out the \'TERM\', \'PATHs\' and \'cd $HOME\' lines in your ~/.bashrc\n
+\n
+v1.94 - Fixed jar signer issue with kenwood signer 1.1 replacement\n
+      - htop 1.0 [update]\n
+      - checkup - a simple script to tell a few things..\n
+      - Fixed install issue on demos when run from inside vim (just added a \'cd\' to start of script)\n
+      - BACK can now be ESC. Press Menu. It\'s always OFF by default. (Only for use with hard keyboards)\n
+\n
+v1.92 - nano 2.2.6 [update]\n
+     - jping [very useful.. get the IP address of a Hostname..]\n
+     - try : jping www.google.com\n
+\n
+v1.9 - htop 0.8.3\n
+     - Beautiful ncurses process viewer\n
+\n
+v1.8 - Nano 2.2.3 - with color syntax\n
+   - VIM is MUCH better than nano [although nano is a lot simpler] .. but nobody likes to see babies crying .. ;-)\n
+   - Pls now stop sending me emails requesting this app..\n
+   - BusyBox \'su\' link removed. Re-Link it if you need it. Too many people confused..\n
+\n
+v1.7 - ProGuard 4.6\n
+   - Added proguard build scripts to demo_ apps in ~/system/src\n
+\n
+v1.6 - GIT 1.7.8.163\n
+   - BusyBox 1.19.2 recompile. Added about 30 apps. All the apps that I could get to work basically.\n
+\n
+v1.5 - BitchX 1.1 final\n
+\n
+v1.4 - rsync 3.0.8\n
+     - Check help for usage example.\n
+\n
+v1.33 - Fixed line rendering of TMUX on device screen.\n
+      - Start tmux with -u option..\n
+\n
+v1.32 - Removed calls to \'getpwuid\' from TMUX\n
+      - Fix crash on some systems..\n
+\n
+v1.3 - TMUX 1.5\n
+     - Terminal Multiplexer..\n
+     - TMUX Still has ENTER key issues, only when in : mode, on device..\n
+\n
+v1.2 - Recommend OVERWRITE ALL install\n
+     - MIDNIGHT COMMANDER 4.8, with most VFS systems installed. I have tested ftp. Works fine.\n
+     - NEW .bashrc required for Midnight Commander to function properly\n
+     - Soft Keyboard F1-F4 now work.\n
+     - Few tweaks to .vimrc\n
+\n
+v1.0 - Initial Release\n
+     - Terminal IDE Soft Keyboard v1.0\n
+     - Hacked Up JackPal Terminal Emulator\n
+     - busybox 1.19.2\n
+     - bash 4.2\n
+     - vim 7.3 (nicely setup with java auto-completion..)\n
+     - javac, java, dx, apkbuilder, aapt\n
+     - dropbear keygen / sshd / ssh\n
+     - utelnetd\n
+     - Normal folder structure\n
+     - With basic setup of ~/.vimrc and ~/.bashrc\n
+     - Best of all, *NO ROOT REQUIRED*!!\n
+     - All works as normal user..\n   
+ </string>
+    <!-- this is for setting -->
+    <string name="setting_keyboard_size_mini">Mini Keyboard</string>
+    <string name="setting_keyboard_size_full">Full Keyboard</string>
+    <string name="setting_keyboard_largest">Largest</string>
+    <string name="setting_keyboard_largerger">Larger</string>
+    <string name="setting_keyboard_medium">Medium</string>
+    <string name="setting_keyboard_smaller">Smaller</string>
+    <string name="setting_yes">Yes</string>
+    <string name="setting_no">No</string>
+    <string name="setting_keyboard_enablehardmappings">Enable Hard Mappings</string>
+    <string name="setting_keyboard_disablehardmappings">Disable Hard Mappings</string>
+    <string name="setting_showstatusbar">Show status bar</string>
+    <string name="setting_hidestatusbar">Hide status bar</string>
+    <string name="setting_cursor_nonblinking">Non-blinking cursor</string>
+    <string name="setting_cursor_blinking">Blinking cursor</string>
+    <string name="setting_rectangle">Rectangle</string>
+    <string name="setting_underline">Underline</string>
+    <string name="setting_verticalbar">Vertical bar</string>
+    <string name="setting_bg_blackonwhite">Black text on white</string>
+    <string name="setting_bg_whiteonblack">White text on black</string>
+    <string name="setting_bg_whiteonblue">White text on blue</string>
+    <string name="setting_bg_greenonblack">Green text on black</string>
+    <string name="setting_bg_amberonblack">Amber text on black</string>
+    <string name="setting_bg_redonblack">Red text on black</string>
+    <string name="setting_key_jobball">Jog ball</string>
+    <string name="setting_key_atkey">\@ key</string>
+    <string name="setting_key_leftaltkey">Left Alt key</string>
+    <string name="setting_key_rightaltkey">Right Alt key</string>
+    <string name="setting_key_volupkey">Vol Up key</string>
+    <string name="setting_key_voldownkey">Vol Down key</string>
+    <string name="setting_key_camerakey">Camera key</string>
+    <string name="setting_key_nonekey">None</string>
+    <string name="setting_ime_character_base">Character-based</string>
+    <string name="setting_ime_Word_base">Word-based</string>
+    <string name="setting_key_ball">Ball</string>
+    <string name="setting_key_at">\@</string>
+    <string name="setting_key_leftalt">Left-Alt</string>
+    <string name="setting_key_rightalt">Right-Alt</string>
+    <string name="setting_key_volup">Vol-Up</string>
+    <string name="setting_key_voldown">Vol-Dn</string>
+    <string name="setting_key_camera">Camera</string>
+    <string name="setting_key_none">None</string>
+    <!-- this is for cmd menu -->
+    <string name="cmd_menu_copypasteemail">Copy / Paste / Email</string>
+    <string name="cmd_menu_emailtranscript">Email Transcript</string>
+    <string name="cmd_menu_copyalltext">Copy ALL Text</string>
+    <string name="cmd_menu_paste">Paste</string>
+    <string name="cmd_menu_toggleoptions">Toggle Options</string>
+    <string name="cmd_menu_toggle_backesc">Toggle BACK=>ESC</string>
+    <string name="cmd_menu_toggle_keylogger">Toggle Key Logger</string>
+    <string name="cmd_menu_toggle_softkeyboard">Toggle Soft Keyboard</string>
+    <string name="cmd_menu_terminalist">Terminal List</string>
+
+
+    <!-- this is for main setting new add -->
+    <string name="main_setting_wakelockoptions">WAKE-LOCK Options</string>
+    <string name="main_setting_cpulock">CPU Lock</string>
+    <string name="main_setting_keepthecpurunning">Keep the CPU running at all times</string>
+    <string name="main_setting_screenlock">Screen Lock</string>
+    <string name="main_setting_keepscreenon">Keep the screen on at all times [Though it can dim]</string>
+    <string name="main_setting_wifilock">Wifi Lock</string>
+    <string name="main_setting_keepwifion">Keep the wifi on at all times</string>
+    <string name="main_setting_basicspecialkey">Basic Special Keys</string>
+    <string name="main_setting_basicspecialkey_ctrlkey">CTRL Key</string>
+    <string name="main_setting_esckey">ESC Key</string>
+    <string name="main_setting_chooseashrdkey">Choose a hard key for ESC</string>
+    <string name="main_setting_hardkeyboardmappins">Hard Keyboard Mappings</string>
+    <string name="main_setting_resetallmappings">Reset All mappings</string>
+    <string name="main_setting_resetallkeymappingssummary">Reset all key mappings to -1</string>
+    <string name="main_setting_resetallkeymappingsdialogmessage">Are you sure you wish to reset all key mappings to -1 ?\n\nNB: You will need to restart this Preference Activity to view these changes.</string>
+    <string name="main_setting_resetallkeymappingsbutton_clear">Clear Keys</string>
+    <string name="main_setting_resetallkeymappingsbutton_cancel">Cancel</string>
+    <string name="main_setting_externalkeyboardmappings">External Keyboard Mappings</string>
+    <string name="main_setting_externalkeyboardmappingssummary">Map keycodes from your external keyboard to Special characters. CTRL / ALT / FN  / ESC </string>
+    <string name="main_setting_enabledisableallmappings">Enable / Disable ALL Mappings</string>
+    <string name="main_setting_keyboardmappings">Keyboard Mappings</string>
+    <string name="main_setting_keyboardmappingssummary">You can set key codes that overide the \'system\' key codes from here [only from within Terminal IDE] so BE CAREFUL!! -1 is the default ignore code.</string>
+    <string name="main_setting_enablehardmappings">Enable Hard Mappings</string>
+    <string name="main_setting_mainkeycodes">Main Key Codes</string>
+    <string name="main_setting_leftctrlkey">Left CTRL Key</string>
+    <string name="main_setting_ctrlkeysummary">CTRL key</string>
+    <string name="main_setting_ctrlkeydialogtitle">CTRL key</string>
+    <string name="main_setting_rightctrlkey">Right CTRL Key</string>
+    <string name="main_setting_escapekey">Escape Key</string>
+    <string name="main_setting_escapekeysummary">The Escape key</string>
+    <string name="main_setting_esckeydialogtitle">ESC Key</string>
+    <string name="main_setting_leftaltkey">Left ALT Key</string>
+    <string name="main_setting_altkeysummary">ALT key</string>
+    <string name="main_setting_altkeydialogtitle">ALT key</string>
+    <string name="main_setting_rightaltkey">Right ALT Key</string>
+    <string name="main_setting_functionkey">Function Key</string>
+    <string name="main_setting_functionkeysummary">Press FN+[0~9]=>F1~F10. FN+O=>F11. FN+P=>F12</string>
+    <string name="main_setting_fnkeydialogtitle">FN Key</string>
+    <string name="main_setting_morekeycodes">More Key Codes (Should already work)</string>
+    <string name="main_setting_tabkey">TAB Key</string>
+    <string name="main_setting_tabkeysummary">TAB Key</string>
+    <string name="main_setting_leftshiftkey">Left SHIFT Key</string>
+    <string name="main_setting_rightshiftkey">Right SHIFT Key</string>
+    <string name="main_setting_spacekey">SPACE Key</string>
+    <string name="main_setting_enterkey">ENTER Key</string>
+    <string name="main_setting_delkey">DEL Key</string>
+    <string name="main_setting_backspace">BACKSPACE Key</string>
+    <string name="main_setting_pageupkey">Page UP Key</string>
+    <string name="main_setting_pagedownkey">Page DOWN Key</string>
+    <string name="main_setting_homekey">Home Key</string>
+    <string name="main_setting_homekeysummary">Home key. Not the Android version, the keyboard version.</string>
+    <string name="main_setting_endkey">End Key</string>
+    <string name="main_setting_arrowkeys">ARROW keys (Should work as DPAD)</string>
+    <string name="main_setting_uparrowkey">UP Arrow Key</string>
+    <string name="main_setting_upkey">UP key</string>
+    <string name="main_setting_downwrrowkey">DOWN Arrow Key</string>
+    <string name="main_setting_downkey">OWN key</string>
+    <string name="main_setting_leftarrowkey">LEFT Arrow Key</string>
+    <string name="main_setting_leftkey">LEFT key</string>
+    <string name="main_setting_rightarrowkey">RIGHT Arrow Key</string>
+    <string name="main_setting_rightkey">RIGHT key</string>
+
+    <!-- this is mian activity stop button dialog -->
+    <string name="main_ui_java_stop_title">Confirm</string>
+    <string name="main_ui_java_stop_content">Shutdown all Terminal?</string>
+    <string name="main_ui_java_stop_surebutton">Shutdown</string>
+    <string name="main_ui_java_stop_cancelbutton">Cancel</string>
+
+
+    <!-- 以下的string使用于在cmd界面中keyboard的设置选项 -->
+    <string name="cmd_keyboard_settings_keypressactions">Key Press Actions</string>
+    <string name="cmd_keyboard_settings_vibrate">Vibrate</string>
+    <string name="cmd_keyboard_settings_vibrateonkeypresssummary">Vibrate on key press</string>
+    <string name="cmd_keyboard_settings_vibratedialogtitle">Vibrate</string>
+    <string name="cmd_keyboard_settings_sound">Sound</string>
+    <string name="cmd_keyboard_settings_soundsummary">Play a click on key press</string>
+    <string name="cmd_keyboard_settings_sounddialogtitle">Sound</string>
+    <string name="cmd_keyboard_settings_keyboardsizepartrait">Keyboard Size Portrait</string>
+    <string name="cmd_keyboard_settings_keyboardportraittype">Keyboard portrait type</string>
+    <string name="cmd_keyboard_settings_keyboardportraittypesummary">Full or mini keyboard in portrait mode</string>
+    <string name="cmd_keyboard_settings_keyboardportraitdialogtitle">Portrait Keyboard</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheight">Keyboard portrait height</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheightsummary">The height of the keyboard in portrait mode</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheightdialogtitle">Portrait Height</string>
+    <string name="cmd_keyboard_settings_keyboardsizelandscape">Keyboard Size Landscape</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetype">Keyboard landscape type</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetypesummary">Full or mini keyboard in landscape mode</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetypedialogtitle">Landscape Keyboard</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheight">Keyboard landscape height</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheightsummary">The height of the keyboard in landscape mode</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheightdialogtitle">Landscape Height</string>
+
+
+    <!-- 以下的string适用于主界面的安装新系统对话框 -->
+    <string name="main_ui_java_newsystem_dialog_title">New System</string>
+    <string name="main_ui_java_newsystem_dialog_content">There is a newer system for you to install.</string>
+    <string name="main_ui_java_newsystem_dialog_button_yes">Show me</string>
+    <string name="main_ui_java_newsystem_dialog_button_no">Later</string>
+
+
+    <!-- 以下string适用于help的总体介绍 -->
+    <string name="main_help_introduction">Introduction</string>
+ <string name="main_help_introduction_following">
+     Welcome to Terminal IDE.\n
+\n
+Terminal IDE is an expandable command-line based system, with many useful applications, that
+runs completely within this \'Application\'s Context\', so you don\'t need ROOT or
+any other special permissions. The whole application works under the normal Android permissions. :-)\n
+\n
+Log in via telnet or ssh and use your nice big home keyboard and computer screen for maximum-super-power!
+utelnetd and sshd are available and the preferred method of using this app.\n
+\n
+You also have a complete \'java\' development environment, for creating java command line apps or full Android applications.
+A collection of sample applications that show how to build and run apps is available in ~/system/src/\n
+\n
+bash, vim, javac, java, dx, aapt, apkbuilder, signer and much more, thanks to busybox, are all available from the provided command line.\n
+\n
+Since Android is not designed to be used with an old fashioned ANSI keyboard, with CTRL ESC ALT and the rest of them, a complete ANSI keyboard has been created.\n
+\n
+By using the \'Terminal IDE keyboard\', which you will have to enable in the Settings > Language and Keyboards of your device, you
+will get a fully working soft-keyboard with TAB, CTRL, ALT, DEL, Function keys etc.. AND all the keys work as they should. Only really to be used with Terminhal IDE.\n
+\n
+One other IMPORTANT issue is hostname resolution. Due to a mixture of statically linked C binaries and no /etc folder on un-rooted phones, 
+hostname resolution generally doesn\'t work in Terminal IDE. BUT this only applies to C apps. Java is fine :-).
+Use \'jping\' to get the IP of any hostname you need to use and then use that \'numeric\' IP instead of the \'string\' name and the C app (wget, git, mc ftp access ..)
+should work fine, ie try..\n
+\n
+# jping www.google.com\n
+\n
+And it will tell you google\'s IP.\n
+\n
+Also - SSL is not built-in to most of the C apos. You do have ssh of course and 
+can create SSL proxy pipes though that (tutorial coming some day.. it\'s easy, basically ssh -L).\n
+\n
+For the most amount of help possible, use Google! There are an infinite amount of tutorials on vim, bash, busybox and all the other available apps.\n
+\n
+Make sure you READ, FULLY understand, and can PERFORM, the \'Tutorials\' in FULL. This will show many features..\n
+\n
+So. The road ahead is long and hard. But the rewards are great. That\'s why it\'s long. And hard.\n
+\n
+Enjoy
+</string>
+
+
+    <!-- this is for help listview item -->
+    <string name="help_ui_introduction">Introduction</string>
+    <string name="help_ui_introduction_summary">Please start here!</string>
+    <string name="help_ui_keyboard">Keyboard</string>
+    <string name="help_ui_keyboard_summary">Special Terminal IDE keyboard</string>
+    <string name="help_ui_tutorial">Tutorial</string>
+    <string name="help_ui_tutorial_summary">Step by step walkthrough..</string>
+    <string name="help_ui_bash">bash</string>
+    <string name="help_ui_bash_summary">The Command Line</string>
+    <string name="help_ui_busybox">busybox</string>
+    <string name="help_ui_busybox_summary">The applications</string>
+    <string name="help_ui_vim">vim</string>
+    <string name="help_ui_vim_summary">THE editor</string>
+    <string name="help_ui_javakits">javac, java, dx..</string>
+    <string name="help_ui_javakits_summary">Java Development tools</string>
+    <string name="help_ui_gcc">gcc 4.4.0</string>
+    <string name="help_ui_gcc_summary">C/CPP Development tools</string>
+    <string name="help_ui_overconnect">utelnetd / sshd / rsync</string>
+    <string name="help_ui_overconnect_summary">Connect over USB / WiFi </string>
+    <string name="help_ui_git">git</string>
+    <string name="help_ui_git_summary">Version Control System</string>
+    <string name="help_ui_mc">Midnight Commander (mc)</string>
+    <string name="help_ui_mc_summary">THE File manager</string>
+    <string name="help_ui_tmux">TMUX</string>
+    <string name="help_ui_tmux_summary">Terminal Multiplexer</string>
+    <string name="help_ui_bitchx">BitchX</string>
+    <string name="help_ui_bitchx_summary">IRC Chat Client</string>
+    <string name="help_ui_additionalapps">Additional Apps</string>
+    <string name="help_ui_additionalapps_summary">Adding more native apps to Terminal IDE</string>
+    <string name="help_ui_trouble">Trouble</string>
+    <string name="help_ui_trouble_summary">Issues, bugs, fixes..</string>
+    <string name="help_ui_thanks">Thanks</string>
+    <string name="help_ui_thanks_summary">The Mighty Ones</string>
+    <string name="help_ui_gplv2">GPL License</string>
+    <string name="help_ui_gplv2_summary">The gplv2 license</string>
+
+
+    <!-- 以下string适用于帮助二级Listview overConnect中 -->
+    <string name="help_overconnect_telnet">telnet</string>
+    <string name="help_overconnect_telnet_summary">Simple and fast telnet</string>
+    <string name="help_overconnect_ssh">ssh</string>
+    <string name="help_overconnect_ssh_summary">Secure SSH access</string>
+    <string name="help_overconnect_rsync">rsync</string>
+    <string name="help_overconnect_rsync_summary">File sync and backup</string>
+
+
+    <!-- 以下string适用于二级Listview Tutorial中 -->
+    <string name="help_tutorial_demo1">Tutorial 1</string>
+    <string name="help_tutorial_demo1_summary">Basic system setup</string>
+    <string name="help_tutorial_demo2">Tutorial 2</string>
+    <string name="help_tutorial_demo2_summary">Hello World! (java)</string>
+    <string name="help_tutorial_demo3">Tutorial 3</string>
+    <string name="help_tutorial_demo3_summary">Java library</string>
+    <string name="help_tutorial_demo4">Tutorial 4</string>
+    <string name="help_tutorial_demo4_summary">Full java command line app</string>
+    <string name="help_tutorial_demo5">Tutorial 5</string>
+    <string name="help_tutorial_demo5_summary">Full Android app</string>
+    <string name="help_tutorial_demo6">Tutorial 6</string>
+    <string name="help_tutorial_demo6_summary">Hello World C app</string>
+    <string name="help_tutorial_demo7">Tutorial 7</string>
+    <string name="help_tutorial_demo7_summary">Hello World CPP app</string>
+    <string name="help_tutorial_demo8">Tutorial 8</string>
+    <string name="help_tutorial_demo8_summary">C library</string>
+    <string name="help_tutorial_demo9">Tutorial 9</string>
+    <string name="help_tutorial_demo9_summary">Full C app (with c lib)</string>
+
+
+    <!-- 以下string适用于main activity中install system选项中的原本潜入java代码总的汉化 -->
+    <string name="main_install_java_current_install_system">System V2.0</string>
+    <string name="main_install_java_no_system_installed">no system installed</string>
+    <string name="main_install_java_textview_current">Current   : </string>
+    <string name="main_install_java_textview_available">Available : </string>
+    <string name="main_install_java_install_show_error">ERROR : \n</string>
+    <string name="main_install_java_install_dialog_title">System installing..</string>
+    <string name="main_install_java_install_dialog_content">Please wait..</string>
+    <string name="main_install_java_install_putstring_startingsysteminstall">Starting System install..</string>
+    <string name="mian_install_java_install_putstring_preparingtar">Preparing tar..</string>
+    <string name="main_install_java_install_putstring_preparing">Preparing </string>
+    <string name="main_install_java_install_putstring_removeoldsystem">Removing Old System..</string>
+    <string name="main_install_java_install_putstring_takeaminute">Installing new system.. can take a minute</string>
+    <string name="main_install_java_install_putstring_installbusybox">Installing BusyBox Apps..</string>
+    <string name="main_install_java_install_putstring_copystartipfile">Copying startup files..</string>
+    <string name="main_install_java_install_putstring_cleaningup">Cleaning up..</string>
+    <string name="main_install_java_install_putstring_error_lastinstall">ERROR : Last Install</string>
+    <string name="main_install_java_install_putstring_systeminstallcomplete">System install complete!</string>
+
+
+    <!-- 以下string使用于cmd界面中调用Terminal键盘的选项的字符串国际化 -->
+    <string name="cmd_keyboard_options_keyboardsettings">Keyboard Settings</string>
+    <string name="cmd_keyboard_options_choosekeyboard">Choose Keyboard</string>
+    <string name="cmd_keyboard_options_hidekeyboard">Hide Keyboard</string>
+    <string name="cmd_keyboard_options_cancel">Cancel</string>
+    <string name="cmd_keyboard_options_dialog_title">Keyboard Options</string>
+
+
+    <!-- 以下string使用于cmd界面中终端列表选项 -->
+    <string name="cmd_terminal_options_terminal_dialog_title">Terminals</string>
+    <string name="cmd_terminal_options_terminal_1">Terminal 1</string>
+    <string name="cmd_terminal_options_terminal_2">Terminal 2</string>
+    <string name="cmd_terminal_options_terminal_3">Terminal 3</string>
+    <string name="cmd_terminal_options_terminal_4">Terminal 4</string>
+
+
+    <!-- 以下string使用于cmd界面中的切换选项弹出的土司的国际化 -->
+    <string name="cmd_toast_terminal_show">Terminal	</string>
+
+    <string name="cmd_toast_terminal_notexttopaste">No text to Paste..</string>
+    <string name="cmd_toast_terminal_backtoesc_on">BACK => ESC</string>
+    <string name="cmd_toast_terminal_backtoesc_off">BACK behaves NORMALLY</string>
+    <string name="cmd_toast_terminal_keylogger_on">KEY LOGGER NOW ON!\n\nCheck ~/.keylog \n\n# tail -f ~/.keylog</string>
+    <string name="cmd_toast_terminal_keylogger_off">Key Logger switched off..</string>
+
+
+    <!-- 帮助的键盘部分 -->
+    <string name="help_keyboard_title">Keyboard</string>
+<string name="help_keyboard_summary">The Keyboard is VERY important.\n
+\n
+You need access to the CONTROL keys of a keyboard or none of these command line applications will work properly.. \n
+\n
+Terminal IDE comes with a full 128 set ASCII soft \'on screen\' keyboard.\n
+\n
+NB! This keyboard is really ONLY for use in TERMINAL IDE / other Terminals.. The emulators expect ^M. Android expects something else.\n
+\n
+That is why some of you complain about the ENTER KEY NOT WORKING. It works in Terminal IDE correctly.. Not in Android.\n
+\n
+BUT - I have now set it so that if you ever get the SEND, NEXT or GO icon on the keyboard it will send the correct ANDROID enter key.\n
+\n
+AND - If you need to send an ANDROID ENTER KEY, say to unlock the screen with a pin (when you can\'t just change keyboard..) then use CTRL+ENTER . This will ALWAYS send the correct Android ENTER value.\n
+\n
+You will need to enable the keyboard in the Settings > \'Language and Keyboard\' section of your device.\n
+\n
+You can select the keyboard from the main screen by pressing \'Keyboard\'. You can switch back to your regular keyboard easily by clicking the options button in the bottom right of the keyboard itself.\n
+\n
+There is a small-ish version and a larger version, and you can set them differently depending on the orientation, in the Keyboard Settings.\n
+\n
+Terminal IDE also comes with a powerful Hard Keybaord Mapper so that MOST external keyboards should now work. And work well.\n
+\n
+As a basic setup, you can specify a CTRL key and ESC key in the options, so atleast you will always have them.\n
+\n
+CTRL is the only TOTALLY essential one.. as..\n
+\n
+ESC     = CTRL+[\n
+[ALT+X] = [ESC then X] (Basically..)\n
+\n
+To see the key combo in BASH pres CTRL+v and then try an action. It will display what keys it receives.\n
+\n
+To set your hard (bluetooth etc..) keyboard up correctly you need to use the \'Hard Key Mappings\' section in the \'Options\'.\n
+\n
+Before you do - check what does / doesn\'t work, as most things now should work automatically.\n
+\n
+Function Keys are a usual problem, so you will have to pick a key on the keyboard you can use as the Function key modifier.\n
+\n
+First - in the main terminal view, press Menu, and select Toggle Key Logger. This is ALWAYS off by default. This will output the keys you press, on your external keyboard, to the file ~/.keylog\n
+\n
+Then from the command line either type\n
+\n
+# tail -f ~/.keylog\n
+\n
+( To exit press CTRL+C )\n
+\n
+This will poll the \'tail\' end from that file and output it to std out. It refreshes every half second so expect a slight delay. Now press any key, and that \'key code\' is the value you need to use in the Hard Keyboard Mappings section.\n
+\n
+Or the KEY LOGGER output is also sent to ADB logcat. So you can check it there too.\n
+\n
+If you press a key and no key-code is sent, like those little blue FN keys, they only change the keyboard.. They cannot be used. They must send a valid code to be used.\n
+\n
+You can map ANY key from your keyboard to ANY key in the list. As long as it sends a key code..\n
+\n
+Don\'t forget to Toggle the key logger OFF when you are finished.\n
+\n
+At the top of the Hard Mapping Section you can enable or disable this feature, in case you override some system keys, and if you want to reset the key values just set them to -1. Only INTEGER values allowed.\n
+\n
+My Sony bluetooth keyboard now works \'perfect\' with this method..\n
+\n
+Fingers Crossed..\n</string>
+
+
+    <!-- 帮助的bash部分 -->
+    <string name="help_bash_title">Bash</string>
+<string name="help_bash_summary">The command line. THIS is where all the real action takes place.\n
+\n
+Once you are used to using the command line, nothing comes close to the speed and power it offers.\n
+\n
+Here are some of bash\'s features\n
+\n
+Edit your settings in the ~/.bashrc file : \n
+\n
+# vim ~/.bashrc\n
+\n
+UP / DOWN - shows your history. Very handy.\n
+\n
+Tab Completion - single TAB to complete or double TAB to show all the available options.\n
+\n
+Change your prompt with > export PS1=#\n
+\n
+Ctrl-c       CANCEL current process\n
+\n
+Search for the last time you used a function..\n
+Ctrl-r       REVERSE search\n
+\n
+Show the keys actually being sent to bash\n
+Ctrl-v       VIEW next key combo\n
+\n
+Undo all changes to the current line. (When you scroll up through the histroy, if you make changes)\n
+Alt-r       REVERT to original line\n
+\n
+Some other shortcuts :-\n
+\n
+Ctrl-l      Clear the screen leaving the current line at the top of the screen.\n
+Ctrl-u       Delete from the cursor to the beginning of the line.\n
+Ctrl-k       Delete from the cursor to the end of the line.\n
+Ctrl-w       Delete from the cursor to the start of the word.\n
+Ctrl-b       Move back one character.\n
+Alt-b        Move back one word.\n
+Ctrl-a       Move to the start of the line.\n
+Ctrl-e       Move to the end of the line.\n
+Ctrl-f       Move forward one character.\n
+Alt-f        Move forward one word.\n
+Alt-] x      Where x is any character, moves the cursor forward to the next occurrence of x.\n
+Ctrl-y       Pastes text from the clipboard.\n
+\n</string>
+
+
+    <!-- 帮助的busybox部分 -->
+    <string name="help_busybox_title">BusyBox</string>
+<string name="help_busybox_summary">The command line. THIS is where all the real action takes place.\n
+\n
+Once you are used to using the command line, nothing comes close to the speed and power it offers.\n
+\n
+Here are some of bash\'s features\n
+\n
+Edit your settings in the ~/.bashrc file : \n
+\n
+# vim ~/.bashrc\n
+\n
+UP / DOWN - shows your history. Very handy.\n
+\n
+Tab Completion - single TAB to complete or double TAB to show all the available options.\n
+\n
+Change your prompt with > export PS1=#\n
+\n
+Ctrl-c       CANCEL current process\n
+\n
+Search for the last time you used a function..\n
+Ctrl-r       REVERSE search\n
+\n
+Show the keys actually being sent to bash\n
+Ctrl-v       VIEW next key combo\n
+\n
+Undo all changes to the current line. (When you scroll up through the histroy, if you make changes)\n
+Alt-r       REVERT to original line\n
+\n
+Some other shortcuts :-\n
+\n
+Ctrl-l      Clear the screen leaving the current line at the top of the screen.\n
+Ctrl-u       Delete from the cursor to the beginning of the line.\n
+Ctrl-k       Delete from the cursor to the end of the line.\n
+Ctrl-w       Delete from the cursor to the start of the word.\n
+Ctrl-b       Move back one character.\n
+Alt-b        Move back one word.\n
+Ctrl-a       Move to the start of the line.\n
+Ctrl-e       Move to the end of the line.\n
+Ctrl-f       Move forward one character.\n
+Alt-f        Move forward one word.\n
+Alt-] x      Where x is any character, moves the cursor forward to the next occurrence of x.\n
+Ctrl-y       Pastes text from the clipboard.\n
+\n</string>
+
+
+    <!-- 帮助的vim部分 -->
+    <string name="help_vim_title">Vim</string>
+<string name="help_vim_summary">There is only one number bigger than infinity. The number of tutorials for vim
+on Google. This will be your best source of information.\n
+\n
+vim ~/.vimrc : to check your current settings.\n
+\n
+One IMPORTANT feature is using the command line app \'terminalide\' to start vim. This is only really helpful
+if you are working on a java project. run \'cat `which terminalide`\' to see the script in full.\n
+\n
+This is a simple but useful script that makes sure you start vim in the correct folder, so that javac can work correctly. All
+that is required is that there is a folder named \'src\' in the current folder.\n
+\n
+Run \'terminalide\' from the project home folder. vim will start with a nice file tree (NERDTree)
+that you can use to browse for a file.\n
+\n
+Basically, make sure you start vim in the src/ folder of any java projects. Then javac works fine.\n
+\n
+The basics have been setup in the initial ~/.vimrc file and ~/.vim folder. You have working
+arrow keys, backspace, delete, Page UP/Down etc. All \'NOT\' givens in vim-land, I might add..\n
+\n
+Vim has been setup with java in mind, and so has all the features required to be a powerful IDE, including
+java class / function popup completion..\n
+\n
+The plugins that you have in ~/.vim are\n
+[Search google for their full uses..]\n
+    : NERDTree - a nice file browser\n
+    : SnipMate - auto text copy. Check snippets in ~/.vim and use word[TAB] to activate.\n
+    : MiniBufExpl - the buffer window at top of vim that shows multiple buffers.\n
+    : ACP - Auto Complete Popup, you can disable this by removing acp.vim from your plugins folder.\n
+    : Java-Complete - hacked/fixed up and working great!\n
+    \n
+Add your own plugins to ~/.vim and edit the ~/.vimrc file to gain total control.\n
+\n
+# vim ~/.vimrc\n
+\n
+Read / Edit the settings file to understand more..\n</string>
+
+
+    <!-- 帮助java部分 -->
+    <string name="help_java_title">Javac, java, dx</string>
+<string name="help_java_summary">javac.\n
+\n
+Terminal IDE comes with a complete Java / Android development kit, and has a very powerful and java optimised editor - vim.\n
+\n
+A set of sample applications can be found in ~/system/src. I strongly recommend
+you read the \'Tutorial\' help through to the end. It will show you what you
+need to know.\n
+\n
+vim has been specifically configured for java!\n
+\n
+Know that these features are supported :-\n
+     -Full syntax highlighting - of numerous languages\n
+     -Auto popup completion of files, words and syntax of numerous languages\n
+     -Java-Completion - in vim insert mode , CTRL-X CTRL-U\n
+     -One button Compile [F7] - check ~/.vimrc\n
+     -List of errors on compilation and ability to jump through them [F8][[F9]\n
+     -Left pane file-browser - the vim NERDTree plugin\n
+     -Lots more..\n
+\n
+Compiling for Android is a little different, as after the normal javac compile, classes
+need to be converted to the \'dex\' format Android\'s dalvikVM requires.\n
+\n
+Also - \'aapt\' and \'apkbuilder\' are required to build the resources and final .apk file.\n
+\n
+All of this is provided..\n
+\n
+Android has a Java VM but it is called Dalvik. It needs to be called in a special way
+to enable you to run java applications from the command line. (Especially as a non-root user!)
+All this has been fixed and now works. Voila.\n
+\n
+Review the build scripts used in the
+samples to see how all the different apps are pieced together.\n
+\n</string>
+
+
+    <!-- 帮助的Gcc部分 -->
+    <string name="help_gcc_title">GCC 4.4.0</string>
+<string name="help_gcc_summary">GCC 4.4.0\n
+\n
+Getting gcc to work required a bit of work. I have written 2 nice scripts that do most of the hard work, terminal-gcc and terminal-g++.\n
+\n
+C works, but C++ support is \'patchy\' in the NDK, but atleast classes work.\n
+\n
+You will need to \'install_gcc\' but this is all explained in the tutorials. READ ALL the java tutorials too, as they show how vim works.\n
+\n
+So - READ ALL THE TUTORIALS! - they show how it all sticks together..\n</string>
+
+
+    <!-- 帮助的Git部分 -->
+    <string name="help_git_title">GIT</string>
+<string name="help_git_summary">GIT 1.7.8\n
+\n
+[ISSUE : The hostnames do not resolve correctly so you must use the NUMBER IP format for any git servers you use.\n
+\n
+github.com = 207.97.227.239 ]\n
+\n
+Git is a fast, open source, distributed version control system.\n
+\n
+It is a simple command line tool for keeping a history on the state of your source code projects. You use it as you might use something like Subversion, CVS or Perforce.\n
+\n
+You tell it to track files in your project and periodically commit the state of the project when you want a saved point. Then you can share that history with other developers for collaboration, merge between their work and yours, and compare or revert to previous versions of the project or individual files.\n
+\n
+Git is fully distributed, which means that it can work almost entirely offline. In stark contrast to VCS tools like Perforce or Subversion, Git does nearly all of it’s operations without needing a network connection, including history viewing, difference viewing and commiting.\n
+\n
+Probably the most compelling feature of Git, since it often fundamentally changes the way that many developers work, is Gits branching model. Instead of the popular VCS branching method of simply cloning into a seperate directory for a branch, Git lets you switch between branches in a single working directory. Add to that the fact that creating and switching between branches is nearly instant, not all of your branches need to be shared, and it’s easy to stash partially completed work - means that the way you work can be incredibly different.\n
+\n
+Instead of only having branches for major development line departures, Git developers routinely create, merge and destroy multiple branches a week, or even per day. Often each feature or bug you are working on can have its own branch, merged in only when it is complete. This model allows you to experiment quickly, easily and safely - without having to go through hoops to get back to where you where. It enables and encourages a non-linear development cycle, where you can work on multiple lines of thought in parallel without them stepping on each other.\n
+\n
+To Start. Git records your name and email address when you create commits, so you need to tell Git what those are. You can use the git config command to set those. If you pass --global, it will save the values in the ‘~/.gitconfig’ file so they are the default for all of your repositories.\n
+\n
+# git config --global user.name &quot;Scooby Dooby&quot; \n
+# git config --global user.email &quot;woof@scoobymail.com&quot;\n
+\n
+# git config user.name\n
+# git config user.email\n
+# cat ~/.gitconfig\n
+\n
+Will show settings\n
+\n
+To initialize a Git repository from an existing directory, simply type git init while in that directory. That will create the skeleton of the basic Git repository for you in that directory.\n
+\n
+# cd ~/system/src/demo_android\n
+# git init\n
+# git add .\n
+# git commit -m \'The Initial Commit\'\n
+\n
+You now have a working \'gitted\' project that you can clone, branch, share and use..\n
+\n
+# git log\n
+\n
+You can exit the logger by pressing \'q\'\n
+\n
+If you now go to another directory you can clone the project easily.\n
+\n
+# cd ~/projects\n
+# git clone ~/system/src/demo_android\n
+\n
+This obviously works for online git servers aswell.. [ BUT Only use number IPs as hostnames don\'t resolve yet.. no /etc/hosts..]\n
+\n
+Now lets make some changes..\n
+\n
+# cd demo_android\n
+\n
+Now edit something..\n
+\n
+# vim terminalide.vim\n
+\n
+Add a line comment and save the file [ like &quot;This is an addition ]\n
+\n
+You can see your changes by running\n
+\n
+# git diff\n
+\n
+And commit them with\n
+\n
+# git commit -a -m &quot;Some stuff about the update..&quot;\n
+# git log\n
+# git status\n
+\n
+The status tells you what branch you are working on..\n
+\n
+Or you can use\n
+\n
+# git branch\n
+\n
+To create a new branch, we can use \'git branch (branchname)\' which will create a branch at the point we\'re currently at.\n
+\n
+# git branch experiment\n
+\n
+To switch to that branch so that the work we do is saved to it instead of the ‘master’ branch, we run the ‘git checkout’ command’\n
+\n
+# git checkout experiment\n
+# git branch\n
+\n
+Now lets make more changes to the terminalide.vim file. Open it up and add some more text, that is commented out..\n
+\n
+And commit those..\n
+\n
+# git commit -a -m &quot;Edited terminalide.vim&quot;\n
+# cat terminalide.vim\n
+\n
+Now - you have 2 valid branches. If you want to switch back and check the master stuff, simply do\n
+\n
+# git checkout master\n
+# cat terminalide.vim\n
+\n
+And switch back with\n
+\n
+# git checkout experiment\n
+# cat terminalide.vim\n
+\n
+You can add files to the branch with\n
+\n
+# git add [file]\n
+\n
+Once happy with your branch you can merge it back to the master.\n
+\n
+# git merge experiment\n
+\n
+Once you have done all your changes and merging, and have finished with your branch you can delete it with\n
+\n
+# git branch -d experiment\n
+\n
+And Voila! That was a nice little git session. There is of course a lot more that can be done with git, so, as always, GOOGLE IT!\n
+</string>
+
+
+    <!-- 叶志龙部分开始 -->
+<string name="help_tutorial_demo1_text">Follow all these tutorials through EXACTLY.\n
+\n
+They will help you compile the sample applications in ~/system/src step by step.\n
+\n
+The best way to follow these tutorials is by logging in over telnet/ssh and then
+you can read and follow on the device, whilst using the computer to perform the actions.\n
+\n
+Let\'s Begin..\n
+\n
+Installing the basic system.\n
+\n
+Click \'Install System\' on the main page, and then follow the instructions.\n
+\n
+Make sure you have enabled the Terminal IDE Keyboard in Settings > Langauge and Keyboard
+on your device. Then choose the Terminal IDE keyboard - click \'Keyboard\' on the main page.\n
+\n
+Start Terminal IDE. Click the button..\n
+\n
+You will now be presented with a nice not-short color prompt. You can change this by typing, \n
+\n
+..$ export PS1=#\n
+\n
+But it does look really nice over telnet/ssh.. :-p\n
+\n
+   - Double-tap toggles the keyboard.\n
+   - Swipe left and right to view your 4 Terminals.\n
+   - Long pressing the screen brings up the Terminal Chooser menu.\n
+   - Press \'Menu\' for Options\n
+\n
+----------------------------------------------\n
+[This part is optional but highly recommended]\n
+\n
+Run telnetd. No parameters are rquired. Defaults setup in ~/.bashrc.You 
+can see what is actually being run by typing :\n
+\n
+# cat \`which telnetd\`\n
+\n
+Anyway - start telnetd with :\n
+\n
+# telnetd
+\n
+You should now see telnetd startup info. Ending in ../system/bin/bash\n
+\n
+You can shut telnetd down at any stage by typing [CTRL]-C on the Terminal IDE Keyboard\n
+\n
+Now, go to your nice big computer and login via telnet. I have set the escape character to blank, as it is the same as the vim help link follow key.\n
+\n
+[Either]\n
+$ telnet -e \'\' [THE PHONES IP] 8080\n
+\n
+[Or - better still with adb, which is part of the Android SDK]\n
+Plug your phone into computer via USB first, then\n
+\n
+$ adb -d forward tcp:8080 tcp 8080\n
+$ telnet -e \'\' 127.0.01 8080\n
+\n
+[\'\' is 2 single quotes not a double quote]\n
+\n
+Now you should be connected to the system via TELNET!\n
+\n
+[And you can connect multiple times simultaneously]\n
+------------------------------------------------\n
+\n
+OK - let\'s start programming.\n
+\n
+</string>
+<string name="help_tutorial_demo2_text">Let\'s start by compiling the simplest Hello World app.\n
+\n
+First cd into the project folder (Remember to use TAB to complete) :\n
+\n
+# cd ~/system/src/helloworld/
+\n
+List the contents : \n
+\n
+# ls (Allthough I prefer ll)\n
+\n
+You will now see three files. hello.java is the code. Compile with :\n
+\n
+# javac hello.java\n
+\n
+Now you have a hello.class file. Need to convert to DEX format :\n
+\n
+# dx --dex --output=hello.jar hello.class\n
+\n
+Now you have hello.jar in dex format. The naming to .jar seems to matter, not .dex.\n
+\n
+And finally you can run it with :\n
+\n
+# java -jar hello.jar hello\n
+\n
+You just compiled and ran your first program.. Well Done!\n
+\n
+Now you will understand what builder.sh and run.sh are doing : \n
+\n
+# cat hello.java\n
+# cat builder.sh\n
+# cat run.sh\n
+\n
+Now let\'s play with vim a little.. VIM not VI - they are different! vi is included only as a fail-safe, from busybox, in-case you break vim with \'weird\' config settings.\n
+\n
+# vim hello.java\n
+\n
+You should now see a syntax highlighted hello.java file.\n
+\n
+REMEMBER : The most important thing about vim is that [ESC] moves you into Control mode
+where you can type commands and do functions, and press \'i\' for INSERT mode to write some text.(Or use \'a\' for APPEND mode)\n
+\n
+Press \'i\' to enter INSERT mode\n
+\n
+Move around with the arrow keys, and then move over the \'System.\' so that the cursor is on the \'o\' of
+.out\n
+\n
+Now press [CTRL]+X [CTRL]+U\n
+\n
+You should see java completion for the available options!\n
+\n
+There are many available completion type : \n
+  - [CTRL]+X [CTRL]+U\n USER java completion\n
+  - [CTRL]+X [CTRL]+O\n OMNI completion, syntax based for many languages\n
+  - [CTRL]+X [CTRL]+F\n FILE name completion, VERY HANDY, try ~[CTRL]+X [CTRL]+F\n
+  \n
+And more.. (Enable the dictionary in your ~/.vimrc for many more options) But for us the important one is the USER completion. Java.\n
+\n
+Completion only works in INSERT mode.. The auto-popup vim plugin is included, so if you type normally, after the 2nd letter of a word,  the auto-completion window should just popup automatically.. sweet. :-)\n
+\n
+You can even compile the code with [F7] (this is setup in your ~/.vimrc).\n
+\n
+Make sure you are in Control mode, press [ESC], then press [F7].\n
+\n
+Since there are no errors the compile will succeed and no errors will appear in the
+output window that should now have appeared at the bottom of the screen.\n
+\n
+The Cursor is now in the output window. Move it to the main window.\n
+\n
+Press [ESC] (to make sure you are in control mode). Then press [CTRL]+W (to move into window mode) and then press the UP arrow key.
+This will move you to the window \'above\'. You can use [CTRL]+W [CTRL]+W to toggle between windows. \n
+\n
+You can close the output window if you wish :\n
+\n
+[ESC]:cclose[ENTER]\n
+\n
+Bring it back with :copen or :clist\n
+Cycle with :cnext :cprevious\n
+\n
+Edit the hello.java file by entering INSERT mode and changing it so that there are a few errors.. add a space in between the letters of System etc..\n
+\n
+You will need to save your changes. Make sure the cursor is in the main window. Then :\n
+\n
+[ESC]:w\n
+\n
+[ESC] is only required if you are not in Control mode.. From now on I\'ll omit it. :w is save the file. Most functions
+need to be run from Control mode, and all those starting with :\n
+\n
+Now try and compile again with [F7]. You need to be in the main window in Control mode.\n
+\n
+This time there should be some errors in the output window.\n
+\n
+You can cycle through them with [F8] and [F9], and the cursor will move to the error line.\n
+\n
+Pretty sweet..\n
+\n 
+You can even run your shell build scripts from within vim, so..\n
+\n
+:! ./builder.sh
+\n
+This will run the complete build script, and show you the output.\n
+\n
+NB : You can use TAB completion in the vim command line so just type :\n
+\n
+:! ./b[TAB] and the rest should be filled in..\n
+\n
+To exit vim use : \n
+\n
+:w   - Save file\n
+:q   - Close but file must be saved\n
+:q!  - Force Close\n
+:wq  - Save and Close\n
+:qa! - Force close ALL.\n
+\n
+OK. Play around here, then move on to Tutorial 3.\n
+\n</string>
+<string name="help_tutorial_demo3_text">We will now compile a more substantial java library. This library will the be
+used in the 2 last remaing apps.\n
+\n
+Android requires that classes be in the DEX format when running them, but javac requires them in the regular .jar format\n
+\n
+This project compiles both types.\n
+\n
+First cd into the project home folder\n
+\n
+# cd ~/system/src/demo_lib/\n
+\n
+Have a look around\n
+\n
+# ls\n
+\n
+Check out the builder script \n
+\n
+# cat builder.sh\n
+\n
+This will explain all that is happening. Two libs are created at the end.\n
+\n
+Run the build script\n
+\n
+# ./builder.sh\n
+\n
+To check the results run\n
+\n
+# ls dist/\n
+\n
+OK - now with vim\n
+\n
+Rather than start vim from this folder, it is important to start it from the src/
+folder, as this way javac is called with the right filenames when compiling.\n
+\n
+I have written a simple script called \'terminalide\' to help.\n
+\n
+# cat `which terminalide`\n
+\n
+This will show how simple a script it is. Run it.\n
+\n
+# terminalide\n
+\n
+vim will now start with a lovely file-browser side-pane on the left, setup in the correct home folder.\n
+\n
+This is done using a vim plugin. :NERDTree\n
+\n
+Move to the src dir with the arrow keys, and press [ENTER] to open a directory or file.\n
+\n
+Open the libfunc.java file in ./src/org/library by movimg onto it and pressing [ENTER]\n
+\n
+The cursor will now be in the main window now. Press [F7] to compile.\n
+\n
+At this point there are no errors. Make some errors in the code and re-compile.\n
+\n
+Now cycle through your errors with [F8] and [F9].\n
+\n
+I think you\'ll agree, this is starting to look like a proper IDE.\n</string>
+<string name="help_tutorial_demo4_text">We will now compile a complete command line java application, that uses the library we compiled in Tutorial 3.\n
+\n
+cd into the home folder\n
+\n
+# cd ~/system/src/demo_console/\n
+\n
+Check things out..\n
+\n
+# cat ./builder.sh\n
+# cat ./run.sh\n
+\n
+Notice how the lib file has been integrated into the build commands.\n
+\n
+Also, check out the terminalide.vim file\n
+\n
+# cat ./terminalide.vim\n
+\n
+Just take a look at it. It will make sense later.\n
+\n
+Now run terminalide\n
+\n
+# terminalide\n
+\n
+Open the start.java file in the src dir.\n
+\n
+Compile with [F7]..\n
+\n
+There are ERRORS! This is normal.\n
+\n
+Also, the java-complete functions will not work for libfunc.\n
+\n
+This is because the vim variables have not been told about the new build environment and added libs.\n
+\n
+Run this function in vim. Make sure you are in the main window and in Control mode.\n
+\n
+:source ../terminalide.vim\n
+\n
+This will set the variables up correctly for the window so that java-complete and javac now work.\n
+\n
+Now try and compile. It should work fine. And the java completion for libfunc as well..\n
+\n
+Use the builder script to create the full app.\n
+\n
+:! ../builder.sh\n
+\n
+Now lets open a second file.\n
+\n
+Move to NERDTree\n
+\n
+[ESC][CTRL]+W LEFT\n
+\n
+Open up name.java as well. You will now notice a thin window appear at the top 
+with the names of your current buffers. Also name.java will now be visible in the main window\n
+\n
+Move into this MiniBufExpl window, [CTRL]+W UP\n
+\n
+Press TAB or SHIFT-TAB to cycle through the windows, and ENTER to select one. Nice.\n
+\n
+There are other nice ways to switch buffers.\n
+\n
+:buffers\n
+\n
+this shows a list of buffers, and you then choose with\n
+\n
+:buffer [number]\n
+\n
+I have created a simple mapping in ~/.vimrc so just press [F5].. \n
+\n
+Play around here and then go to tutorial 5.
+</string>
+<string name="help_tutorial_demo5_text">You should now be pretty adept at compiling code and editing in vim.\n
+\n
+Here is a complete Android application.\n
+\n
+cd into the home folder\n
+\n
+# cd ~/system/src/demo_android/\n
+\n
+Check out the build script\n
+\n
+# cat ./builder.sh\n
+\n
+Quite a beast.\n
+\n
+But once you understand it, you will see that the eventual result is the
+creation of an .apk file. This is signed with a default test signature.\n
+\n
+This will show you how the install is performed\n
+\n
+# cat ./install.sh\n
+\n
+And then you can install it..so\n
+\n
+# ./builder.sh\n
+# ./install.sh\n
+\n
+And run it..\n
+\n
+# ./run.sh\n
+\n
+And HEY presto. If all\'s well, you should see an Android application start on the Device!\n
+\n
+Now for vim..\n
+\n
+Check out the terminalide.vim file first\n
+\n
+# cat ./terminalide.vim\n
+\n
+It is almost the same as the demo_console version but the classes are built in the ./build/classes folder instead.\n
+\n
+Use terminalide to start vim\n
+\n
+# terminalide\n
+\n
+Open a the main java file. And then remember to setup correctly
+\n
+:so ../terminalide.vim\n
+\n
+Now javac compile and java-complete should work fine.\n
+\n
+Open multiple files and switch between them using the MiniBufExpl window at the top.\n
+\n
+It all works... finally.\n
+\n
+The rest - is up to you.\n
+</string>
+<string name="help_tutorial_demo6_text">OK - Now that we understand quite how wonderful vim can be, let\'s compile a c applications.\n
+\n
+GCC is not extracted by default, since it takes up about 70mb, or 20mb unextracted.\n
+\n
+You need to extract it to the right location for all my scripts to work, so I have created a very simple installer.\n
+\n
+# cat `which install_gcc`\n
+\n
+This will show what is actually being done. Simple. Now run it..\n
+\n
+# install_gcc\n
+\n
+Now GCC, and more importantly the \'terminal-gcc\' script, should be installed..\n
+\n
+First cd into the project folder (Remember to use TAB to complete) :\n
+\n
+# cd ~/system/src/c_examples/chello/\n
+\n
+List the contents : \n
+\n
+# ls (Allthough I prefer ll)\n
+\n
+There are 2 file here. hello.c and a Makefile. Lets look at the file\n
+\n
+# cat hello.c\n
+\n
+You can compile the c code with \n
+\n
+# terminal-gcc -o hello hello.c\n
+\n
+And there it is. You should now have an executable in the folder called \'hello\'. Run it with \n
+\n
+# ./hello\n
+\n
+You can add more files by adding them at the end of the command. So if you had file1.c and file2.c you would use\n
+\n
+# terminal-gcc -o hello file1.c file2.c\n
+\n
+You don\'t need to add the .h files, they should be in this folder. Now let\'s see what terminal-gcc is actually doing..\n
+\n
+# cat `which terminal-gcc`\n
+\n
+As you can see I am calling arm-eabi-gcc with some specific parameters. You need these for it to work on Android.\n
+\n
+If you want to know what is \'actually\' being called you need to set the environment variable DEBUG_GCC\n
+\n
+# export DEBUG_GCC=true\n
+\n
+And to stop\n
+\n
+# export DEBUG_GCC=\n
+\n
+Also - you can add \'-v\' to get verbose output.\n
+\n
+Now let\'s see the Makefile..\n
+\n
+# cat Makefile\n
+\n
+This is a very simple generic Makefile. It scans the folder for c files and then compiles them.\n
+\n
+To use the Makefile :\n
+\n
+# make clean (This will delete all the compiled files..)\n
+\n
+# make\n
+\n
+\'make\' only compiles the files that need to be compiled. Unlike the previous method that just re-compiles everything.
+Best of all, this works nicely with vim.. or terminalide.. :-)\n
+\n
+So - run terminalide.\n
+\n
+# terminalide\n
+\n
+The fact you don\'t have a ./src folder doesn\'t matter..\n
+\n
+Once vim/terminalide is up and running you can compile everything by pressing F7.\n
+\n
+And you can scan through errors, just like in the java tutorials, with F8 and F9.\n
+\n
+Nice.\n
+\n
+Now let\'s move on to a .cpp example..\n
+</string>
+<string name="help_tutorial_demo7_text">Now, with regard to CPP apps there is good news and bad news..\n
+\n
+The GOOD news is that CPP files, classes etc work, the bad news is that \'iostream\' and the C++ headers don\'t work. 
+Yes I have integrated them, and can compile them, and it works, but when you run it, it just seg faults.. :-(\n
+\n
+SO - you can use cpp files, but you need to stick with the standard C header files. When I fix it, I\'ll add it.\n
+\n
+(ps If anyone doea get it working, please let me know!)\n
+\n
+Let\'s cd into the directory\n
+\n
+# cd ~/system/src/c_examples/cpphello/\n
+\n
+There is rect.cpp and the Makefile. Check out the cpp file :\n
+\n
+# cat rect.cpp\n
+\n
+Start by compiling with\n
+\n
+# terminal-g++ -o rect rect.cpp\n
+\n
+You now have an executable \'rect\' in this folder.\n
+\n
+Now let\'s use the Makefile. Check it out to see what it does..\n
+\n
+# cat Makefile\n
+\n
+# make clean\n
+\n
+# make\n
+\n
+(normally just \'make\' will do..)\n
+\n
+Now - another new feature is the TAGLIST vim plugin. This is a very handy plugin that shows a breakdown of the classes, variables in a file.\n
+\n
+I have set it to toggle On/Off with \'F3\' in your ~/.vimrc file. You can edit the width and other properties there.\n
+\n
+Just run \'vim rect.cpp\' or \'terminalide\', and press F3 to see it in action.\n
+\n
+Also - you now have \'ctags\', a requirement of taglist. Check Google, for how to best use this for you..\n
+\n
+Next a c library..\n</string>
+<string name="help_tutorial_demo8_text">Now we\'ll compile a C library\n
+\n
+The only tricky bit is that you need to install it somewhere that the /system/bin/linker will find it.\n
+\n
+# echo $LD_LIBRARY_PATH\n
+\n
+This shows the path that will be searched. You will notice ~/local/lib at the front. That\'s where we\'ll put it.\n
+\n
+Check out the Makefile to see how I have modified it, LDFLAGS has -shared. Also there is an \'install\' option here, so..\n
+\n
+# make\n
+\n
+Lets see what\'s in ~/local\n
+\n
+# find ~/local\n
+\n
+Not much, but then\n
+\n
+# make install\n
+\n
+And now\n
+\n
+# find ~/local\n
+\n
+The header file is in ~/local/include and the lib in ~/local/lib. Ready for us to use in the next tutorial..\n
+\n 
+</string>
+<string name="help_tutorial_demo9_text">Now we are going to compile a full c app, that uses the library we just compiled. It will ask for some input and then print it back.\n
+\n
+Check out the Makefile..\n
+\n
+# cat Makefile\n
+\n
+I have included ~/local/include and -lmyfunc will load libmyfunc.so, and later look for it in the $LD_LIBRARY_PATH\n
+\n
+# make\n
+\n
+And then run it.. \n
+\n
+# ./tester\n
+\n
+Or you can install it for use anywhere..\n
+\n
+# make install\n
+\n
+Now you can run it from any folder, with just \'tester\' not \'./tester\', as ~/local/bin is in your $PATH\n
+\n
+And that - is that :-)\n</string>
+<string name="help_ui_bitchx_text">BitchX final 1.1\n
+\n
+This is an IRC client. This stands for Internet Relay Chat.\n
+\n
+If you are stuck on a problem, you can now ask for help in an infinite number of IRC chat rooms..!\n
+\n
+You can set your IRCNAME and IRCNICK environment variables to speed things up.\n
+\n
+ISSUE :-( .. BitchX works fine over SSH / Telnet but when run on the device the screen rendering has some issues. To get around this, when running on the device, I start it with\n
+\n
+# BitchX -d (This will set \'dumb\' terminal.. only ONE chat window allowed [I think?].. but it works)\n
+\n
+[You can of course run multiple copies of BitchX in TMUX..]\n
+\n
+Normally To start just run\n
+\n
+# BitchX\n
+\n
+Which will connect to your defaults.. or\n
+\n
+# BitchX -n [nickname] [irc-server]\n
+\n
+Terminal IDE does not resolve hostnames, as there is no /etc/resolv.conf on un-rooted phones, so the servers MUST be entered in their IP NUMBER format.\n
+\n
+Once in BitchX.. some functions..\n
+\n
+/list           - Lists all the Channels\n
+/quit           - Exit BitchX\n
+/window [func]  - many functions - GOOGLE IT..\n
+/window new     - New window\n
+/window kill    - Kill window\n
+/window goto #  - Goto window number #\n
+/join [channel] - Join a channel in the active window\n
+/part [channel] - Leave a channel.\n
+\n
+You can do all the window splitting and tabbing that you can with other good command line apps.\n
+\n
+Chats away!\n
+\n
+</string>
+    <string name="help_tutorial_expand">Compiling C Apps</string>
+<string name="help_tutorial_expand_text">Terminal IDE uses the command line with many native C apps. There are DEFINITELY 
+more apps that some of you might want.\n
+\n
+You can of course add C applications you have compiled yourself to Terminal IDE. 
+Just put them in the ~/local/bin folder.. like your Java / Shell scripts. \n
+\n
+Yes GCC 4.4.0 is available in Terminal IDE, but I have yet to get a ./configure, make, make install to work.. 
+They build, but they seg fault.. :-( Your own projects should be fine, but the 
+libc / bionic differences need to be fixed as you go, as all in one go, never seems to work.\n
+\n
+The Android NDK has come a long way, and you can now create stand alone toolchains. Most of the apps in Terminal IDE are compiled with CodeSourcery, statically linked.\n
+\n
+For a really good start - use http://dan.drown.org/android/\n
+\n
+You still have to fix up any issues that arise, but his build scripts work really well! Thanks DAN!\n
+\n
+I\'m not going to go into too much depth, as this is something you will have to wrestle with yourself, as we all do :-)!\n
+\n
+</string>
+<string name="help_ui_mc_text">Midnight Commander 4.8\n
+\n
+Just type \'mc\'.\n
+\n
+This is a great console based file manager.\n
+\n
+Use the arrow keys to move around, TAB switches panels, and function keys to get the menus.\n
+\n
+If the function keys don\'t work for you, just use [ESC] \'number\' for the same effect.\n
+\n
+You can mount FTP file systems in mc and if you set up an SSL pipe with ssh, you can access ftps.\n
+\n
+There is even the FISH protocol for SSH file access.\n
+\n
+To get it to work, I had to write a simple little mc script. mc-real is the actual binary. You can run mc-real on a regular screen / keyboard.\n
+\n
+Few tips:\n
+\n
+[F1] HELP - doesn\'t work yet :-(\n
+[F3] View a file - v quick.\n
+[F4] Open the file in vim for editing\n
+[F9] gets you the main menus. Just use arrow keys and enter.\n
+\n
+Press [ESC] twice to cancel most actions.\n
+\n
+[F10] Quit.\n
+\n
+As with vim, plenty of help on Google.. :-)\n
+\n</string>
+<string name="help_overconnect_rsync_text">rsync 3.0.8\n
+\n
+rsync is a great way to backup and synchronise folders on  different machines.\n
+\n
+It only sends the DIFFERENCE between files so that the minimum amount of bandwidth is used.\n
+\n
+Even large projects can easily be synced quickly, if you\'re only transferring the changes..\n
+\n
+There are MANY ways of syncing folders in rsync, pull or push, run in daemon mode, etc.. but I will show you ONE secure way of doing this.\n
+\n
+You need to have the sshd daemon running in Terminal IDE. Follow the previous instructions.\n
+\n
+Now its really quite simple. You need rsync on your home computer.\n
+\n
+Let\'s try and synchronise the ~/system/src demo apps folder.\n
+\n
+On your big computer, where you want to backup your work, you need to run this function :\n
+\n
+# rsync -e \'ssh -p 8090\' --rsync-path=\'/data/data/com.terminal.ide/files/system/bin/rsync\' -avn 127.0.0.1:/data/data/com.terminal.ide/files/system/src .\n
+\n
+By adding the -n option it will show you what it would do, but not do it. Re-run without the -n to actually back the files up..\n
+\n
+# rsync -e \'ssh -p 8090\' --rsync-path=\'/data/data/com.terminal.ide/files/system/bin/rsync\' -av 127.0.0.1:/data/data/com.terminal.ide/files/system/src .\n
+\n
+Create a script, to make this easier to call.\n
+\n
+And there you have it. Fast simple secure folder synchronization..\n
+\n
+You can of course reverse the rolls of this script.\n
+\n
+That would mean you could backup your files FROM Terminal IDE TO any ssh server you have access to online, as long as it has rsync.\n
+\n</string>
+<string name="help_overconnect_ssh_txt">This is the MOST important feature of Terminal IDE.\n
+\n
+Being able to log in over telnet/ssh with a large fully compatible keyboard and even larger
+monitor is what makes Terminal IDE so useable.\n
+\n
+How to login via SSH\n
+--------------------\n
+\n
+There is a slight issue.. basically when you log in you have to start bash manually.. unless you have the file /etc/shell with the correct shell to use.. Which requires a rooted phone.\n
+\n
+Since Terminal IDE is for non-ROOT users, I will have to recompile the code to allow a shell to be specified on the command line.. Soon..\n
+\n
+FOR NOW - This is how to connect to the phone via SSH (There are other ways using public keys but this is one way)\n
+\n
+So - Once in Terminal IDE\n
+\n
+2) You need to create a couple of server ssh keys\n
+\n
+Start in $HOME\n
+# cd ~\n
+\n
+Create folder\n
+# mkdir .ssh\n
+\n
+Give it some secure permissions\n
+# chmod 700 .ssh\n
+\n
+Get in there\n
+# cd .ssh\n
+\n
+Now create the keys\n
+# dropbearkey -t dss -f dropbear_dss_host_key\n
+# dropbearkey -t rsa -f dropbear_rsa_host_key\n
+\n
+OK - That\'s almost it. Just need to start dropbear with the correct parameters now. [Probably want to keep this in a script]\n
+\n
+Back HOME\n
+# cd ~\n
+\n
+You need to know the UID of your app, which is different per phone - use \'id\'\n
+# id\n
+\n
+That will tell you your user ID / Group ID. Let\'s say its 10058.\n
+\n
+Now to start DropBear\n
+# dropbear -A -N username -U 10058 -G 10058 -C password -d ~/.ssh/dropbear_dss_host_key -r ~/.ssh/dropbear_rsa_host_key -F -E -p 8090 -P PidFile\n
+\n
+You should DEFNITELY write a simple script to do this.. Call it sshd.. and put it in ~/bin\n
+\n
+This will start sshd running in the foreground with password set to \'password\' on port 8090.\n
+\n
+Then you can connect, like telnet, and simply use \'password\' for the password.\n
+\n
+Now for the issue. It will start a simple shell session in / with no ENVIRONMENT variables or anything..\n
+\n
+I\'ll fix it permanently in a future release, but for now it can be fixed with these 2 commands.\n
+\n
+cd into your home dir - Check this is correct on your device\n
+\n
+# cd /data/data/com.terminal.ide/files\n
+\n
+And start bash with an init file Terminal IDE auto-magically creates..\n
+\n
+# ./system/bin/bash --init-file ./.init\n
+\n
+Everything should now be setup as usual.\n
+\n
+You can set up a nice script that will do this for you automatically on startup..\n
+\n
+You need to invoke ssh like this..\n
+\n
+# ssh 127.0.0.1 -p 8090 -l username -t /data/data/com.terminal.ide/files/system/bin/bash --init-file /data/data/com.terminal.ide/files/.init\n
+\n
+Good luck..\n
+</string>
+<string name="help_overconnect_telnet_text">This is the MOST important feature of Terminal IDE.\n
+\n
+Being able to log in over telnet / ssh with a large fully compatible keyboard and even larger
+monitor is what makes Terminal IDE so useable.\n
+\n
+How to login via TELNET\n
+--------------------\n
+\n
+A typical session will entail you starting Terminal IDE and simply running
+\'telnetd\'. No options required as defaults are used.\n
+\n
+Then log in via your secure home wifi with telnet, default port 8080.If you are an
+android developer and have adb installed, there is a better option.\n
+\n
+Plug your phone in via usb and make sure adb can see it. Then run\n
+\n
+adb -d forward tcp:8080 tcp:8080\n
+\n
+This will forward the local port 8080 to the device port 8080\n
+\n
+Then log in via telnet, via your local machine. Simple.\n
+\n
+telnet -e \'\' 127.0.0.1 8080\n
+\n
+Since there is no encryption, like ssh, and over USB, this is the fastest possible connection..\n
+\n
+Using the -e \'\' turns off the escape character, which is the same as the default
+vim help-link follow-through key. Set it to whatever you want.\n
+\n
+Once you have logged on make sure the TERM variable is correct, The default is \'xterm\'.\n
+\n
+</string>
+<string name="help_ui_trouble_text">All efforts have been made to ensure the smooth and correct running of this application.\n
+\n
+If you find that Terminal IDE is behaving abnormaly though, there are 3 options :\n
+\n
+    1) Turn it off and run away. Not an option I would advise.\n
+    \n
+    2) Write a harsh comment that says how this app is a pile of **** and you
+can\'t believe I even dared to waste your time.. Again, not a great option, but it does make me laugh when I read some of the stuff.. :-)\n
+\n
+    3) Send me a short email with phone type, android version, error type and any other information you think is relevant, and I\'ll fix it. Jackpot.\n
+    \n
+When I find a bug, I crush it. If I don\'t find it, and you do, and don\'t tell me,
+it lives and we all lose.. I\'m not a mind-reader. Or a phone-reader. I\'m not one of the X-Men.\n
+\n
+I\'m Spartacus Rex.</string>
+<string name="help_ui_thanks_text">NONE of this is possible without the Open Source Community!.\n
+\n
+\'Who can fathom it\'s deepest thoughts..\'\n
+\n
+Terminal IDE is available under GPLv2.\n
+\n
+Get the code from http://code.google.com/p/terminal-ide/\n
+\n
+Thanks especially to :\n
+\n
+    : JackPal - for his excellent terminal emulator\n
+    : Dan Drown - wonderful build system to compile c apps - http://dan.drown.org/android/\n
+    : Tom Arn - for aapt, jarsigner\n
+    : DropBear - for sshd\n
+    : Bash Boys - for bash\n
+    : Busy Boys - for busybox\n
+    : Vim love - vim rocks\n
+    : Fang Cheng - for java-complete vim script\n
+    : Eric Lafortune - for proguard\n
+    : Java - who ever you are.\n
+    \n
+    And many many more..\n
+    \n
+    Simon Funk, Kevin Boone,.. \n
+    \n
+    Thank you!\n</string>
+     <string name="help_ui_gplv2_text">
+                   GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation\'s software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Lesser General Public License instead.)  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must show them these terms so they know their
+rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author\'s protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors\' reputations.
+
+  Finally, any free program is threatened constantly by software
+patents.  We wish to avoid the danger that redistributors of a free
+program will individually obtain patent licenses, in effect making the
+program proprietary.  To prevent this, we have made it clear that any
+patent must be licensed for everyone\'s free use or not licensed at all.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this General Public License.  The \'Program\', below,
+refers to any such program or work, and a \'work based on the Program\'
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term \'modification\'.)  Each licensee is addressed as \'you\'.
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted, and the output from the Program
+is covered only if its contents constitute a work based on the
+Program (independent of having been made by running the Program).
+Whether that is true depends on what the Program does.
+
+  1. You may copy and distribute verbatim copies of the Program\'s
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program normally reads commands interactively
+    when run, you must cause it, when started running for such
+    interactive use in the most ordinary way, to print or display an
+    announcement including an appropriate copyright notice and a
+    notice that there is no warranty (or else, saying that you provide
+    a warranty) and that users may redistribute the program under
+    these conditions, and telling the user how to view a copy of this
+    License.  (Exception: if the Program itself is interactive but
+    does not normally print such an announcement, your work based on
+    the Program is not required to print an announcement.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients\' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and \'any
+later version\', you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+                            NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM \'AS IS\' WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+convey the exclusion of warranty; and each file should have at least
+the \'copyright\' line and a pointer to where the full notice is found.
+
+    [one line to give the program\'s name and a brief idea of what it does.]
+    Copyright (C) [year]  [name of author]
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) year name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w\'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c\' for details.
+
+The hypothetical commands `show w\' and `show c\' should show the appropriate
+parts of the General Public License.  Of course, the commands you use may
+be called something other than `show w\' and `show c\'; they could even be
+mouse-clicks or menu items--whatever suits your program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a \'copyright disclaimer\' for the program, if
+necessary.  Here is a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+  `Gnomovision\' (which makes passes at compilers) written by James Hacker.
+
+  [signature of Ty Coon], 1 April 1989
+  Ty Coon, President of Vice
+
+This General Public License does not permit incorporating your program into
+proprietary programs.  If your program is a subroutine library, you may
+consider it more useful to permit linking proprietary applications with the
+library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.</string>
+<string name="help_ui_tmux_text">TMUX 1.5\n
+\n
+Tmux is a \'Terminal MultiPlexer\'. Like GNU Screen but better.\n
+\n
+What this means is that you can now have multiple windows arranged however you like in the SAME SINGLE console window.. :-)\n
+\n
+A word of WARNING! If you\'ve never used a feature like this, it may seem a little strange. Once you have used a feature like this, you can NEVER go back.. that\'s how utterly awesome it is..\n
+\n
+Now - lets take her for a spin.\n
+\n
+The tmux settings are in ~/.tmux.conf. Check them out. I have made a few shortcuts but very little else. That will be up to you.\n
+\n
+# tmux\n
+\n
+[If you are running this on the device screen itself you may want to start with\n
+\n
+# tmux -u\n
+\n
+as this will render the lines correctly.. ]\n
+\n
+You should now be seeing a normal command line, and a status bar of information at the bottom of the screen.\n
+\n
+Let\'s split the window [Very much like in vim..]\n
+\n
+[CTRL]+a |\n
+\n
+And again, this time vertically\n
+\n
+[CTRL}+a -\n
+\n
+Now you should have 3 panes open. And you will be in the bottom right one.\n
+\n
+# top\n
+\n
+Or even better..\n
+\n
+# htop \n
+\n
+And now switch to the next pane with\n
+\n
+[CTRL]+a o\n
+\n
+or even easier..\n
+\n
+[CTRL]+a [Arrow Key]\n
+\n
+Well - not bad, you now have 3 windows with a constant computer monitor..\n
+\n
+Now lets create a whole new window..\n
+\n
+[CTRL]+a c\n
+\n
+You should now see 2 windows represented at the bottom.\n
+\n
+In this new window why not start Midnight Commander\n
+\n
+# mc\n
+\n
+You can switch between the last active window by using\n
+\n
+[CTRL]+a [CTRL]+a\n
+\n
+Or\n
+\n
+[CTRL]+a [n or p]\n
+\n
+You can have as many windows and panes as our squishy biological brains can handle.\n
+\n
+Imagine the possibilities.. tail -fs.. etc.. :-)\n
+\n
+A list of some useful functions :\n
+\n
+[CTRL]+a c  > Create new window\n
+[CTRL]+a a  > Move to last used window\n
+[CTRL]+a n  > Move to next window\n
+[CTRL]+a p  > Move to previous window\n
+[CTRL]+a [Window Number]  > Move to the specified window\n
+\n
+[CTRL]+a |  > Split window horizontally\n
+[CTRL]+a -  > Split window vertically\n
+[CTRL]+a o  > Move to next pane\n
+[CTRL]+a [Arrow Key] > Move to pane in direction of arrow key\n
+[CTRL]+a q  > Show pane numbers, and press quickly to jump\n
+\n
+[CTRL]+a ,  > Rename current window\n
+[CTRL]+a ?  > List all keybindings\n
+[CTRL]+a [  > Scroll Mode [ESC exits or CTRL+C]\n
+[CTRL]+a w  > List windows\n
+\n
+You need to \'exit\' and shut down the window panes individually. When all are shut down, tmux stops.. There may be a faster way?\n
+\n
+There is more info about screen resizing, pane switching , detaching, re-attaching and MORE, but as always GOOGLE it.. there is plenty out there.\n
+\n</string>
+    <!-- 叶志龙部分结束 -->
+
+    <!--                                            -->
+    <!--                                            -->
+    <!--      新的主界面string                        -->
+    <!--                                            -->
+    <!--                                            -->
+    <string name="wh_main_welcome">Welcome to the<b>Terminal IDE</b>\n Please choose what you want to do:</string>
+    <string name="wh_main_run_title">Run</string>
+    <string name="wh_main_run_summary">Here you can run the terminal,which is  the entrance to all functions of Terminal IDE.</string>
+    <string name="wh_main_install_title">Install</string>
+    <string name="wh_main_install_summary">Terminal IDE has binary system,you can install the binary system make Terminal IDE to be more useful and powerful!</string>
+    <string name="wh_main_keyboard_title">Keyboard</string>
+    <string name="wh_main_keyboard_summary">Here you can choose the ASCI keyboard of Terminal IDE and it needs turn on in the Setting.</string>
+    <string name="wh_main_setting_title">Preference</string>
+    <string name="wh_main_setting_summary">Here you can config the ASCI keyboard of Terminal IDE,font and background etc..</string>
+    <string name="wh_main_help_title">Help</string>
+    <string name="wh_main_help_summary">Here you can get some information for how to work by terminal IDE.</string>
+    <string name="wh_main_exit_title">Exit</string>
+    <string name="wh_main_exit_summary">Shutdown all terminal and session and exit the app.</string>
+    <string name="wh_main_system_noinstall">You may not install system for Terminal IDE,Click the <a>Install</a> to make you Terminal IDE more powerful!</string>
+
+
+    <!-- 菜单部分 -->
+    <string name="wh_menu_about">About</string>
+    <string name="wh_menu_git_tut">GIT</string>
+    <string name="wh_menu_exit">Exit</string>
+    <string name="wh_actionbar_title_help">Help</string>
+    <string name="wh_actionbar_title_setting">Setting</string>
+    <string name="wh_actionbar_title_keyboard_setting">Keyboard Setting</string>
+    <string name="wh_actionbar_title_remote">Remote</string>
+    <string name="wh_actionbar_title_tut">Tutorials</string>
+    <string name="wh_actionbar_title_install">Install</string>
+    <string name="wh_pricate">Try it</string>
+
+
+    <!-- 关于部分 -->
+    <string name="wh_about_developers_label">Project members:</string>
+    <string name="wh_about_developers"><a href="http://weibo.com/wanghao19940820">Doublemine </a> and <a href="http://user.qzone.qq.com/522793528/">White</a></string>
+    <string name="wh_about_developers_warning">Please do not contact us directly for support.use the link below.</string>
+    <string name="wh_about_translator_label">Translator:</string>
+    <string name="wh_translator">wanghao、yezhilong</string>
+    <string name="wh_about_teacher_label">Advisor:</string>
+    <string name="wh_about_teacher"><a href="http://user.qzone.qq.com/308337370/">Dennis Yang</a></string>
+    <string name="wh_about_source_label">Source code:</string>
+    <string name="wh_about_source">https://code.google.com/p/terminal-ide</string>
+    <string name="wh_about_support_label">The Version Source code:</string>
+    <string name="wh_about_support">https://git.oschina.net/doublemine/Terminal-IDE</string>
+    <string name="wh_about_support_warning">This link is for the version\'s Terminal IDE,if you have some sugest about this,please contact the author of Terminal IDE.</string>
+    <string name="wh_about_libraries_label">Used libraries:</string>
+    <string name="wh_about_libraries">Android-Support-v7</string>
+    <string name="wh_about_title">About</string>
+
+    <!-- 通知栏按钮 -->
+    <string name="notification_open_termianl">Run Terminal</string>
+    <string name="notification_exit_app">Exit Application</string>
+
+    <string name="aboutActivity_app_name"><b>Terminal IDE</b></string>
+    <string name="aboutActivity_app_verison">V 3.0.1 Alpha</string>
+
+    <!--设置的actionbar标题 -->
+    <string name="main_Preference_title">Setting</string>
+    <string name="main_keyboard_title">Keyboard Setting</string>
+
+    <!-- 以下为新的帮助界面主题字符串 -->
+    <!-- 此处国际化请做以下更改：
+                            1.html_file_url的数值。例如:中文:file:///android_asset/html/cn/ 英文:file:///android_asset/html/en/
+                            2.在assets目录在的html文件夹中新建一个国家缩写代码的文件夹，将html文件置于该文件夹中
+
+     -->
+    <string name="html_file_url">file:///android_asset/html/zh/</string>
+    <string name="help_html_introduction">installsystemActivity_Follow.html</string>
+    <string name="help_html_tutorial"></string>
+    <string name="help_html_bash"></string>
+    <string name="help_html_busybox"></string>
+    <string name="help_html_vim"></string>
+    <string name="help_html_java"></string>
+    <string name="help_html_gcc"></string>
+    <string name="help_html_telnet"></string>
+    <string name="help_html_ssh"></string>
+    <string name="help_html_rsync"></string>
+    <string name="help_html_git"></string>
+    <string name="help_html_mc"></string>
+    <string name="help_html_tmux"></string>
+    <string name="help_html_bitchx"></string>
+    <string name="help_html_additional_apps"></string>
+    <string name="help_html_gplv2"></string>
+    <string name="help_html_keyboard"></string>
+
+    <string name="help_html_introduction_title">Introduction</string>
+    <string name="help_html_tutorial_title">Tutorial</string>
+    <string name="help_html_bash_title">Bash</string>
+    <string name="help_html_busybox_title">Busybox</string>
+    <string name="help_html_vim_title">Vim</string>
+    <string name="help_html_java_title">JAVA</string>
+    <string name="help_html_gcc_title">GCC</string>
+    <string name="help_html_telnet_title">Telnet</string>
+    <string name="help_html_ssh_title">Secure Shell</string>
+    <string name="help_html_rsync_title">Rsync</string>
+    <string name="help_html_git_title">Git</string>
+    <string name="help_html_mc_title">Midnight Commander</string>
+    <string name="help_html_tmux_title">TMUX</string>
+    <string name="help_html_bitchx_title">BitchX</string>
+    <string name="help_html_additional_apps_title">Add More Apps</string>
+    <string name="help_html_gplv2_title">License</string>
+    <string name="help_html_keyboard_title">Keyboard</string>
+
+    <string name="help_html_introduction_summary">Please start here!</string>
+    <string name="help_html_tutorial_summary">Step by step walkthrough..</string>
+    <string name="help_html_bash_summary">The Command Line</string>
+    <string name="help_html_busybox_summary">The applications</string>
+    <string name="help_html_vim_summary">The editor</string>
+    <string name="help_html_java_summary">java Development tools</string>
+    <string name="help_html_gcc_summary">C/CPP Development tools</string>
+    <string name="help_html_telnet_summary">Connect over USB/WIFI</string>
+    <string name="help_html_ssh_summary">Connect over USB/WIFI</string>
+    <string name="help_html_rsync_summary">Connect over USB/WIFI</string>
+    <string name="help_html_git_summary">Version Control System</string>
+    <string name="help_html_mc_summary">The File manager</string>
+    <string name="help_html_tmux_summary">Terminal Multiplexer</string>
+    <string name="help_html_bitchx_summary">IRC Chat Client</string>
+    <string name="help_html_additional_apps_summary">Add more native apps to Terminal IDE</string>
+    <string name="help_html_gplv2_summary">Thle GPLV2 License</string>
+    <string name="help_html_keyboard_summary">Special Terminal IDE Keyboard</string>
+
+</resources>

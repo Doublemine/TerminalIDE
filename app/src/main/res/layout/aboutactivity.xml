@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <ImageView
+                    android:id="@+id/aboutActivity_imageView0"
+                    android:layout_marginTop="30dip"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/anim_terminal_gif" />
+
+                <TextView
+                    android:id="@+id/aboutactivity_appname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aboutActivity_app_name"
+                    android:layout_below="@id/aboutActivity_imageView0"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="22sp"
+                    android:textColor="@color/wh_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aboutActivity_app_verison"
+                    android:textSize="13sp"
+                    android:layout_below="@id/aboutactivity_appname_tv"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#898989" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- 分割线 -->
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip" />
+
+                <ExpandableListView
+                    android:id="@+id/aboutactivity_expandlv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"></ExpandableListView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

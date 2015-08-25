@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用于程序或者活动的主题 -->
+    <style name="DoublemineActionBarTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+
+        <!-- 支持库兼容 -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+
+    </style>
+
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_doublemine</item>
+
+        <!-- 支持库兼容 -->
+        <item name="background">@drawable/ab_solid_doublemine</item>
+    </style>
+
+</resources>

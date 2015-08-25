@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/screen_preferences">
+
+        <ListPreference
+            android:key="statusbar"
+            android:defaultValue="@string/default_value_statusbar_preference"
+            android:title="@string/title_statusbar_preference"
+            android:summary="@string/summary_statusbar_preference"
+            android:entries="@array/entries_statusbar_preference"
+            android:entryValues="@array/entryvalues_statusbar_preference"
+            android:dialogTitle="@string/dialog_title_statusbar_preference" />
+
+        <!--
+                <ListPreference
+                        android:key="cursorstyle"
+                        android:defaultValue="@string/default_value_cursorstyle_preference"
+                        android:title="@string/title_cursorstyle_preference"
+                        android:summary="@string/summary_cursorstyle_preference"
+                        android:entries="@array/entries_cursorstyle_preference"
+                        android:entryValues="@array/entryvalues_cursorstyle_preference"
+                        android:dialogTitle="@string/dialog_title_cursorstyle_preference" />
+
+                <ListPreference
+                        android:key="cursorblink"
+                        android:defaultValue="@string/default_value_cursorblink_preference"
+                        android:title="@string/title_cursorblink_preference"
+                        android:summary="@string/summary_cursorblink_preference"
+                        android:entries="@array/entries_cursorblink_preference"
+                        android:entryValues="@array/entryvalues_cursorblink_preference"
+                        android:dialogTitle="@string/dialog_title_cursorblink_preference" />
+        -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/text_preferences">
+
+        <ListPreference
+            android:key="fontsize"
+            android:defaultValue="@string/default_value_fontsize_preference"
+            android:title="@string/title_fontsize_preference"
+            android:summary="@string/summary_fontsize_preference"
+            android:entries="@array/entries_fontsize_preference"
+            android:entryValues="@array/entryvalues_fontsize_preference"
+            android:dialogTitle="@string/dialog_title_fontsize_preference" />
+
+        <ListPreference
+            android:key="color"
+            android:defaultValue="@string/default_value_color_preference"
+            android:title="@string/title_color_preference"
+            android:summary="@string/summary_color_preference"
+            android:entries="@array/entries_color_preference"
+            android:entryValues="@array/entryvalues_color_preference"
+            android:dialogTitle="@string/dialog_title_color_preference" />
+
+    </PreferenceCategory>
+    <!-- start for this -->
+    <PreferenceCategory android:title="@string/main_setting_wakelockoptions">
+
+        <ListPreference
+            android:key="cpulock"
+            android:defaultValue="1"
+            android:title="@string/main_setting_cpulock"
+            android:summary="@string/main_setting_keepthecpurunning"
+            android:entries="@array/entries_yesno"
+            android:entryValues="@array/entryvalues_yesno"
+            android:dialogTitle="@string/main_setting_cpulock" />
+
+        <ListPreference
+            android:key="screenlock"
+            android:defaultValue="0"
+            android:title="@string/main_setting_screenlock"
+            android:summary="@string/main_setting_keepscreenon"
+            android:entries="@array/entries_yesno"
+            android:entryValues="@array/entryvalues_yesno"
+            android:dialogTitle="@string/main_setting_screenlock" />
+
+        <ListPreference
+            android:key="wifilock"
+            android:defaultValue="0"
+            android:title="@string/main_setting_wifilock"
+            android:summary="@string/main_setting_keepwifion"
+            android:entries="@array/entries_yesno"
+            android:entryValues="@array/entryvalues_yesno"
+            android:dialogTitle="@string/main_setting_wifilock" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/main_setting_basicspecialkey">
+
+        <ListPreference
+            android:key="controlkey"
+            android:defaultValue="@string/default_value_controlkey_preference"
+            android:title="@string/main_setting_basicspecialkey_ctrlkey"
+            android:summary="@string/summary_controlkey_preference"
+            android:entries="@array/entries_controlkey_preference"
+            android:entryValues="@array/entryvalues_controlkey_preference"
+            android:dialogTitle="@string/dialog_title_controlkey_preference" />
+
+        <ListPreference
+            android:key="fnkey"
+            android:defaultValue="@string/default_value_fnkey_preference"
+            android:title="@string/main_setting_esckey"
+            android:summary="@string/main_setting_chooseashrdkey"
+            android:entries="@array/entries_fnkey_preference"
+            android:entryValues="@array/entryvalues_fnkey_preference"
+            android:dialogTitle="@string/main_setting_esckey" />
+
+        <!--<ListPreference
+                android:key="ime"
+                android:defaultValue="@string/default_value_ime_preference"
+                android:title="@string/title_ime_preference"
+                android:summary="@string/summary_ime_preference"
+                android:entries="@array/entries_ime_preference"
+                android:entryValues="@array/entryvalues_ime_preference"
+                android:dialogTitle="@string/dialog_title_ime_preference" />-->
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory
+        android:title="@string/shell_preferences">
+
+    <EditTextPreference
+            android:key="shell"
+            android:defaultValue="@string/default_value_shell_preference"
+            android:title="@string/title_shell_preference"
+            android:summary="@string/summary_shell_preference"
+            android:dialogTitle="@string/dialog_title_shell_preference" />
+    <EditTextPreference
+            android:key="initialcommand"
+            android:defaultValue="@string/default_value_initialcommand_preference"
+            android:title="@string/title_initialcommand_preference"
+            android:summary="@string/summary_initialcommand_preference"
+            android:dialogTitle="@string/dialog_title_initialcommand_preference" />
+    </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="@string/main_setting_hardkeyboardmappins">
+
+        <com.terminal.ide.util.dialogpref
+            android:key="hardkeys_reset"
+            android:dialogIcon="@android:drawable/ic_dialog_alert"
+            android:title="@string/main_setting_resetallmappings"
+            android:summary="@string/main_setting_resetallkeymappingssummary"
+            android:dialogMessage="@string/main_setting_resetallkeymappingsdialogmessage"
+            android:positiveButtonText="@string/main_setting_resetallkeymappingsbutton_clear"
+            android:negativeButtonText="@string/main_setting_resetallkeymappingsbutton_cancel" />
+
+
+        <PreferenceScreen
+            android:title="@string/main_setting_externalkeyboardmappings"
+            android:summary="@string/main_setting_externalkeyboardmappingssummary">
+
+            <PreferenceCategory android:title="@string/main_setting_enabledisableallmappings">
+                <ListPreference
+                    android:key="hardmap_enable"
+                    android:defaultValue="0"
+                    android:title="@string/main_setting_keyboardmappings"
+                    android:summary="@string/main_setting_keyboardmappingssummary"
+                    android:entries="@array/entries_enableHardKeyboardMappings"
+                    android:entryValues="@array/entryvalues_enableHardKeyboardMappings"
+                    android:dialogTitle="@string/main_setting_enablehardmappings" />
+
+            </PreferenceCategory>
+
+            <PreferenceCategory android:title="@string/main_setting_mainkeycodes">
+                <EditTextPreference
+                    android:key="hardmap_ctrlLeft"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_leftctrlkey"
+                    android:summary="@string/main_setting_ctrlkeysummary"
+                    android:dialogTitle="@string/main_setting_ctrlkeydialogtitle" />
+                <EditTextPreference
+                    android:key="hardmap_ctrlRight"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_rightctrlkey"
+                    android:summary="@string/main_setting_ctrlkeysummary"
+                    android:dialogTitle="@string/main_setting_ctrlkeydialogtitle" />
+
+                <EditTextPreference
+                    android:key="hardmap_escape"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_escapekey"
+                    android:summary="@string/main_setting_escapekeysummary"
+                    android:dialogTitle="@string/main_setting_esckeydialogtitle" />
+
+                <EditTextPreference
+                    android:key="hardmap_altLeft"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_leftaltkey"
+                    android:summary="@string/main_setting_altkeysummary"
+                    android:dialogTitle="@string/main_setting_altkeydialogtitle" />
+                <EditTextPreference
+                    android:key="hardmap_altRight"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_rightaltkey"
+                    android:summary="@string/main_setting_altkeysummary"
+                    android:dialogTitle="@string/main_setting_altkeydialogtitle" />
+
+                <EditTextPreference
+                    android:key="hardmap_function"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_functionkey"
+                    android:summary="@string/main_setting_functionkeysummary"
+                    android:dialogTitle="@string/main_setting_fnkeydialogtitle" />
+
+            </PreferenceCategory>
+
+            <PreferenceCategory android:title="@string/main_setting_morekeycodes">
+                <EditTextPreference
+                    android:key="hardmap_tab"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_tabkey"
+                    android:summary="@string/main_setting_tabkeysummary"
+                    android:dialogTitle="@string/main_setting_tabkeysummary" />
+
+                <EditTextPreference
+                    android:key="hardmap_leftshift"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_leftshiftkey"
+                    android:summary="@string/main_setting_leftshiftkey"
+                    android:dialogTitle="@string/main_setting_leftshiftkey" />
+
+
+                <EditTextPreference
+                    android:key="hardmap_rightshift"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_rightshiftkey"
+                    android:summary="@string/main_setting_rightshiftkey"
+                    android:dialogTitle="@string/main_setting_rightshiftkey" />
+
+
+                <EditTextPreference
+                    android:key="hardmap_space"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_spacekey"
+                    android:summary="@string/main_setting_spacekey"
+                    android:dialogTitle="@string/main_setting_spacekey" />
+
+                <EditTextPreference
+                    android:key="hardmap_enter"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_enterkey"
+                    android:summary="@string/main_setting_enterkey"
+                    android:dialogTitle="@string/main_setting_enterkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_delete"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_delkey"
+                    android:summary="@string/main_setting_delkey"
+                    android:dialogTitle="@string/main_setting_delkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_backspace"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_backspace"
+                    android:summary="@string/main_setting_backspace"
+                    android:dialogTitle="@string/main_setting_backspace" />
+
+                <EditTextPreference
+                    android:key="hardmap_pageup"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_pageupkey"
+                    android:summary="@string/main_setting_pageupkey"
+                    android:dialogTitle="@string/main_setting_pageupkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_pagedown"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_pagedownkey"
+                    android:summary="@string/main_setting_pagedownkey"
+                    android:dialogTitle="@string/main_setting_pagedownkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_home"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_homekey"
+                    android:summary="@string/main_setting_homekeysummary"
+                    android:dialogTitle="@string/main_setting_homekey" />
+
+                <EditTextPreference
+                    android:key="hardmap_end"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_endkey"
+                    android:summary="@string/main_setting_endkey"
+                    android:dialogTitle="@string/main_setting_endkey" />
+
+            </PreferenceCategory>
+
+            <PreferenceCategory android:title="@string/main_setting_arrowkeys">
+                <EditTextPreference
+                    android:key="hardmap_up"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_uparrowkey"
+                    android:summary="@string/main_setting_upkey"
+                    android:dialogTitle="@string/main_setting_upkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_down"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_downwrrowkey"
+                    android:summary="@string/main_setting_downkey"
+                    android:dialogTitle="@string/main_setting_downkey" />
+
+                <EditTextPreference
+                    android:key="hardmap_left"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_leftarrowkey"
+                    android:summary="@string/main_setting_leftkey"
+                    android:dialogTitle="@string/main_setting_leftkey" />
+
+
+                <EditTextPreference
+                    android:key="hardmap_right"
+                    android:defaultValue="-1"
+                    android:title="@string/main_setting_rightarrowkey"
+                    android:summary="@string/main_setting_rightkey"
+                    android:dialogTitle="@string/main_setting_rightkey" />
+
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

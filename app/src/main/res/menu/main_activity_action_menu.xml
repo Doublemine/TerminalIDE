@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_activity_action_about"
+        android:title="@string/wh_menu_about"
+
+        />
+    <item
+        android:id="@+id/main_activity_action_git"
+        android:title="@string/wh_menu_git_tut"
+
+        />
+    <item
+        android:id="@+id/main_activity_action_exit"
+        android:title="@string/wh_menu_exit"
+
+        />
+
+</menu>

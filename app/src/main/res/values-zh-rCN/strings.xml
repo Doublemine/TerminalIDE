@@ -1,0 +1,2388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name">Terminal键盘</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">确定</string>
+    <string name="label_next_key">下一个</string>
+    <string name="label_send_key">发送</string>
+
+    <string name="application_terminal">Terminal IDE</string>
+    <string name="preferences">选项</string>
+    <string name="new_window">新窗口</string>
+    <string name="close_window">关闭窗口</string>
+    <string name="window_list">窗口</string>
+    <string name="prev_window">前一个窗口</string>
+    <string name="next_window">下一个窗口</string>
+    <string name="reset">重置命令行</string>
+    <string name="send_email">电子邮件发送到</string>
+    <string name="special_keys">特殊按键</string>
+    <string name="toggle_soft_keyboard">软键盘开关</string>
+
+    <string name="enable_wakelock">打开唤醒锁定</string>
+    <string name="disable_wakelock">关闭唤醒锁定</string>
+    <string name="enable_wifilock">打开wifi锁定</string>
+    <string name="disable_wifilock">关闭wifi锁定</string>
+
+    <string name="edit_text">编辑文本</string>
+    <string name="select_text">选择文本</string>
+    <string name="copy_all">全部复制</string>
+    <string name="paste">粘贴</string>
+
+    <string name="service_notify_text">Terminal IDE服务正在后台运行</string>
+
+    <!-- Preference dialog -->
+    <string name="screen_preferences">屏幕</string>
+
+    <string name="title_statusbar_preference">状态栏</string>
+    <string name="summary_statusbar_preference">显示/隐藏 状态栏.</string>
+    <string name="dialog_title_statusbar_preference">状态栏</string>
+
+    <string name="title_cursorstyle_preference">光标风格</string>
+    <string name="summary_cursorstyle_preference">设置光标风格</string>
+    <string name="dialog_title_cursorstyle_preference">光标风格</string>
+
+    <string name="title_cursorblink_preference">光标闪烁</string>
+    <string name="summary_cursorblink_preference">设置光标闪烁.</string>
+    <string name="dialog_title_cursorblink_preference">光标闪烁</string>
+
+    <string name="text_preferences">文本</string>
+
+    <string name="title_fontsize_preference">字体大小</string>
+    <string name="summary_fontsize_preference">设置字体大小</string>
+    <string name="dialog_title_fontsize_preference">字体大小</string>
+
+    <string name="title_color_preference">颜色</string>
+    <string name="summary_color_preference">设置文本颜色.</string>
+    <string name="dialog_title_color_preference">文本颜色</string>
+
+    <string name="keyboard_preferences">键盘</string>
+
+    <string name="title_controlkey_preference">控制键</string>
+    <string name="summary_controlkey_preference">设置Ctrl键.</string>
+    <string name="dialog_title_controlkey_preference">控制键</string>
+
+    <string name="title_fnkey_preference">Fn键</string>
+    <string name="summary_fnkey_preference">设置Fn键.</string>
+    <string name="dialog_title_fnkey_preference">Fn键</string>
+
+    <string name="title_ime_preference">输入模式</string>
+    <string name="summary_ime_preference">设置输入模式为软键盘输入.</string>
+    <string name="dialog_title_ime_preference">输入模式</string>
+
+    <string name="shell_preferences">Shell</string>
+    <string name="title_shell_preference">命令行</string>
+    <string name="summary_shell_preference">特殊的shell命令行.</string>
+    <string name="dialog_title_shell_preference">Shell</string>
+
+    <string name="title_initialcommand_preference">初始命令</string>
+    <string name="summary_initialcommand_preference">发送到shell当它运行时.</string>
+    <string name="dialog_title_initialcommand_preference">初始命令</string>
+
+    <!-- Don't localize these default values -->
+    <string name="default_value_statusbar_preference">1</string>
+    <string name="default_value_cursorstyle_preference">0</string>
+    <string name="default_value_cursorblink_preference">0</string>
+    <string name="default_value_fontsize_preference">12</string>
+    <string name="default_value_color_preference">1</string>
+    <string name="default_value_controlkey_preference">7</string>
+    <string name="default_value_fnkey_preference">7</string>
+    <string name="default_value_ime_preference">0</string>
+    <string name="default_value_shell_preference">/system/bin/sh -</string>
+    <string name="default_value_initialcommand_preference">export HOME=/data/data/com.terminal.ide/files;cd $HOME</string>
+
+    <string name="control_key_dialog_title">控制键和功能键</string>
+    <!-- The word CTRLKEY should be left un-translated. It will be replaced at run-time with the
+         actual control key key name. -->
+    <string name="control_key_dialog_control_text">CTRLKEY Space : Control-@ (NUL)\nCTRLKEY A..Z : Control-A..Z\nCTRLKEY 5 : Control-]\nCTRLKEY 6 : Control-^\nCTRLKEY 7 : Control-_\nCTRLKEY 9 : F11\nCTRLKEY 0 : F12</string>
+    <string name="control_key_dialog_control_disabled_text">没有控制键被设置.</string>
+    <!-- The word FNKEY should be left un-translated. It will be replaced at run-time with the
+         actual function key key name. -->
+    <string name="control_key_dialog_fn_text">FNKEY 1..9 : F1-F9\nFNKEY 0 : F10\nFNKEY W : Up\nFNKEY A : Left\nFNKEY S : Down\nFNKEY D : Right\nFNKEY P : PageUp\nFNKEY N : PageDown\nFNKEY T : Tab\nFNKEY L : | (pipe)\nFNKEY U : _ (underscore)\nFNKEY E : Control-[ (ESC)\nFNKEY X : Delete\nFNKEY I : Insert\nFNKEY H : Home\nFNKEY F : End\nFNKEY . : Control-\\\n</string>
+    <string name="control_key_dialog_fn_disabled_text">没有功能键被设置.</string>
+    <!-- this is for mian part -->
+    <string name="readhelp">完整的使用请先阅读帮助</string>
+    <string name="main_author">Spartacus Rex..</string>
+    <string name="main_start">运行集成开发环境</string>
+    <string name="main_install">安装二进制库</string>
+    <string name="main_stop">退出系统</string>
+    <string name="main_keyboard">键盘</string>
+    <string name="mian_options">设置</string>
+    <string name="main_help">帮助</string>
+    <!-- install system following part-->
+   <string name="install_system_follow">\tTerminal IDE有一个底层的C语言运行环境的二进制文件库，Terminal IDE的强大功能与它密不可分。它将被安装在本应用的私有数据储存空间中。您不需要获得Root权限或者其它任何特殊的权限来完成这个操作。\n\n\n
+\t当这个底层的C语言运行环境的二进制文件库有新的版本可用时，如果您准备好安装它，您可以在此处进行升级安装。\n
+需要特别说明的是：当您在应用市场发现有新版本的Terminal IDE的时候，可能并不意味着有新版本的C二进制文件库可以进行升级安装，该情形仅仅适用于C二进制文件库。\n\n\n
+\t当进行升级安装的时候，\"~/system\"文件夹将被删除并重新写入数据，因此，您不应该在该目录下储存与您工作有关的文件。这里的\"system\"文件夹不是Android系统文件夹，不要惊慌╮(╯▽╰)╭\n
+\t\"~/.vimrc\"，\"~/.vim\"，\"~/.tmux.conf\"，\"~/.bashrc\"和\"mc.ini\"将不会被覆盖重写，但是如果这些文件不存在的话，将会被创建。\n\n\n
+此外，请确保您的手机拥有至少150MB的空闲可以储存空间！\n\n</string>
+    <string name="install_system_overwrite">覆盖安装</string>
+    <string name="install_system_changelog">查看升级日志</string>
+    <string name="install_system_installstart">安装二进制库</string>
+
+    <!-- changLog part -->
+    <string name="changlog_title">升级日志</string>
+ <string name="changlog_log">
+\n
+v2.0  - 重新构建所有的动态二进制文件库，如果一切正常，我将会继续添加。\n
+      - 增加了 GCC 4.4.0 (arm-eabi-gcc)编译器\n
+      - 增加了 vim编辑器的插件:\'make\', \'ctags\', and \'taglist\' 。\n
+      - 增加了 \'links\'基于控制台的Web浏览器。\n
+      - 修复了Git部分Bug，现在\'pull\',\'push\',\'merge\'将能够在ssh协议下正常工作了(不支持SSL)\n
+      - 增加了C和C++的源码示例，详情参见\"帮助\"-\"教程\"。\n
+      - 添加了Tmux依赖的$home环境变量到.bashrc中\n
+\n
+v1.95 - 修复了~/.bashrc的环境变量\n
+      - 现在设置路径到~/.init目录下将不会延长您每次运行bash的时间。\n
+      - 当您运行tmux时，如果将TERM变量设置为~/.init将不会重置它。(其完美运行需要设置为:\'export TERM=screen\'来完美呈现)\n
+      - 进入$HOME目录将会对~/init操作而不是~/.bashrc因此如果您运行另一个bash它将不会被重置了。\n
+      - 这将意味着当您运行tmux和telnetd时它们将在您目前的环境变量目录中启动。\n
+      - 对于升级:您应该保存您的当前配置然后选择\'覆盖安装\'。\n
+      - 或者在~/system/bashrc中查看最新的~/.bashrc和~/.init然后升级您自己的。\n
+      - 或者注释掉\'TERM\'和\'PATHs\'然后进入$HOME目录添加到您自己的~/.bashrc中。\n
+\n
+v1.94 - 修复了jar签名问题。\n
+      - 更新htop到htop 1.0版本。\n
+      - 修复了从内部运行vim的时候安装示例的问题。(只是增加了一个\'CD\'启动脚本)\n
+      - 现在返回键\'BACK\'能够充当\'ESC\'的功能了，该功能默认关闭,请在菜单中打开。(仅在实体键盘上可用) \n
+\n
+v1.92 - 升级nano到2.2.6版本。\n
+      - 增加\'jping\'(非常实用的功能来获取ip地址和主机名)。\n
+      - 例如: jping www.google.com。\n
+\n
+v1.9  - 升级htop到0.8.3版本。\n
+      - 美观的ncures进程查看工具。\n
+\n
+v1.8  - 升级Nano到2.2.3将提供语法着色。\n
+      - 移除了BusyBox中的\'su\'链接，如果您需要它，请重新链接。\n
+\n
+v1.7  - 升级ProGuard到4.6版本。\n
+      - 增加了proguard的构建脚本示例，该示例储存在~/system/src目录下。\n
+\n
+v1.6  - 升级GIT到1.7.8.163版本。\n
+      - 重新编译BusyBox到1.19.2版本，新增了大约30个应用命令。所有应用命令基本都能正常执行。\n
+\n
+v1.5  - 升级BitchX到1.1最终版。\n
+\n
+v1.4  - 升级rsync到3.0.8版本。\n
+      - 增加了使用帮助示例。\n
+\n
+v1.33 - 修复了TMUX对设备屏幕线的渲染。\n
+      - 执行tmux通过\'-u\'选项。\n
+\n
+v1.32 - 从TMUX中移除了\"getpwuid\"系统调用。\n
+      - 修复了一造成系统崩溃的Bug。\n
+\n
+v1.3  - 升级TMUX到1.5版本。\n
+      - 终端复用器:\n
+      - TMUX一直存在\'ENTER\'键的问题,该问题仅仅出现在:模式下的设置上。\n
+\n
+v1.2  - 推荐重新\"覆盖安装\"二进制系统库。\n
+      - 升级MIDNIGHT COMMANDER到4.8版本,通过它绝大多数VFS系统已经被安装。我已经测试过了FTP，运行的很好。\n
+      - 全新的.bashrc来为Midnight Commander正常运行提供保障。\n
+      - 软键盘F1-F4现在能够正常工作了。\n
+      - 小幅度调整.vimrc \n
+\n
+v1.0  - 初始版本。\n
+      - 增加Terminal IDE软键盘v1.0版本。\n
+      - 增加了终端仿真器。\n
+      - 升级busybox到1.19.2版本。\n
+      - 升级bash到4.2版本。\n
+      - 升级vim到7.3版本。\n
+      - 增加javac, java, dx, apkbuilder, aapt等命令工具。\n
+      - 最重要的是:不需要ROOT权限!\n
+      </string>
+    <!-- 此处为设置选项 -->
+    <string name="setting_keyboard_size_mini">迷你键盘</string>
+    <string name="setting_keyboard_size_full">全键盘</string>
+    <string name="setting_keyboard_largest">超大</string>
+    <string name="setting_keyboard_largerger">大号</string>
+    <string name="setting_keyboard_medium">中等</string>
+    <string name="setting_keyboard_smaller">小号</string>
+    <string name="setting_yes">确认</string>
+    <string name="setting_no">取消</string>
+    <string name="setting_keyboard_enablehardmappings">打开硬件映射</string>
+    <string name="setting_keyboard_disablehardmappings">关闭硬件映射</string>
+    <string name="setting_showstatusbar">显示状态栏</string>
+    <string name="setting_hidestatusbar">隐藏状态栏</string>
+    <string name="setting_cursor_nonblinking">关闭光标闪烁</string>
+    <string name="setting_cursor_blinking">光标闪烁</string>
+    <string name="setting_rectangle">方块</string>
+    <string name="setting_underline">下划线</string>
+    <string name="setting_verticalbar">竖线</string>
+    <string name="setting_bg_blackonwhite">白底黑字</string>
+    <string name="setting_bg_whiteonblack">黑底白字</string>
+    <string name="setting_bg_whiteonblue">蓝底白字</string>
+    <string name="setting_bg_greenonblack">黑底绿字</string>
+    <string name="setting_bg_amberonblack">黑底黄字</string>
+    <string name="setting_bg_redonblack">黑底红字</string>
+    <string name="setting_key_jobball">轨迹球</string>
+    <string name="setting_key_atkey">\@键</string>
+    <string name="setting_key_leftaltkey">左Alt键</string>
+    <string name="setting_key_rightaltkey">右Alt键</string>
+    <string name="setting_key_volupkey">音量加键</string>
+    <string name="setting_key_voldownkey">音量减键</string>
+    <string name="setting_key_camerakey">相机键</string>
+    <string name="setting_key_nonekey">无</string>
+    <string name="setting_ime_character_base">基本字符</string>
+    <string name="setting_ime_Word_base">基本字词</string>
+    <string name="setting_key_ball">球</string>
+    <string name="setting_key_at">\@</string>
+    <string name="setting_key_leftalt">左Alt</string>
+    <string name="setting_key_rightalt">右Alt</string>
+    <string name="setting_key_volup">音量加</string>
+    <string name="setting_key_voldown">音量减</string>
+    <string name="setting_key_camera">相机</string>
+    <string name="setting_key_none">无</string>
+    <!-- this is for cmd menu -->
+    <string name="cmd_menu_copypasteemail">复制/粘贴/Email</string>
+    <string name="cmd_menu_emailtranscript">编写邮件</string>
+    <string name="cmd_menu_copyalltext">复制全部文本</string>
+    <string name="cmd_menu_paste">粘贴</string>
+    <string name="cmd_menu_toggleoptions">选项开关</string>
+    <string name="cmd_menu_toggle_backesc">BACK切换为ESC</string>
+    <string name="cmd_menu_toggle_keylogger">键值记录器</string>
+    <string name="cmd_menu_toggle_softkeyboard">软键盘开关</string>
+    <string name="cmd_menu_terminalist">命令窗口列表</string>
+
+    <!-- this is for main setting new add -->
+    <string name="main_setting_wakelockoptions">唤醒锁定选项</string>
+    <string name="main_setting_cpulock">CPU锁定</string>
+    <string name="main_setting_keepthecpurunning">保持CPU为唤醒状态</string>
+    <string name="main_setting_screenlock">屏幕锁定</string>
+    <string name="main_setting_keepscreenon">保持屏幕为唤醒状态</string>
+    <string name="main_setting_wifilock">wifi锁定</string>
+    <string name="main_setting_keepwifion">保持wifi为连接状态</string>
+    <string name="main_setting_basicspecialkey">特殊按键</string>
+    <string name="main_setting_basicspecialkey_ctrlkey">Ctrl键</string>
+    <string name="main_setting_esckey">Esc键</string>
+    <string name="main_setting_chooseashrdkey">设置Esc键</string>
+    <string name="main_setting_hardkeyboardmappins">实体键盘映射</string>
+    <string name="main_setting_resetallmappings">重置所有映射</string>
+    <string name="main_setting_resetallkeymappingssummary">重置所有按键映射为-1</string>
+    <string name="main_setting_resetallkeymappingsdialogmessage">您确定要重置所有映射为-1吗？\n\n注意：您将需要重新打开本页面来查看这些更改。</string>
+    <string name="main_setting_resetallkeymappingsbutton_clear">清除所有按键映射</string>
+    <string name="main_setting_resetallkeymappingsbutton_cancel">取消</string>
+    <string name="main_setting_externalkeyboardmappings">外接键盘映射</string>
+    <string name="main_setting_externalkeyboardmappingssummary">从您的外部键盘中映射特殊的键码:Ctrl/Alt/Fn/Esc</string>
+    <string name="main_setting_enabledisableallmappings">启用/禁用所有映射</string>
+    <string name="main_setting_keyboardmappingssummary">您可以通过这里来设置键码重载\'system\'键码。(仅仅适用于Terminal IDE)所以请务必小心，-1为默认忽略码。</string>
+    <string name="main_setting_keyboardmappings">键盘映射</string>
+    <string name="main_setting_enablehardmappings">启用硬件映射</string>
+    <string name="main_setting_mainkeycodes">基本键码</string>
+    <string name="main_setting_leftctrlkey">左Ctrl键</string>
+    <string name="main_setting_ctrlkeysummary">Ctrl键</string>
+    <string name="main_setting_ctrlkeydialogtitle">Ctrl键</string>
+    <string name="main_setting_rightctrlkey">右Ctrl键</string>
+    <string name="main_setting_escapekey">Escape键</string>
+    <string name="main_setting_escapekeysummary">Escape键</string>
+    <string name="main_setting_esckeydialogtitle">Escape键</string>
+    <string name="main_setting_leftaltkey">左Alt键</string>
+    <string name="main_setting_altkeysummary">Alt键</string>
+    <string name="main_setting_altkeydialogtitle">Alt键</string>
+    <string name="main_setting_rightaltkey">右Alt键</string>
+    <string name="main_setting_functionkey">功能键</string>
+    <string name="main_setting_functionkeysummary">按下组合键:Fn+[0~9]=[F1~F10]，Fn+O=F11，Fn+P=F12</string>
+    <string name="main_setting_fnkeydialogtitle">Fn键</string>
+    <string name="main_setting_morekeycodes">更多键码</string>
+    <string name="main_setting_tabkey">Tab键</string>
+    <string name="main_setting_tabkeysummary">Tab键</string>
+    <string name="main_setting_leftshiftkey">左Shift键</string>
+    <string name="main_setting_rightshiftkey">右Shift键</string>
+    <string name="main_setting_spacekey">空格键</string>
+    <string name="main_setting_enterkey">回车键</string>
+    <string name="main_setting_delkey">Del键</string>
+    <string name="main_setting_backspace">Backspace键</string>
+    <string name="main_setting_pageupkey">Page Up键</string>
+    <string name="main_setting_pagedownkey">Page Down键</string>
+    <string name="main_setting_homekey">Home键</string>
+    <string name="main_setting_homekeysummary">Home键。该版本键盘不兼容当前Android版本。</string>
+    <string name="main_setting_endkey">End键</string>
+    <string name="main_setting_arrowkeys">方向键</string>
+    <string name="main_setting_uparrowkey">上方向键</string>
+    <string name="main_setting_upkey">↑键</string>
+    <string name="main_setting_downwrrowkey">下方向键</string>
+    <string name="main_setting_downkey">↓键</string>
+    <string name="main_setting_leftarrowkey">左方向键</string>
+    <string name="main_setting_leftkey">←键</string>
+    <string name="main_setting_rightarrowkey">右方向键</string>
+    <string name="main_setting_rightkey">→键</string>
+
+    <!-- 下面的string用于主界面中退出对话框 -->
+    <string name="main_ui_java_stop_title">退出Terminal IDE</string>
+    <string name="main_ui_java_stop_content">你确定要关闭所有终端并退出吗？</string>
+    <string name="main_ui_java_stop_surebutton">退出</string>
+    <string name="main_ui_java_stop_cancelbutton">取消</string>
+
+
+    <!-- 以下的string使用于在cmd界面中keyboard的设置选项 -->
+    <string name="cmd_keyboard_settings_keypressactions">按键动作</string>
+    <string name="cmd_keyboard_settings_vibrate">振动</string>
+    <string name="cmd_keyboard_settings_vibrateonkeypresssummary">按键振动</string>
+    <string name="cmd_keyboard_settings_vibratedialogtitle">打开振动？</string>
+    <string name="cmd_keyboard_settings_sound">声音</string>
+    <string name="cmd_keyboard_settings_soundsummary">按键声音</string>
+    <string name="cmd_keyboard_settings_sounddialogtitle">打开按键音？</string>
+    <string name="cmd_keyboard_settings_keyboardsizepartrait">键盘外观及大小</string>
+    <string name="cmd_keyboard_settings_keyboardportraittype">键盘外观风格</string>
+    <string name="cmd_keyboard_settings_keyboardportraittypesummary">设置全键盘或迷你键盘外观模式</string>
+    <string name="cmd_keyboard_settings_keyboardportraitdialogtitle">请选择键盘的风格</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheight">键盘大小</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheightsummary">设置默认键盘的大小</string>
+    <string name="cmd_keyboard_settings_keyboardportaitheightdialogtitle">请选择键盘的大小</string>
+    <string name="cmd_keyboard_settings_keyboardsizelandscape">横屏键盘外观及大小</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetype">横屏键盘外观</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetypesummary">设置横屏模式下键盘的外观风格</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapetypedialogtitle">请设置键盘的风格</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheight">横屏键盘大小</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheightsummary">设置横屏模式下键盘的大小</string>
+    <string name="cmd_keyboard_settings_keyboardlandscapeheightdialogtitle">请设置键盘的大小</string>
+
+
+    <!-- 以下的string适用于主界面的安装新系统对话框 -->
+    <string name="main_ui_java_newsystem_dialog_title">发现新版本：</string>
+    <string name="main_ui_java_newsystem_dialog_content">检测到有新的二进制文件库可用，现在安装吗？</string>
+    <string name="main_ui_java_newsystem_dialog_button_yes">安装</string>
+    <string name="main_ui_java_newsystem_dialog_button_no">忽略</string>
+
+
+    <!-- 以下string适用于help的总体介绍 -->
+    <string name="main_help_introduction">总体简介</string>
+ <string name="main_help_introduction_following">
+     欢迎使用Terminal IDE。\n
+\n
+Terminal IDE是一个基于命令行拥有许多使用程序的可扩展系统，这些程序完全运行在Terminal IDE的程序上下文内。
+Terminal IDE工作在Android系统的正常权限下，因此您不需要为其获取Root权限或者其他任何特殊的权限。
+\n
+\n
+通过登录telnet或者ssh来使用您的大尺寸外接键盘配合外接显示器，能够最大化的发挥Terminal IDE的功能!当然了，
+utelnetd和sshd也是可用的，它们是使用本应用的首选方式。
+\n
+\n
+Terminal IDE还拥有一个完整的\'Java\'的开发环境，您可以用它来构建Java命令行程序或者完整的Android应用程序。在~/system/src/目录下有一组示例程序展示了如何构建和运行它们。
+\n
+\n
+多亏了BusyBox使得:bash, vim, javac, java, dx, aapt, apkbuilder, signer等等都可以在命令行下面正常运行。 
+\n
+\n
+因为Android系统原本的设计使用的键盘没有Ctrl,Esc,Alt等键码，鉴于此，Terminal IDE提供了一个完整的ANSI的键
+盘来胜任这个工作。
+\n
+\n
+您必须在Android系统中的\"设置\"=>\"语言和时间设置\"中勾选Terminal IDE键盘，您才能在Terminal IDE中使它。
+通过它，您会得到一个完整的带有Tab,Ctrl,Alt,Del等功能键的ANSI键盘。
+\n
+\n
+另外，一个已知比较重要的问题是主机名解析。由于静态链接的C语言二进制库，在没有Root的手机上将没有/etc文件
+夹。在Terminal IDE中，除了C程序，主机名解析一般不工作。使用\'jping\'获取ip地址和主机名的时候，一些主机名
+您需要使用“数字”的ip地址而不是“字符串”的主机名。C语言程序将会正常工作而不受这个限制。(weget,git,
+mc等)
+\n
+\n
+# jping www.google.com\n
+\n
+您将会获得Google的IP地址。\n
+\n
+由于SSL协议没有被内置在大多数APOS标准的Android系统中，因此您可以使用SSH协议，并且通过SSH来创建代理
+管道。
+\n
+\n
+学会使用Google(请自备梯子)，上面有不计其数的vim,bash,busybox以及所有其他的应用的使用教程。它将使你受益匪
+浅。
+\n
+\n
+请确保您充分阅读，完整的理解并执行本教程，它将会展示给你许多功能。\n
+\n
+总之，虽然前方的道路漫长而艰险，但回报巨大。你我共勉！
+\n
+\n
+Enjoy！
+ </string>
+
+
+    <!-- this is for help listview item -->
+    <string name="help_ui_introduction">简介</string>
+    <string name="help_ui_introduction_summary">请先阅读简介</string>
+    <string name="help_ui_keyboard">键盘</string>
+    <string name="help_ui_keyboard_summary">Terminal IDE键盘</string>
+    <string name="help_ui_tutorial">教程</string>
+    <string name="help_ui_tutorial_summary">循序渐进的查看本教程</string>
+    <string name="help_ui_bash">Bash</string>
+    <string name="help_ui_bash_summary">命令行解释器</string>
+    <string name="help_ui_busybox">BusyBox</string>
+    <string name="help_ui_busybox_summary">应用工具集</string>
+    <string name="help_ui_vim">Vim</string>
+    <string name="help_ui_vim_summary">文本编辑器</string>
+    <string name="help_ui_javakits">Java</string>
+    <string name="help_ui_javakits_summary">Java开发环境工具集</string>
+    <string name="help_ui_gcc">GCC</string>
+    <string name="help_ui_gcc_summary">C/C++编译器</string>
+    <string name="help_ui_overconnect">远程工具</string>
+    <string name="help_ui_overconnect_summary">通过USB/WIFI连接您的设备</string>
+    <string name="help_ui_git">Git</string>
+    <string name="help_ui_git_summary">分布式版本控制系统</string>
+    <string name="help_ui_mc">MC</string>
+    <string name="help_ui_mc_summary">文件管理器</string>
+    <string name="help_ui_tmux">TMUX</string>
+    <string name="help_ui_tmux_summary">终端多路复用器</string>
+    <string name="help_ui_bitchx">BitchX</string>
+    <string name="help_ui_bitchx_summary">基于IRC协议的聊天软件客户端</string>
+    <string name="help_ui_additionalapps">额外的应用程序集</string>
+    <string name="help_ui_additionalapps_summary">添加更多的应用到Terminal IDE</string>
+    <string name="help_ui_trouble">问题反馈</string>
+    <string name="help_ui_trouble_summary">有关Bug意见以及建议等</string>
+    <string name="help_ui_thanks">鸣谢</string>
+    <string name="help_ui_thanks_summary">特别鸣谢</string>
+    <string name="help_ui_gplv2">GPL许可证</string>
+    <string name="help_ui_gplv2_summary">GPL第二版许可协议</string>
+
+
+    <!-- 以下string适用于帮助二级Listview overConnect中 -->
+    <string name="help_overconnect_telnet">telnet</string>
+    <string name="help_overconnect_telnet_summary">telnet连接简便而快速</string>
+    <string name="help_overconnect_ssh">ssh</string>
+    <string name="help_overconnect_ssh_summary">安全的ssh访问</string>
+    <string name="help_overconnect_rsync">rsync</string>
+    <string name="help_overconnect_rsync_summary">文件同步和备份</string>
+
+
+    <!-- 以下string适用于二级Listview Tutorial中 -->
+    <string name="help_tutorial_demo1">教程一</string>
+    <string name="help_tutorial_demo1_summary">基本的系统安装</string>
+    <string name="help_tutorial_demo2">教程二</string>
+    <string name="help_tutorial_demo2_summary">编写简单的java程序</string>
+    <string name="help_tutorial_demo3">教程三</string>
+    <string name="help_tutorial_demo3_summary">编写java库</string>
+    <string name="help_tutorial_demo4">教程四</string>
+    <string name="help_tutorial_demo4_summary">编写完整的java命令行程序</string>
+    <string name="help_tutorial_demo5">教程五</string>
+    <string name="help_tutorial_demo5_summary">编写完整的Android应用</string>
+    <string name="help_tutorial_demo6">教程六</string>
+    <string name="help_tutorial_demo6_summary">编写简单的C程序</string>
+    <string name="help_tutorial_demo7">教程七</string>
+    <string name="help_tutorial_demo7_summary">编写简单的C++程序</string>
+    <string name="help_tutorial_demo8">教程八</string>
+    <string name="help_tutorial_demo8_summary">编写C库</string>
+    <string name="help_tutorial_demo9">教程九</string>
+    <string name="help_tutorial_demo9_summary">编写带C库的C语言程序</string>
+
+
+    <!-- 以下string适用于main activity中install system选项中的原本潜入java代码总的汉化 -->
+    <string name="main_install_java_current_install_system">系统v2.0</string>
+    <string name="main_install_java_no_system_installed">无</string>
+    <string name="main_install_java_textview_current">已安装版本	:</string>
+    <string name="main_install_java_textview_available">可安装版本	:</string>
+    <string name="main_install_java_install_show_error">错误	:</string>
+    <string name="main_install_java_install_dialog_title">正在安装</string>
+    <string name="main_install_java_install_dialog_content">请稍候。。。</string>
+    <string name="main_install_java_install_putstring_startingsysteminstall">正在开始安装二进制系统库</string>
+    <string name="mian_install_java_install_putstring_preparingtar">正在准备tar文件。。。</string>
+    <string name="main_install_java_install_putstring_preparing">正在准备</string>
+    <string name="main_install_java_install_putstring_removeoldsystem">正在移除旧二进制系统库</string>
+    <string name="main_install_java_install_putstring_takeaminute">正在安装二进制系统库。。这将花费一些时间,请耐心等待。。。</string>
+    <string name="main_install_java_install_putstring_installbusybox">正在安装BusyBox应用程序集。。。</string>
+    <string name="main_install_java_install_putstring_copystartipfile">正在拷贝启动文件。。。</string>
+    <string name="main_install_java_install_putstring_cleaningup">正在清理环境。。。</string>
+    <string name="main_install_java_install_putstring_error_lastinstall">错误	:最后安装</string>
+    <string name="main_install_java_install_putstring_systeminstallcomplete">二进制系统库安装完成!</string>
+
+
+    <!-- 以下string使用于cmd界面中调用Terminal键盘的选项的字符串国际化 -->
+    <string name="cmd_keyboard_options_keyboardsettings">键盘设置</string>
+    <string name="cmd_keyboard_options_choosekeyboard">选择键盘</string>
+    <string name="cmd_keyboard_options_hidekeyboard">隐藏键盘</string>
+    <string name="cmd_keyboard_options_cancel">取消</string>
+    <string name="cmd_keyboard_options_dialog_title">键盘设置</string>
+
+
+    <!-- 以下string使用于cmd界面中终端列表选项 -->
+    <string name="cmd_terminal_options_terminal_dialog_title">终端列表</string>
+    <string name="cmd_terminal_options_terminal_1">终端一</string>
+    <string name="cmd_terminal_options_terminal_2">终端二</string>
+    <string name="cmd_terminal_options_terminal_3">终端三</string>
+    <string name="cmd_terminal_options_terminal_4">终端四</string>
+
+
+    <!-- 以下string使用于cmd界面中的切换选项弹出的土司的国际化 -->
+    <string name="cmd_toast_terminal_show">终端	</string>
+
+    <string name="cmd_toast_terminal_notexttopaste">粘贴板是空的。。</string>
+    <string name="cmd_toast_terminal_backtoesc_on">BACK已经切换为ESC</string>
+    <string name="cmd_toast_terminal_backtoesc_off">BACK键已经恢复正常。。</string>
+    <string name="cmd_toast_terminal_keylogger_on">键值记录器已经打开！\n\n日志保存在 ~/.keylog中 \n\n#使用命令tail -f ~/.keylog来查看</string>
+    <string name="cmd_toast_terminal_keylogger_off">键值记录器已经被关闭。。</string>
+
+
+    <!-- 帮助的键盘部分 -->
+    <string name="help_keyboard_title">键盘</string>
+<string name="help_keyboard_summary">
+    键盘是非常非常重要的！
+\n
+\n
+您需要通过键盘上的这些控制功能键来确保命令行程序正确的运行。
+ \n
+\n
+Terminal IDE附带了一个完整的128组键码的键盘。
+\n
+\n
+注意：这个键盘仅仅只有在Terminal IDE或者其他终端中才能真正的完整的正常工作。
+\n
+\n
+这就是为什么你们当中有一部分人抱怨回车键不工作，它正常工作在Terminal IDE中而不是Android系统所有应用中。
+\n
+\n
+但是呢，经过我的修改，如果你能在键盘上发现\'发送\'(\'send\')键,\'下一个\'(\'next\')键或者\'确认\'(\'
+go\')键的图标，那么它们将能够在Android系统的其他应用中正确的充当回车键。
+\n
+\n
+当你在锁屏状态下需要输入PIN码然后输入回车键来解锁的时候，你可以使用Ctrl+Enter键的组合来完成这个操作，它
+将能够正常的充当回车键。
+\n
+\n
+你需要在你的设备的\'设置\'>\'语言与时间设置\'选项中勾选Terminal IDE键盘才能启用它。
+\n
+\n
+你可以在程序的主界面中的\'键盘\'选项中切换到Terminal IDE键盘，通过Terminal IDE键盘右下角的按钮，你也可以
+轻松的切换到其他键盘。
+\n
+\n
+在Terminal IDE右下角的键盘设置中，有一个更大版本的键盘，你可以根据你的屏幕方向设置不同的适合你的键盘大
+小。
+\n
+\n
+Terminal IDE还附带了一个强大的硬件键盘映射，因此绝大多数外接键盘都应该可以正常工作。\n
+\n
+作为一项基本设置，你可以在\'设置\'选项中设置设备的物理按键来充当Ctrl键和Esc键。 
+\n
+\n
+Ctrl键是至关重要的一个键:
+\n
+\n
+ESC     = CTRL+[\n
+[ALT+X] = [先按下ESC 然后再按 X]
+\n
+\n
+为了查看键盘的组合键，在Bash中，按下Ctrl+V键之后，然后按下任意键，将会在屏幕上显示它接受到了什么键码。
+\n
+\n
+为了正确设置诸如蓝牙键盘等外接的硬件键盘，你需要使用硬件键码映射。该功能在\'设置\'>\'外接键盘映射\'选项
+中。
+\n
+\n
+在设置之前，你应该检测有哪些键码正常工作，哪些工作不正常。绝大多数情况下，这些设置都会自动完成。
+\n
+\n
+功能键一个常见的问题了，因此，你必须在你的键盘上选择一个键来充当功能键(Fn)。\n
+\n
+首先，在终端界面中，通过菜单选项打开\'选项开关\'>\'键值记录器\'，它默认是关闭的。这将会输出你按下的键码
+的键值，具体信息保存在~/.keylog文件中。
+\n
+\n
+然后你可以在终端中输入以下命令来查看:
+\n
+\n
+# tail -f ~/.keylog
+\n
+\n
+按下Ctrl+C退出查看。
+\n
+\n
+这个操作将会poll到\'tail\'命令的标准输出，每0.5秒钟刷新一次，所以有一点轻微的延迟。现在，按下键盘上的一
+些键码，得到的键值将可用于外接键盘映射部分的设置。
+\n
+\n
+键值记录器的输出也会发送给LogCat，你也可以通过查看LogCat来获取键值。
+\n
+\n
+如果你按下一个键却没有接收到响应的键值，比如Fn键。那是因为这种类型的按键本身没有任何有效的键码，他们必须
+配合其他有效的键码来组合完成特定的功能，才能被键值记录器捕获到。
+\n
+\n
+只要它能够产生键值，你可以任意映射你键盘上的键码。
+\n
+\n
+不要忘记关闭键值记录器当你使用完毕的时候。
+\n
+\n
+在\'外接键盘的映射\'的顶部，你可以设置启用或者禁用键盘映射。如果你覆盖了一些系统按键，然后你打算重置这些
+键码，只需要将这些键值设置为-1即可。只允许整形数值。
+\n
+\n
+我使用的索尼大法的蓝牙键盘通过这个方法完美运行~\n
+\n
+码字就像吃了炫脉，根本停不下来。。
+\n
+</string>
+
+
+    <!-- 帮助的bash部分 -->
+    <string name="help_bash_title">Bash</string>
+<string name="help_bash_summary">命令行解释器，这是真正产生交互的地方。
+\n
+\n
+一旦你习惯了使用命令行，相信我，没有什么能够媲美它的强大和快速。
+\n
+\n
+这里提供了一些Bash的特性。\n
+\n
+在~/.bashrc文件中可以编辑你的个性化设置:\n
+\n
+# vim ~/.bashrc\n
+\n
+↑和↓将显示你的修改记录，非常方便。\n
+\n
+完整的Tab键命令补全。单击或者双击Tab将显示所有可用的选项。
+\n
+\n
+修改你的提示通过: export PS1=#\n
+\n
+Ctrl-c       取消当前进程。\n
+\n
+搜索你最后一次使用的函数:\n
+Ctrl-r       反向搜索\n
+\n
+显示已经发送到Bash的键值:\n
+Ctrl-v       查看下一个组合键\n
+\n
+撤销当前行的更改: (如果你修改了，可以上下滑动屏幕查看输入历史)\n
+Alt-r       恢复到初始行\n
+\n
+其他的一些快捷键 :-\n
+\n
+Ctrl-l       复制上一行文本到下一行。\n
+Ctrl-u       删除从行初到光标处的内容。\n
+Ctrl-k       删除从光标处到行尾的内容。\n
+Ctrl-w       删除光标处的单词。\n
+Ctrl-b       光标向左移动一个字符。\n
+Alt-b        光标向左移动一个单词。\n
+Ctrl-a       光标移动到行首。\n
+Ctrl-e       光标移动到行尾。\n
+Ctrl-f       光标向右移动一个字符。\n
+Alt-f        光标向右移动一个单词。\n
+Alt-] x      X为任意字符，移动光标到下一个出现X的地方。\n
+Ctrl-y       从粘贴板中粘贴文本。\n
+\n</string>
+
+
+    <!-- 帮助的busybox部分 -->
+    <string name="help_busybox_title">BusyBox</string>
+<string name="help_busybox_summary">堪称应用程序集中的瑞士军刀！\n
+\n
+99.9% 的程序可以在Terminal IDE中运行都归功于与BusyBox!\n
+\n
+一个可以压缩的应用:\n
+   tar -czf compressed.tar.gz ./folder-to-compress\n
+\n
+解压:\n
+   tar -xf compressed.tar.gz\n
+\n
+或者列出压缩文件的内容:\n
+   tar -tf compressed.tar.gz\n
+\n
+如果你在递归地查找一个文件，基于文件名:\n
+   find . | grep search_term\n
+\n
+如果你在递归地查找一个文件，基于内容:\n
+   grep -ar "searchforthis" *\n
+\n
+还有大量其他的应用没有提及。\n
+\n
+灵活的运用它们。。
+\n
+    
+</string>
+
+
+    <!-- 帮助的vim部分 -->
+    <string name="help_vim_title">Vim</string>
+<string name="help_vim_summary">vim 7.3版本\n在Google(被和谐了，请自备梯子)拥有无穷无尽的Vim使用教程，这将是你最好的信息来源。
+\n
+\n
+vim ~/.vimrc : 来检查你当前的Vim设置。\n
+\n
+一个非常重要的特性是:要想使用\'Terminal IDE\'，先要会使用vim。 如果你编写Java项目，它对你而言是不言而喻的重要。通过运行\'cat\'可以用来全屏查看脚本。
+\n
+\n
+这是一个简易却实用的脚本，请确认你在一个正确的目录下运行vim以及javac可以正常工作。所有的需求仅仅是在一个
+正确的目录下有一个命名为\'src\'的文件夹。\n
+\n
+从一个项目的主目录运行\'Terminal IDE\'，vim始于一个树形文件路径下运行，通过NERDTree你可以用它来浏览文
+件。
+\n
+\n
+请确保vim初始运行在java项目的src/目录下，javac可以正常工作。\n
+\n
+基本的设置已经被初始化保存在 ~/.vimrc文件和~/.vim目录下。你的方向键，Backspace键，Delete以及Page Up/
+Dwon等等键都正常工作。但是这些都在vim的横屏模式下都将无效，我将会试图添加。。
+\n
+\n
+Vim已经安装了java插件，所以它拥有一个强大IDE的所需要的所有特性，包括java类以及函数的自动补全。
+\n
+\n
+插件将安装在~/.vim目录下\n
+[通过Google(百度不到)你可以获得他们的完整用法]\n
+    : NERDTree - 一个非常nice的文件浏览器。\n
+    : SnipMate - 自动的文本复制。 在~/.vim中检查文本片段，使用Tab键来激活这个功能。\n
+    : MiniBufExpl - 缓存区，在窗口的顶端显示多个多个缓冲区。\n
+    : ACP - 自动弹出,你可以通过从vim插件目录移除ACP.vim来禁用acp。 \n
+    : Java-	完整的修复了所有问题，工作的很好!\n
+    \n
+通过~/.vim添加你自己的插件。编辑~/.vimrc文件获得对vim完整的控制权。\n
+\n
+# vim ~/.vimrc\n
+\n
+阅读/修改配置设置来了解更多。\n</string>
+
+
+    <!-- 帮助java部分 -->
+    <string name="help_java_title">Java工具集</string>
+<string name="help_java_summary">
+\n
+Terminal IDE带有一个完整的Java/Android开发工具集和一个强大的进过优化的Java编辑器 - Vim\n
+\n
+在~/system/src目录下可以找到一组示例程序。吐血推荐你阅读\'教程\'选项卡中的所有教程，它将会展示给你所
+有你需要知道的东西。
+\n
+\n
+Vim编辑器为Java专业进行了独特的配置!
+\n
+\n
+已经完整了这些特性的支持:\n
+     -完整的语法高亮显示。\n
+     -自动弹出已完成的文件,单词和语法。\n
+     -在插入模式下完整的java支持, CTRL-X CTRL-U\n
+     -[F7]一件编译。 查看~/.vimrc获得更多帮助。\n
+     -[F8][[F9]可跳转到编译错误时的错误列表。\n
+     -左窗格文件浏览器 - vim的NERDTree插件。\n
+     -更多其他功能。。\n
+\n
+相较于正常的Java编译，编译Android应用有些许不同:class文件需要转换为Android的Dalvik虚拟机需要的\'dex\'
+文件。
+\n
+\n
+因此，\'aapt\' 和 \'apkbuilder\'被用来构建资源文件和最终的.apk文件。\n
+\n
+所有这些需求的工具Terminal IDE都已经提供了。\n
+\n
+Android系统有一个叫做Dalvik的Java虚拟机。 它需要一个特殊的方法来启用运行Java命令行应用程序。 (尤其是作为
+一个非Root用户!)不过所有这一切问题都已经被修复，现在都可以正常工作。(￣︶￣)↗ 
+\n
+\n
+反复查看被使用的构建脚本来理解不同的应用程序集是如何被融合在一起正常工作的。
+\n
+\n</string>
+
+
+    <!-- 帮助的Gcc部分 -->
+    <string name="help_gcc_title">GCC</string>
+<string name="help_gcc_summary">GCC编译器 4.4.0版本。
+\n
+\n
+为了让GCC正在运行需要进行大量的工作。我的绝大部分努力付出凝结成了两个非常nice的脚本。Terminal-Gcc和
+Terminal-G++。\n
+\n
+其中C是完美运行, 但是C++在支持NDK上面有些许不完整。但至少类这部分是正常的。。\n
+\n
+你将需要安装Gcc编译器，这些操作在\'教程\'选项卡中都有详细的介绍，当然，你也需要完整的阅读Java教程。如同
+它们展示Vim如何工作的那样。\n
+\n
+所以，请务必认真阅读\'教程\'选项卡中的所有内容!\n</string>
+
+
+    <!-- 帮助的Git部分 -->
+    <string name="help_git_title">GIT</string>
+<string name="help_git_summary">GIT 版本: 1.7.8\n
+\n
+【已发现问题: 由于主机名不能正确的解析，所以你必须使用数字格式的IP地址来访问你的Git服务器。】
+\n
+\n
+github.com = 207.97.227.239 \n
+\n
+Git是一个快速，开源的分布式版本控制系统。\n
+\n
+这是一个简易的命令行工具来保存你的项目源码的历史版本状态，如同你使用其他的诸如SubVersion，CVS或者
+Perforce版本控制工具一样使用Git即可。\n
+\n
+通过指定你项目中需要Git跟踪的文件，定期提交项目可完成保存项目的操作。然后你可以分享项目提交的记录来与其
+他开发者协同合作，将你们各自的开发内容合并，比较或者回滚项目或者个人文件到之前的版本。\n
+\n
+Git是完全分布式的版本控制系统,这意味着它可以几乎完全脱机工作，与集中式的版本管理工具:PerforceV和
+Subversion形成了鲜明对比。 Git几乎所有的操作都不需要网络连接,包括查看历史，对比文件的异同和提交项目进度。
+\n
+\n
+大概Git的最引人注目的特性就是它的分支模式了，它从根本上改变了许多开发者的工作方式。与大多数流行的集中式版本控制工具仅仅是简单的克隆当前分支内容到一个单独的目录下来创建新分支的方法不同，Git允许你在同一个工作目录切换分支。 创建和切换分支几乎是瞬时的，事实上并不是所有分支都需要公开共享。因此保存已完成的工作变得异常简单，这讲意味着通过Git你的工作方式将会发生彻底的改变!
+\n
+\n
+项目的开发并不是只有仅仅几个主要的分支，事实上，使用Git的开发者通常每周甚至每天都在创建、合并、摧毁分支。通常情况下，一些特性或者Bug只在你自己的分支上，由你自己实现亦或者修复它，然后再合并到主分支当中。这种开发模式允许你进行实验，快速、简单又安全而不必回到你最初所在的位置。它允许并鼓励非线性的开发周期，你可以在多个并行的周期中工作而不会相互干扰。\n
+\n
+首先，Git需要记录你的姓名和电子邮件地址，当你提交的时候，Git才能知道是谁进行了这个提交操作。因此，你需要
+告诉Git你是谁。你可以使用Git的配置命令来完成这个操作。如果你使用全局配置，它将保存在~/.gitconfig文件中。
+因此，他是你所有版本库的默认文件。\n
+\n
+# git config &#8212;&#8212;global user.name \"Doublemine\" \n
+# git config &#8212;&#8212;global user.email \"wanghaokoko1994@163.com\"\n
+\n
+# git config user.name\n
+# git config user.email\n
+# cat ~/.gitconfig\n
+\n
+将会显示配置信息\n
+\n
+从现有目录中初始化Git版本库，只需要在该目录输入\'git init\'，这将为你在该目录创建基本的Git版本库框架。 
+\n
+\n
+# cd ~/system/src/demo_android\n
+# git init\n
+# git add .\n
+# git commit -m \'初始提交(这是提交时的备注)\'\n
+\n
+现在，你将拥有一个\'Git\'了的项目，你可以克隆、分支、分享或者使用这个项目。\n
+\n
+# git log\n
+\n
+你可以通过按\'q\'键来退出日志记录器。\n
+\n
+你可以轻松的克隆项目到其他目录。\n
+\n
+# cd ~/projects\n
+# git clone ~/system/src/demo_android\n
+\n
+很显然，在线的Git服务器克隆也是如此。[但是只能使用数字ip，域名的方法我还没搞定。。]
+\n
+\n
+现在让我们做一些修改.。\n
+\n
+# cd demo_android\n
+\n
+现在编辑文本\n
+\n
+# vim terminalide.vim\n
+\n
+添加一行内容然后保存退出[ 比如 &quot;]\n
+\n
+你可以通过运行这个来查看文件做了哪些修改\n
+\n
+# git diff\n
+\n
+然后提交\n
+\n
+# git commit -a -m \"一些基本的更新(编写提交备注很重要!)\"\n
+# git log\n
+# git status\n
+\n
+状态将告诉你你当前工作在哪个分支下\n
+\n
+或者你可以使用\n
+\n
+# git branch\n
+\n
+来创建一个新分支, 我们可以使用\'git branch (分支名)\' 来在当前分支基础上创建一个新分支。\n
+\n
+# git branch experiment\n
+\n
+切换到该分支之后，我们保存的操作将保存到该分支上而不是\'master\'分支上,我们运行‘git checkout’命令\n
+\n
+# git checkout experiment\n
+# git branch\n
+\n
+现在，让我们对terminalide.vim做更多的修改. 打开它，添加更多的文本内容。\n
+\n
+然后提交\n
+\n
+# git commit -a -m \"编辑修改terminalide.vim\"\n
+# cat terminalide.vim\n
+\n
+现在你有两个可用的分支，如果你想切换回master分支，只需要做以下步骤:\n
+\n
+# git checkout master\n
+# cat terminalide.vim\n
+\n
+然后再切换回来\n
+\n
+# git checkout experiment\n
+# cat terminalide.vim\n
+\n
+你可以在该分支上添加文件，通过:\n
+\n
+# git add [文件名]\n
+\n
+一旦该分支上的修改让你满意了，你可以将他合并到master分支。\n
+\n
+# git merge experiment\n
+\n
+一旦你完成了所有的合并和修改，你就可以删除该分支通过:\n
+\n
+# git branch -d experiment\n
+\n
+瞧！这只是一个小小的Git的练习，还有很多Git的用法。还是那句老话:Google一下，获益匪浅。\n当然了，推荐一个权威的Git教程:<a href="http://git.oschina.net/progit/">浏览Git教程请猛戳我！(中文的，妈妈再也不用担心我看不懂英文了~)</a> (请叫我雷锋 )
+\n
+</string>
+
+    <!-- 叶志龙部分开始 -->
+<string name="help_tutorial_demo1_text">请严格遵循这些指南。\n
+\n
+他们会帮助你一步一步的编译在~/system/src中的示例应用程序。\n
+\n
+遵循这些指南的最好方式是通过在Telnet / SSH上的记录然后
+你可以在设备阅读并遵循它，而使用计算机来执行动作。\n
+\n
+让我们开始吧。\n
+\n
+安装基本系统。\n
+\n
+点击主页面上的\'Install System\'，然后按照说明操作。\n
+\n
+请确保您已启用 Terminal IDE键盘，设置路径为：系统设置>语言和输入法
+或在Terminal IDE主界面点击\'Keyboard\'按钮\n
+\n
+单击按钮\'Terminal IDE\'启动Terminal IDE。\n
+\n
+你现在看懂有不错的短的颜色提示。您可以以下路径更改它，\n
+\n
+..$ export PS1=#\n
+\n
+但它看起来真的不错，在Telnet / SSH上 :-p\\ n
+\n
+-双击切出键盘。\n
+-向左和右滑动查看您的4个终端子。\n
+-长按屏幕弹出终端选择菜单。\n
+-按\'Menu\'弹出选项\n
+\n
+---------------------------------------------- \n
+[这部分是可选的，但强烈推荐] \n
+\n
+运行telnetd。没有参数的要求。缺省设置在~/.bashrc中。
+您可以输入命令查看什么程序正在运行\n
+\n
+# cat `which telnetd`\n
+\n
+不论以何种方式启动telnetd：\n
+\n
+# telnetd
+\n
+你现在应该看到telnetd启动信息。 在../system/bin/bash最后\n
+\n
+您可以关闭在任何阶段telnetd，请在IDE的键盘键入[CTRL]-C\n
+\n
+现在，去通过telnet登录你的好大的计算机。我将转义字符设为空。\n
+\n
+[两者之中任何一个] \n
+$ telnet -e \'\' [THE PHONES IP] 8080\n
+\n
+[更好的连接adb是Android SDK的一部分]\n 
+第一把手机插上电脑通过USB，然后
+\n
+$ adb -d forward tcp:8080 tcp 8080\n
+$ telnet -e \'\' 127.0.01 8080\n
+\n
+[\'\' 是2个单引号不是双引号] \n
+\n
+现在你应该通过Telnet连接到系统！\n
+\n
+[你可以同时多次] \n
+------------------------------------------------ \n
+\n
+好，让我们开始编程。\n
+\n
+</string>
+<string name="help_tutorial_demo2_text">让我们通过编写简单的Hello World应用程序启动。\n
+\n
+第一cd到项目文件夹中（记得使用Tab来完成）：\n
+\n
+# cd ~/system/src/helloworld/
+\n
+列表显示内容：\n
+\n
+#ls（虽然我更喜欢LL）\n
+\n
+你会看到三个文件。hello.java是代码文件。编译命令：\n
+\n
+# javac hello.java\n
+\n
+现在你有一个hello.class文件。这需要转换成dex格式输入：\n
+\n
+# dx --dex --output=hello.jar hello.class\n
+\n
+现在你在DEX格式hello.jar。命名时必需为.jar后缀而不是.dex后缀\n
+\n
+最后，你可以运行它：\n
+\n
+# java -jar hello.jar hello\n
+\n
+编译运行你的第一个程序。\n
+\n
+现在你会明白builder.sh和run.sh是做什么的：\n
+\n
+# cat hello.java\n
+# cat builder.sh\n
+# cat run.sh\n
+\n
+现在让我们玩一下vim。Vim不是VI -他们是不同的！从BusyBox，万一你打破vim的怪异的配置设置。\n
+\n
+# vim hello.java\n
+\n
+你现在应该看到一个语法高亮hello.java文件。\n
+\n
+记住：关于vim的最重要的事情是，[ESC]转到控制模式
+在这里您可以输入命令和功能，并按 \'i\' 进入插入模式写一些文字。（或用 \'a\'进入附加模式）\n
+\n
+按\'i\' 进入插入模式\n
+\n
+左右移动的箭头键，然后移动到 \'System.\' 使光标在\'o\' 外”
+\ n。
+\n
+现在按[Ctrl] + X [Ctrl] + U n
+\n
+你应该看到Java完成的可用选项！\n
+\n
+有许多可用的完成式：\n
+-【ctrl】+ X [Ctrl] + U \n用户Java完成
+-【ctrl】+ X [Ctrl] + O \n全完成，基于语法的许多语言\n
+-【ctrl】+ X [Ctrl] + F \n文件名完成，非常方便，试试~ [Ctrl] + X [Ctrl] + F \ n
+\n
+更多选项在 ~/.vimrc查看）但是对我们最重要的是[Ctrl] + X [Ctrl] + U \n
+\n
+完成只能在插入模式工作。自动弹出Vim插件包含，所以如果你通常输入一个词的第二个字母后，自动完成窗口就自动弹出）\n
+\n
+你甚至可以用[ F7 ]编译代码（这是设置在你 ~/.vimrc之中的）。\n
+\n
+确保你的控制方式，请先按[Esc]键，然后按【F7】。\n
+\n
+由于没有编译错误就会成功，没有错误会出现在
+输出窗口，输出窗口应该出现在屏幕的底部。\n
+\n
+现在光标显示在输出窗口。移动到主窗口。\n
+\n
+按[ESC]（确保你处于控制模式）。然后按[Ctrl] + W（进入窗口模式），然后按向上箭头键。
+这将使你的窗口 \'above\'。您可以使用[Ctrl] + W [Ctrl] + W键切换窗口。\n
+\n
+如果你想可以关闭输出窗口：\n
+\n
+[ESC]：cclose [ENTER] \n
+\n
+打开输出窗口：copen or :clist\n
+Cycle with :cnext :cprevious\n
+\n
+编辑hello.java文件进入插入模式并修改错误，例如添加缩进等。\n
+\n
+你需要保存你的变化。确保光标在主窗口。然后：\n
+\n
+[ESC]:w\n
+\n
+[ESC]保证你处于控制模式。从现在开始我会忽略它。：w保存文件。大部分功能需要运行在控制模式，且所有都从：开始\n
+\n
+现在请你再次用[ F7 ]编译。你需要在主窗口控制模式。\n
+\n
+这个时候应该有“输出”窗口中的一些错误。\n
+\n
+你可以通过它们循环用[F8]和[F9]，并将光标移动到错误行。\n
+\n
+很甜蜜。\n
+\n
+你甚至可以运行你的shell构建脚本在vim，所以\n
+\n
+:! ./builder.sh
+\n
+这将运行完整的构建脚本，并显示你的输出。\n
+\n
+答：你可以使用tab完成在vim命令行就类型：\n
+\n
+:! ./b[TAB]和其他应填写的。\n
+\n
+退出Vim使用：\n
+\n
+：w保存文件\n
+：q近但文件必须保存\n
+：q！-强制关闭\n
+：wq -保存并关闭\n
+：qa！关闭所有的力量。\n
+\n
+</string>
+<string name="help_tutorial_demo3_text">现在我们将编译更真实的Java库编译。Java库将
+用在2上剩余的应用程序。\n
+\n
+Android要求class是在DEX格式中时才可以运行，但是javac要求在JAR格式\n。
+\n
+本项目编制的两种类型。\n
+\n
+第一cd到项目文件夹\n
+\n
+# cd ~/system/src/demo_lib/\n
+\n
+看下情况\n
+\n
+# ls \n
+\n
+检查生成脚本\n
+\n
+# cat builder.sh\n
+\n
+这将解释所有的事情。最后两个库会被创建。\n
+\n
+运行构建脚本\n
+\n
+# ./builder.sh\n
+\n
+检查的结果\n
+\n
+# ls dist/\n
+\n
+好，现在用vim \n
+\n
+为了帮助理解我已经写了一个简单的脚本名为“terminalide”。\n
+\n
+# cat `which terminalide`\n
+\n
+本文将展示如何简单的脚本是。运行它。\n
+\n
+# terminalide \n
+\n
+现在vim运行在一个可爱的文件浏览器的侧窗格的左边，在正确的文件夹设置。\n
+\n
+这是使用Vim插件。:NERDTree\n
+\n
+移动到src目录使用箭头键，然后按[输入]打开一个目录或文件。\n
+\n
+在./src/org/library 打开libfunc.java文件 \n
+\n
+光标将在主窗口。按[F7]编译。\n
+\n
+在这一点上没有错误。做一些错误的代码并重新编译。\n
+\n
+现在通过循环用[F8]和[F9]排错。\n
+\n
+我想你会同意，这看起来像一个适当的IDE。\n
+\n
+你可能已经注意到一个叫builderpro.sh和proguard.cgf件。
+\n
+这是构建脚本来创建使用proguard混淆..他们类似于其他应用程序中的脚本\n
+\n
+然后去教程4。\n</string>
+<string name="help_tutorial_demo4_text">现在我们将编译一个完整的命令行Java应用程序，使用库编写教程3。\n
+\n
+cd 到主文件夹\n
+\n
+# cd ~/system/src/demo_console/\n
+\n
+检查一下\n
+\n
+# cat ./builder.sh\n
+# cat ./run.sh\n
+\n
+注意库文件已经集成到构建命令。\n
+\n
+同时，查看terminalide.vim文件\n
+\n
+# cat ./terminalide.vim\n
+\n
+看下这些等会将要执行的语句。\n
+\n
+现在运行terminalide \n
+\n
+# terminalide \n
+\n
+在src目录打开start.java文件。\n
+\n
+[ F7 ]编译 .. \n
+\n
+有错误！这是正常的。\n
+\n
+同时，功能齐全的Java不适合libfunc。\n
+\n
+这是因为vim变量没有被告知有关新建立的环境和添加libs。\n
+\n
+在vim中运行这个函数时，确保你在主窗口且处于控制模式。\n
+\n
+:source ../terminalide.vim\n
+\n
+正确的设置窗口变量才能使java-complete和javac工作。\n
+\n
+现在试着编译。它应该能正常工作了。且java-complete和javac完美运行。\n
+\n
+使用生成器脚本创建完整的应用程序。\n
+\n
+:! ../builder.sh\n
+\n
+现在让我们打开另一个文件。\n
+\n
+移动到 NERDTree\n
+\n
+按[ESC][CTRL]+W LEFT
+\n
+打开name.java。现在你会注意到一个小的窗口出现在顶部
+上面有你当前的缓冲区的名字。另外现在将在主窗口中看到name.java\n
+\n
+转到minibufexpl窗口, [CTRL]+W UP\n
+\n
+按Tab或SHIFT-TAB 循环切换窗口并选择一个按 ENTER 进入。好。\n
+\n
+有其他好的方式切换缓冲区。\n
+\n
+:buffers\n
+\n
+这显示缓冲区，然后你选择一个进入\n
+\n
+:buffer [number]\n
+\n
+我已经创建了一个简单的映射 ~/.vimrc 所以按下[ F5 ] 进入就好啦 \n
+\n
+然后去教程5。
+</string>
+<string name="help_tutorial_demo5_text">你现在应该很可以熟练的编译代码和用vim编辑。\n
+\n
+这是一个完整的Android应用。\n
+\n
+cd到主文件夹\n
+\n
+# cd ~/system/src/demo_android/\n
+\n
+查看生成的脚本\n
+\n
+# cat ./builder.sh\n
+\n
+有些奇怪。\n
+\n
+但是一旦你了解它，你会看到最终的结果是
+创建一个APK文件。这是一个默认的测试签名。\n
+\n
+这将显示您如何安装进行\n
+\n
+# cat ./install.sh\n
+\n
+然后你可以安装它\n
+\n
+# ./builder.sh\n
+# ./install.sh\n
+\n
+并运行它。\n
+\n
+# ./run.sh\n
+\n
+如果一切正常，你应该看到一个Android应用程序在你的设备上启动！\n
+\n
+现在到vim中 \n
+\n
+先查看terminalide.vim文件\n
+\n
+# cat ./terminalide.vim\n
+\n
+这里跟demo_console课程几乎是相同的。但是建立的类被./build/classes文件夹代替。\n
+\n
+开始使用terminalide打开Vim \n
+\n
+# terminalide \n
+\n
+打开一个Java主文件。然后记得要正确安装
+\n
+:so ../terminalide.vim\n
+\n
+现在javac编译和java-complete应该正常工作。\n
+\n
+打开多个文件和它们之间的切换在顶部使用minibufexpl窗口。\n
+\n
+其余的就是你的事了。\n
+</string>
+<string name="help_tutorial_demo6_text">ok现在我们明白了vim是如此美妙，让我们开始编译C程序。\n
+\n
+GCC默认是未解压的，因为它占用大约70MB空间，而未解压时占用20MB。\n
+\n
+你需要用脚本开解压缩到正确的位置，所以我创建了一个非常简单的安装程序。\n
+\n
+# cat `which install_gcc`\n
+\n
+这将显示什么是真正的该做的简单的。现在运行它。\n
+\n
+# install_gcc \n
+\n
+现在GCC应该安装好了。\n
+\n
+第一cd到项目文件夹中（记得使用Tab来完成）：\n
+\n
+# cd ~/system/src/c_examples/chello/\n
+\n
+列表显示内容：\n
+\n
+# ls（虽然我更喜欢ll）\n
+\n
+这有2个文件。hello.c 和makefile。让我们看看文件\n
+\n
+# cat hello.c\n
+\n
+编译C代码\n
+\n
+# terminal-gcc -o hello hello.c\n
+\n
+现在你文件夹中应该有一个名为“hello”可执行文件。运行它\n
+\n
+# ./hello\n
+\n
+你可以在命令的结尾添加更多的文件。所以如果你有file1.c 和 file2.c你可以使用\n
+\n
+# terminal-gcc -o hello file1.c file2.c\n
+\n
+你不需要添加.h文件，他们应该在这个文件夹中。现在让我们看看终端GCC实际上是怎样工作的。\n
+\n
+# cat `which terminal-gcc`\n
+\n
+你可以看到我使用一些特定的参数调用GCC ARM是。你需要这些参数使程序工作在android平台上。\n
+\n
+如果你想知道什么被真正的调用了，你需要设置环境变量DEBUG_GCC\\n
+\n
+# export DEBUG_GCC=true\n
+\n
+并停止\n
+\n
+# export DEBUG_GCC=\n
+\n
+还可以添加“V”得到详细的输出。\n
+\n
+现在让我们看看makefile 。 \n
+\n
+# cat Makefile\n
+\n
+这是一个非常简单的通用makefile。它扫描C文件的文件夹并将其编译。\n
+\n
+使用makefile：\n
+\n
+# make clean（这将删除所有编译文件..）\n
+\n
+# make\n
+\n
+make只编译需要编译的文件。不像以前的方法重新编译所有文件。
+最重要的是，这可以很好地与vim和terminalide工作）\n
+\n
+所以运行terminalide。\n
+\n
+# terminalide \n
+\n
+你不该有一个./src文件夹不过没关系.. \n
+\n
+一旦vim / terminalide正在运行，你可以按F7编译一切。\n
+\n
+你可以循环扫描错误，就像在Java教程，用F8和F9。\n
+\n
+OK 现在让我们来看一个例子。\n CPP。
+</string>
+<string name="help_tutorial_demo7_text">现在，对CPP的应用程序有一个好消息和一个坏消息。\n
+\n
+好消息是，CPP文件和类等可以工作。坏消息是，“iostream”和C++头文件不工作。
+是的我已集成，可以编译和运行它们，但当你运行它时会发生错误\n
+\n
+所以你可以使用CPP文件，但你需要坚持标准C头文件。当我修好它，我将提供新的安装包。\n
+\n
+（如果有人可以使它正常的工作，请联想我）\n
+\n
+让我们cd到目录\n
+\n
+# cd ~/system/src/c_examples/cpphello/\n
+\n
+有rect.cpp和Makefile。检查CPP文件：\n
+\n
+# cat rect.cpp\n
+\n
+开始编译\n
+\n
+# terminal-g++ -o rect rect.cpp\n
+\n
+你在这个文件夹现在有一个可执行的rect文件。\n
+\n
+现在让我们使用makefile。检查一下看看它是干什么的 \n
+\n
+# cat Makefile\n
+\n
+# make clean\n
+\n
+# make\n
+\n
+（通常只是“make”就可以了）\n
+\n
+现在使用了 TAGLIST Vim插件。这是一个非常有用的插件。它会显示文件中类和变量的错误。\n
+\n
+我把它打开/关闭切换按键设置为“F3”。您可以在 ~/.vimrc文件编辑宽度等选项。\n
+\n
+运行 \'vim rect.cpp\'，并按F3看到它在是否工作。\n
+\n
+而且你现在有“ctags”的要求，使用条件请自行谷歌找到最适合你的\n
+\n
+下一个指南式关于C库的。\n
+</string>
+<string name="help_tutorial_demo8_text">现在我们要编译一个C++库\n
+\n
+唯一有点棘手的是，你需要安装它的地方，在/system/bin/linker 将找到它。\n
+\n
+# echo $LD_LIBRARY_PATH\n
+\n
+这表明将在这个路径下搜索。你会注意到~/local/lib在前面。这就是我们要安装的地方。\n
+\n
+看看Makefile然后修改它， LDFLAGS需要-shared.参数。这有一个“安装”选项，所以\n
+\n
+# make\n
+\n
+让我们看看在 ~/local\\n
+\n
+#找到 ~/local\\n
+\n
+#安装\n
+\n
+然后\n
+\n
+# find ~/local\n
+\n
+头文件在~/local/include，库在~/local/lib。我们准备在下一个教程用。\n
+\n
+</string>
+<string name="help_tutorial_demo9_text">现在我们要编译一个完整的C程序，只使用库编译。它将要求一些输入，然后将输入数据输出。\n
+\n
+检查makefile .\n
+\n
+# cat Makefile\n
+\n
+我已经包括~ /地方/包括和lmyfunc将负载libmyfunc.so，后来看它在$ ld_library_path \n
+\n
+# make\n
+\n
+然后运行它。\n
+\n
+# ./tester\n
+\n
+或者你可以安装在任何地方使用。\n
+\n
+# make install\n
+\n
+现在你可以从任何文件夹只用 \'tester\' 运行而不用\'./tester\’。因为在~/local/bin中有你的~/local/bin/n
+\n
+那就是全部\n</string>
+<string name="help_ui_bitchx_text">BitchX版本为1.1 \n
+\n
+这是一个使用IRC协议的因特网中继聊天客户端。\n
+\n
+如果你卡在了某一问题上，你可以在IRC聊天室获得无限的帮助！\n！\n
+\n
+你可以设置你的IRCNAME和IRCNICK环境变量来加快速度。\n
+\n
+BitchX在SSH / Telnet上可以正常运行但在设备上的屏幕渲染有问题。为
+
+了解决这个问题，在设备运行时，我开始用\n
+\n
+# BitchX -d（这将只允许有一个聊天窗口在终端上运行）\n
+\n
+【当然你可以运行多个BitchX在TMUX上.】\n
+\n
+开始运行\n
+\n
+# BitchX \n
+\n
+如果连接失败\n
+\n
+# BitchX -n [nickname] [irc-server]\n
+\n
+终端IDE不解析主机名的原因是未Root的手机没有/etc/resolv.conf文件
+
+，所以服务器必须输入他们的IP数字格式。\n
+\n
+BitchX的一些功能。\n
+\n
+/list           - 列表列出所有通道\n
+/quit           - 退出-退出BitchX\n
+/window [func]  - 这个选项功能较多请自行谷歌\n
+/window new     - 新建窗口\n
+/window kill    - 关闭窗口\n
+/window goto #  - 窗口转到# -转到窗口号#\n
+/join [channel] - 加入活动窗口中的频道\n
+/part [channel] - 离开一个通道\n
+\n
+去聊天吧！\n
+\n
+</string>
+    <string name="help_tutorial_expand">编译C程序</string>
+<string name="help_tutorial_expand_text">Terminal IDE使用命令执行许多本地的C程序。这么多的应用程序种肯定有你想要的。\n
+\n
+当然你也可以用 ~/local/bin编译你自己的C应用。
+请把它们放在 ~/local/bin文件夹中就像你的Java / shell脚本一样。\n
+\n
+是的GCC 4.4.0在Terminal IDE是可用的，但我还没做配置和安装工作。
+在你自行安装时请注意libc / bionic是不同的请根据你的需要修该\n
+\n
+Android NDK已经走过了漫长的道路，你现在可以创建单独的工具链。在终端的IDE大多数应用是可以编译codesourcery，静态链接。\n
+\n
+使用http://dan.drown.org/android是一个很好的开始\n
+\n
+你还是要解决出现的任何问题，但是他的构建脚本的工作真的很好！谢谢丹！\n
+\n
+我不会去考虑太多的深度，这是你会超越你自己，正如我们所做的：-）！\n
+\n
+</string>
+<string name="help_ui_mc_text">Midnight Commander 4.8\n
+\n
+只要输入“mc”即可运行。\n
+\n
+这是一个很好的基于控制台的文件管理器。\n
+\n
+使用箭头键来移动，tab面板，并得到菜单的功能键。\n
+\n
+如果功能键不工作，请使用[ESC]数字见也有相同的效果。\n
+\n
+你可以安装FTP文件系统在MC，如果你建立一个SSL和SSH的管道，你可以访
+
+问FTPS。\n
+\n
+SSH甚至可以使用FISH协议。\n
+\n
+为了使它工作，我不得不写一个简单的MC脚本。MC真的是实际的二进制。
+
+你可以运行MC在一个普通的屏幕/键盘。\n
+\n
+小窍门：\n
+\n
+【F1】帮助（可能不工作）\n
+【F3】查看文件V快。\n
+【F4】打开文件在vim编辑\n
+【F9】让你的主菜单。用箭头键和回车。\n
+\n
+按[ESC]两次取消行动。\n
+\n
+[ F10 ]退出。\n
+\n
+和vim一样更多请找谷歌\n
+</string>
+<string name="help_overconnect_rsync_text">rsync 3.0.8 \n
+\n
+rsync用一个伟大的方式来备份和同步文件夹在不同的机器上。\n
+\n
+它只发送文件之间的差异，使带宽的使用量达到最小。\n
+\n
+如果你只传输差异，甚至可以很容易地很快同步大的项目。\n
+\n
+用rsync同步文件夹的方法很多， pull或push或运行在后台模式，等等。
+
+但我会给你一个安全的方式这样做。\n
+\n
+按照以前的指示，你需要有sshd守护进程运行在 Terminal IDE。\n
+\n
+要在你家里的电脑同步真的很简单。\n
+\n
+让我们尝试同步演示应用程序的文件夹~/system/src。\n
+\n
+如果你要在你的电脑上备份你的工作，你需要运行这个功能：\n
+\n
+# rsync -e \'ssh -p 8090\' --rsync-
+
+path=\'/data/data/com.terminal.ide/files/system/bi
+
+n/rsync\' -avn 
+
+127.0.0.1:/data/data/com.terminal.ide/files/syste
+
+m/src .\n
+\n
+通过添加-n选项会显示它将要运行，但不运行。不加-n重新运行时回滚文
+
+件操作\n
+\n
+# rsync -e \'ssh -p 8090\' --rsync-
+
+path=\'/data/data/com.terminal.ide/files/system/bi
+
+n/rsync\' -av 
+
+127.0.0.1:/data/data/com.terminal.ide/files/syste
+
+m/src .\n
+\n
+创建一个脚本，使这更容易调用。\n
+\n
+这样你就可以快速简单安全的使用文件夹同步。\n
+\n
+当然你也可以回退这个脚本的卷。\n
+\n
+这意味着你可以从Terminal IDE备份文件到任何可以访问在线SSH服务器，
+
+只要它有rsync。\n
+\n
+</string>
+<string name="help_overconnect_ssh_txt">这是终端集成开发环境的最重要特征。\n
+\n
+我们可以在一个大的完全兼容的键盘和更大的显示器通过Telnet / SSH登
+
+录Terminal IDE\n
+\n
+如何通过SSH登录\n
+-------------------- \n
+\n
+有一个轻微的问题。基本上，当你登录时你需要手动的开始bash。除非你
+
+在 /etc/shell有正确的shell命令文件，这需要你的手机已经Root。\n
+\n
+由于一般用户的手机未Root，我将不得不重新编译代码来允许Shell可以在
+
+命令行中被解释。\n
+\n
+现在这是如何通过SSH连接到手机（有使用公共密钥等方式，但这仅是其中
+
+的一个方法）\n
+\n
+在Terminal IDE上 \n
+\n
+2）你需要建立一个连接服务器SSH密钥\n
+\n
+在$HOME开始 \n
+# cd ~\n
+\n
+创建文件夹\n
+# mkdir .ssh\n
+\n
+给它指定安全权限\n
+# chmod 700 .ssh\n
+\n
+进入文件夹\n
+# cd .ssh\n
+\n
+现在创建键密钥\n
+# dropbearkey -t dss -f dropbear_dss_host_key\n
+# dropbearkey -t rsa -f dropbear_rsa_host_key\n
+\n
+上面的命令是要启动dropbear和加上正确的参数
+\n
+回 HOME目录\n
+# cd ~\n
+\n
+你需要知道你的应用程序的UID，每部手机使用的“id”是不同的\n
+# id\n
+\n
+这会告诉你你的用户ID和组ID。让我们先假设为10058。\n
+\n
+现在开始启动dropbear \n
+# dropbear -A -N username -U 10058 -G 10058 -C password -d 
+
+~/.ssh/dropbear_dss_host_key -r ~/.ssh/dropbear_rsa_host_key 
+
+-F -E -p 8090 -P PidFile\n
+\n
+你应该写一个简单的脚本做这些事..称它为sshd ..把它放在~/bin下 \n
+\n
+这将启动sshd在前台运行的密码设置“密码”在8090端口。\n
+\n
+然后你可以简单的使用密码Telnet连接。\n
+\n
+现在的问题。它将启动一个简单的shell会话而没有环境变量或其他东西。
+
+\n
+\n
+我会把它永久地在未来的版本中，但是现在它可以固定，这2个命令。\n
+\n
+cd到你的HOME目录检查这是正确的在您的设备\n
+\n
+# cd /data/data/com.terminal.ide/files\n
+\n
+并在bash开始运行Terminal IDE自动创建的init文件。\n
+\n
+# ./system/bin/bash --init-file ./.init\n
+\n
+现在一切都设置正常。\n
+\n
+你可以建立一个好的脚本会为你自动启动的。\n
+\n
+你需要像这样调用SSH。\n
+\n
+# ssh 127.0.0.1 -p 8090 -l username -t 
+
+/data/data/com.terminal.ide/files/system/bin/bash 
+
+--init-file 
+
+/data/data/com.terminal.ide/files/.init\n\n
+\n
+祝你好运。\n
+</string>
+<string name="help_overconnect_telnet_text">如何通过telnet登录\n
+-------------------- \n
+\n
+一个典型的会议需要你启动Terminal IDE和简单地运行
+“telnetd”。不输入参数事使用缺省选项。\n
+\n
+然后登录你家WiFi安全通过telnet，默认端口8080。如果你是一个
+Android开发者且安装了adb这是一个更好的选择。\n
+\n
+把手机通过USB连接adb。然后运行\n
+\n
+adb -d forward tcp:8080 tcp:8080\n
+\n
+这会将本地8080端口映射为设备端口8080 \n
+\n
+然后通过telnet登录，通过本地机器。简单。\n
+\n
+telnet -e \'\' 127.0.0.1 8080\n
+\n
+由于没有加密SSH用USB是最快的方式。\n
+\n
+使用“-e”关闭转义字符，这和默认的
+VIM的帮助链接一样。将它设置为任何你想要的。\n
+\n
+你时登录请确保TERM变量是正确的，默认的是“xterm”。\n
+\n
+</string>
+<string name="help_ui_trouble_text">所有已作出努力都是为了确保此应用程序的运行和正确。\n
+\n
+如果你发现Terminal IDE行为异常，有3个选项：\n
+\n
+1）关掉它逃跑。我不会建议个选项这。\n
+\n
+2）写一个苛刻的评论，说这是一堆***你
+无法相信，我甚至敢浪费你的时间。再次，不是一个伟大的选择，但我读到的一些东西确实让我笑的时候\n
+\n
+3）给我发个电子邮件，手机型号，Android版本，错误类型和任何其他信息，你认为是相关的，其余的我会搞定。头奖。\n
+\n
+我喜欢发现和解决bug。如果我没有找到它，但你发现了却没告诉我，
+它将一直存在而我们将会失败。我不会读心术或打电话给用户。我不是一个X战警。\n
+\n
+我是Spartacus Rex.</string>
+<string name="help_ui_thanks_text">没有开源社区就不可能有这个东西！。\n
+\n
+“谁能理解它的最深的思想..”\n
+\n
+Terminal IDE 采用用GPLv2开源协议。\n
+\n
+请从http://code.google.com/p/terminal-ide/获取代码 \n
+\n
+特别感谢：\n
+\n
+  : JackPal - 做出了出色的终端模拟器\n
+    : Dan Drown - 为编译C程序搭建系统 - http://dan.drown.org/android/\n
+    : Tom Arn - for aapt, jarsigner\n
+    : DropBear -  for sshd\n
+    : Bash Boys - for bash\n
+    : Busy Boys - for busybox\n
+    : Vim love - vim rocks\n
+    : Fang Cheng - for java-complete vim script\n
+    : Eric Lafortune - for proguard\n
+    : Java - who ever you are.\n
+    \n
+和许多更多。\n
+\n
+   Simon Funk, Kevin Boone,.\n
+\n
+谢谢你！\n</string>
+ <string name="help_ui_gplv2_text">第二版, 1991年6月
+
+ 
+
+　　著作权所有 (C) 1989，1991 Free Software Foundation, Inc. 59 
+
+Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+ 
+
+　　允许每个人复制和发布本授权文件的完整副本，但不允许对它进行任何
+
+修改。
+
+ 
+
+导言 
+
+　　大多数软件授权声明是设计用以剥夺您共享与修改软件的自由。相反地
+
+，GNU通用公共授权力图保证您分享与修改自由软件的自由-确保软件 对所
+
+有的使用者都是自由的。通用公共授权适用于大多数自由软件基金会的软件
+
+，以及任何作者指定使用本授权的其他软件。（有些自由软件基金会的软件
+
+，则适用 GNU函式库通用公共授权规定。）您也可以让您的软件适用本授
+
+权规定。 
+
+　　当我们在谈论自由软件时，我们所指的是自由，而不是价格。我们的通
+
+用公共授权是设计用以确保使您拥有发布自由软件备份的自由（以及您可 
+
+以决定此一服务是否收费），确保您能收到源码或者在您需要时能得到它，
+
+确保您能变更软件或将它的一部分用于新的自由软件；并且确保您知道您可
+
+以做上述的这 些事情。 
+
+　　为了保障您的权利，我们需要作出限制：禁止任何人否认您上述的权利
+
+，或者要求您放弃这些权利。如果您发布软件的副本，或者对之加以修改，
+
+这些限制就转化成为您的责任。 
+
+　　例如，假如您发布此类程序的副本，无论是免费或收取费用，您必须将
+
+您所享有的一切权利给予收受者。您也必须确保他们也能收到或得到原始程
+
+序码。而且您必须向他们展示这些条款的內容，使他们知到他们所享有的权
+
+利。 
+
+　　我们采取两项措施來保护您的权利：(1)以著作权保护软件，以及(2)
+
+提供您本授权，赋与您复制、发布并且／或者修改软件的法律许可。 
+
+　　同时，为了保护作者与我们（按：指自由软件基金会），我们想要确定
+
+每个人都明白，自由软件是沒有担保责任的。如果软件被他人修改并加以 
+
+传播，我们需要其收受者知道，他们所得到的并非原始版本，因此由他人所
+
+引出的任何问题对原作者的声誉将不会有任何的影响。 昀后，所有自由软
+
+件不断地受到软件专利的威胁。我们希望能避免自由软件的再发布者以个人
+
+名义取得专利授权而使程序专有化的风险。为了防止上述的情事发生， 我
+
+们在此明确声明：任何专利都必须为了每个人的自由使用而核准，否则就不
+
+应授与专利。 
+
+　　以下是有关复制、发布及修改的明确条款及条件。 
+
+复制、发布与修改的条款与条件
+
+　　0. 凡著作权人在其程序或其他著作中声明，该程序或著作会在通用公
+
+共授权条款下发布，本授权对其均有适用。以下所称的"程序"，是指任何
+
+一种适用通用公共授权 的程序或著作；并且一个"基于本程序的著作"，则
+
+指本程序或任何基于著作权法所产生的衍生著作，换言之，是指包含本程序
+
+全部或一部的著作，不论是完整的或 经过修改的程序，以及（或）翻译成
+
+其他语言的程序（以下"修改"一词包括但不限于翻译行为在內）。被授权
+
+人则称为"您"。本授权不适用于复制、发布与修改 以外的行为；这些行为
+
+不在本授权范围内。执行本程序的行为并不受限制，而本程序的输出只有在
+
+其內容构成基于本程序所生的著作（而非只是因为执行本程序所造 成）时
+
+，始受本授权拘束。至于程序的输出內容是否构成本程序的衍生著作，则取
+
+决于本程序的具体用途。 
+
+　　1. 您可以对所收受的本程序源代码，无论以何种媒介，复制与发布其
+
+完整的复制物，然而您必须符合以下要件：以显著及适当的方式在每一份复
+
+制物上发布适当的著作 权标示及无担保声明；维持所有有关本授权以及无
+
+担保声明的原貌；并将本授权的副本连同本程序一起交付予其他任何一位本
+
+程序的收受者。
+
+　　您可以对让与复制物的实际行为收取一定的费用，您也可以自由决定是
+
+否提供担保以作为对价的交换
+
+　　2. 您可以修改本程序的一个或数个复制物或者本程序的任何部份，以
+
+此形成基于本程序所生的著作，并依前述第一条规定，复制与发布此一修改
+
+过的程序或著作，但您必须符合以下要件： 
+
+　　(a) 您必须在所修改的挡案上附加显著的标示，阐明您修改过这些挡
+
+案，以及修改日期。 
+
+　　(b) 您必须就您所发布或发行的著作，无论是包含本程序全部或一部
+
+的著作，或者是自本程序或其任何部份所衍生的著作，整体授权所有第三人
+
+依本授权规定使用，且不得因此项授权行为而收取任何费用。 
+
+　　(c) 若经过修改的程序在执行时通常以交互方式读取命令时，您必须
+
+在昀常被使用的方式下，于开始进入这种交互式使用时，列印或展示以下宣
+
+告：适当的著作权标示及 无担保声明（或者声明您提供担保）、使用者可
+
+以依这些条件再发布此程序，以及告知使用者如何浏览本授权的副本。（例
+
+外：若本程序本身是以交互的方式执行， 然而通常却不会列印该宣告时，
+
+则您基于本程序所生的著作便无需列印该宣告。） 
+
+　　这些要求对修改过的著作是整体适用的。倘著作中可识別的一部份并非
+
+衍生自本程序，并且可以合理地认为是一独立的、个別的著作，则当您将 
+
+其作为个別著作加以发布时，本授权及其条款将不适用于该部分。然而当您
+
+将上述部分，作为基于本程序所生著作的一部而发布时，整个著作的发布必
+
+须符合本授权 条款的规定，而本授权对于其他被授权人所为的许可及于著
+
+作整体。
+
+　　因此，本条规定的意图不在于主张或剥夺您对于完全由您所完成著作的
+
+权利；应该說，本条规定意在行使对基于程序所生的之衍生著作或集合著作
+
+发布行为的控制权。 
+
+　　此外，非基于本程序所生的其他著作与本程序（或基于本程序所生的著
+
+作）在同一储存或发布的媒介上的单纯聚集行为，并不会使该著作因此受本
+
+授权条款约束。
+
+　　3. 您可以依前述第一、二条规定，复制与发布本程序（或第二条所述
+
+基于本程序所产生的著作）的目的码或可执行形式，但您必须符合以下要件
+
+： 
+
+　　(a) 附上完整、相对应的机器可判读源码，而这些源码必须依前述第
+
+一、二条规定在经常用以作为软件交换的媒介物上发布；或
+
+　　(b) 附上至少三年有效的书面报价文件，提供任何第三人在支付不超
+
+过实际发布源码所需成本的费用下，取得相同源码的完整机器可读复制物，
+
+并依前述第一、二条规定在经常用以作为软件交换的媒介物上发布该复制物
+
+；或
+
+　　(c) 附上您所收受有关发布相同源码的报价资讯。（本项选择仅在非
+
+赢利发布、且仅在您依前述b项方式自该书面报价文件收受程序目的码或可
+
+执行形式时，始有适用。） 
+
+　　著作的源码，是指对著作进行修改时适用的形式。对于一个可执行的著
+
+作而言，完整的源码是指著作中所包含所有模组的全部源码，加上相关介 
+
+面的定义挡，还加上用以控制该著作编译与安裝的描述。然而，特別的例外
+
+情况是，所发布的源码并不需包含任何通常会随著所执行作业系统的主要组
+
+成部分（编译 器、核心等等）而发布的软件（无论以源码或二进位格式）
+
+，除非该部分本身即附加在可执行程序中。 
+
+　　若可执行码或目的码的发布方式，是以指定的地点提供存取位置供人复
+
+制，则提供可自相同地点复制源码的使用机会，视同对于源码的发布，然而
+
+第三人并不因此而负有将目的码连同源码一起复制的义务。
+
+　　4. 除本授权所明示的方式外，您不得对本程序加以复制、修改、再授
+
+权或发布。任何试图以其他方式进行复制、修改、再授权或者发布本程序的
+
+行为均为无效，并且将 自动终止您基于本授权所得享有的权利。然而，依
+
+本授权规定自您手中收受复制物或权利之人，只要遵守本授权规定，他们所
+
+获得的授权并不会因此终止。
+
+　　5. 因为您并未在本授权上签名，所以您无须接受本授权。然而，除此
+
+之外您別无其他修改或发布本程序或其衍生著作的授权许可。若您不接受本
+
+授权，则这些行为在法 律上都是被禁止的。因此，藉由对本程序（或任何
+
+基于本程序所生的著作）的修改或发布行为，您表示了对于本授权的接受，
+
+以及接受所有关于复制、发布或修改本 程序或基于本程序所生著作的条款
+
+与条件。 
+
+　　6. 每当您再发布本程序（或任何基于本程序所生的著作）时，收受者
+
+即自动获得原授权人所授予依本授权条款与条件复制、发布或修改本程序的
+
+权利。您不得就本授权所赋予收受者行使的权利附加任何进一步的限制。您
+
+对于第三人是否履行本授权一事，无须负责。 
+
+　　7. 若法院判决、专利侵权主张或者其他任何理由（不限于专利争议）
+
+的结果，使得加诸于您的条件（无论是由法院命令、协议书或其他方式造成
+
+）与本授权规定有所冲 突，他们并不免除您对于本授权规定的遵守。若您
+
+无法同时符合依本授权所生义务及其他相关义务而进行发布，那么其结果便
+
+是您不得发布该程序。例如，若专利授 权不允许其他人直接或间接取得复
+
+制物，通过您以免付权利金的方式再发布该程序，您唯一能同时滿足该义务
+
+及本授权的方式就是徹底避免进行该程序的发布。 
+
+　　若本条任一部份在特殊情况下被认定无效或无法执行时，本条其余部分
+
+仍应适用，且本条全部于其他情况下仍应适用。 
+
+　　本条的目的并不在诱使您侵害专利或其他財产权的权利主张，或就此类
+
+主张的有效性加以争执；本条的唯一目的，是在保障藉由公共授权惯例所 
+
+执行自由软件发布系统的完整性。许多人信赖该系统一贯使用的应用程序，
+
+而对经由此系统发布的大量软件有相当多的贡献；作者／贡献者有权决定他
+
+或她是否希望 经由其他的系统发布软件，而被授权人则无该种选择权。 
+
+　　本条的用意在于将本授权其他不确定的部分徹底解释清楚。 
+
+　　8. 若因为专利或享有著作权保护的介面问题，而使得本程序的发布与
+
+／或使用局限于某些国家时，则将本程序置于本授权规范之下的原著作权人
+
+得增列明确的发布地区 限制条款，将这些国家排除在外，而使发布的许可
+
+只限在未受排除的国家之內或之中。在该等情况下，该限制条款如同以书面
+
+方式订定于本授权內容中，而成为本授 权的条款。 
+
+　　9. 自由软件基金会得随时发表通用公共授权的修正版与／或新版本。
+
+新版本在精神上将近似于目前的版本，然而在细节上或所不同以因应新的问
+
+题或状况。 
+
+　　每一个版本都有个別的版本号码。若本程序指定有授权版本号码，表示
+
+其适用该版本或是"任何新版本"时，您可以选择遵循该版本或任何由自由
+
+软件基金会日后所发表新版本的条款与条件。若本程序并未指定授权版本号
+
+码时，您可以选择任一自由软件基金会所发表的版本。
+
+　　10. 若您想将部分本程序纳入其他自由程序，而其发布的条件有所不
+
+同时，请写信取得作者的许可。若为自由软件基金会享有著作权的软件，请
+
+写信至自由软件基金会；我们有时会以例外方式予以处理。我们的决定取决
+
+于两项目 
+
+　　标：确保我们自由软件的所有衍生著作均维持在自由的状态，并广泛地
+
+促进软件的分享与再利用。 
+
+　　无担保声明 
+
+　　1. 由于本程序是无偿授权，因此在法律许可范围內，本授权对本程序
+
+并不负担保责任。非经书面声明，著作权人与／或其他提供程序之人，无论
+
+明示或默许，均是依 「现况」提供本程序而并无任何形式的担保责任，其
+
+包括但不限于，就适售性以及特定目的的适用性为默示性担保。有关本程序
+
+品质与效能的全部风险均由您承担。 如本程序被证明有瑕疵，您应承担所
+
+有服务、修复或改正的费用。 
+
+　　2. 非经法律要求或书面同意，任何著作权人或任何可能依前述方式修
+
+改与／或发布本程序者，对于您因为使用或不能使用本程序所造成的一般性
+
+、特殊性、意外性或间 接性损失，不负任何责任（包括但不限于，资料损
+
+失，资料执行不精确，或应由您或第三人承担的损失，或本程序无法与其他
+
+程序运作等），即便前述的著作权人或 其他人已被告知该等损失的可能性
+
+时，也是一样。
+
+-条文结束-
+
+ 
+
+您的新程序该如何采用这些条款？ 
+
+　　如果您开发了一个新程序，并且希望能够让它尽可能地被大众使用，达
+
+成此目的的昀好方式就是让它成为自由软件，任何人依这些条款规定都能就
+
+该软件再为发布及修改。 
+
+　　为了做到这一点，请将以下声明附加到程序上。昀安全的作法，是将声
+
+明放在每份源码挡案的起始处，以有效传达无担保责任的讯息；且每份挡案
+
+至少应有「著作权」列以及本份声明全文位置的提示。
+
+　　用一行描述程序的名称与其用途简述
+
+　　著作权所有(C)〈年份〉〈作者姓名〉
+
+　　本程序为自由软件；您可依据自由软件基金会所发表的GNU通用公共授
+
+权条款规定，就本程序再为发布与／或修改；无论您依据的是本授权的第二
+
+版或（您自行选择的）任一日后发行的版本。
+
+　　您应已收到附随于本程序的GNU通用公共授权的副本；如果没有，请写
+
+信至自由软件基金会：59 Temple Place - Suite 330, Boston, Ma 
+
+02111-1307, USA。
+
+　　同时附上如何以电子及书面信件与您联系的资料。 
+
+　　若程序是以交互方式运作时，请在交互式模式开始时，输出简短提示如
+
+下： 
+
+　　Gnomovision 第69版，著作权所有 (c) 年份 作者姓名 Gnomovision
+
+不负担保责任，欲知详情请键入\'show w\'。这是一个自由软件，欢迎您在
+
+特定条件下再发布本程序；欲知详情请键入\'show c\'。 
+
+　　所假设的指令\'show w\'与\'show c\'应显示通用公共授权的相对应条款
+
+。当然，您可以使用\'show w\'与\'show c\'以外的指令名称；甚至以鼠标键
+
+击或选菜单方式进行-只要是合于您程序需要的方式都可以。 
+
+　　如有需要，您亦应取得您的雇主（若您的工作为程序设计師）或学校就
+
+本程序所签署的「著作权放弃承諾书」。其范例如下，您只要修改姓名即可
+
+： 
+
+　　Yoyodyne公司，茲此放弃James Hacker所写之\'Gnomovision\'程序（
+
+该程序产出编译器所需资讯）所有的著作权利益。 
+
+　　〈Ty Coon公司签章〉，1989年四月一日Ty Coon公司,副总裁本通用
+
+公共授权并不允许您将本程序并入专有程序中。若您的程序是一子程序函数
+
+库时，您可能认为允许专有应用 
+
+　　程序与该函式库相连结会更有帮助。若这是您所想做的，请使用GNU函
+
+式库通用公共授权代替本授权。</string>
+<string name="help_ui_tmux_text">TMUX 1.5 \n
+\n
+TMUX是一个多路复用终端。它有点像GNU Screen但比其更好。\n
+\n
+这意味着什么是，你现在可以有一个真正的多窗口虽然你在单控制台窗口。\n
+\n
+提醒一句！如果你从来没有使用这项功能，它可能看起来会有点奇怪。但一旦你使用了这项功能，你就会深深爱上它，并忘记之前所使用的。那是它是多么的美妙。。\n
+\n
+现在让我们让它来运行一遍。\n
+\n
+tmux的配置文件是 ~/.tmux.conf，你可以寻找，若这个文件可能不存在，你可以自己新建。
+程序本身已经存在一些快捷键，但只是很少的一部分。其他的快捷设置将取决于你。\n
+\n
+# TMUX \n
+\n
+[你可以在设备的屏幕上看到它的运行，当你想让它开始运行的时候\n
+\n
+# tmux -u\n
+\n
+这将确保运行路线正确\n
+\n
+你现在应该看到一个正常的命令行，和其屏幕底部的状态栏的信息。\n
+\n
+通过简单的拆分窗口[ 类似于Vi的文本编辑器]\n
+\n
+[CTRL]+a |\n
+\n
+再次，拆分出一个垂直的窗口\n
+\n
+[CTRL}+a -\n
+\n
+现在你应该有3个窗格中打开。你将选择右下一个的一个窗格。\n
+\n
+# top\n
+\n
+这或者会更好\n
+\n
+# htop \n
+\n
+现在切换到下一个窗格\n
+\n
+[CTRL]+a o\n
+\n
+甚至更容易。\n
+\n
+[CTRL]+a [Arrow Key]\n
+\n
+很不错，你现在有3个窗口来用于计算机恒定监测。\n
+\n
+现在创建一个全新的窗口。\n
+\n
+[CTRL]+a c\n
+\n
+你现在应该看到2个窗口代表的底部。\n
+\n
+可以在这个新的窗口运行文件管理器\n
+\n
+# mc\n
+\n
+你可以通过使用快捷键来对最后的活动窗口之间切换\n
+\n
+[CTRL]+a [CTRL]+a\n
+\n
+或\n
+\n
+[CTRL]+a [n or p]\n
+\n
+你拥有的很多窗口和面板可由一个控制台来控制正如我们的生物意义上的大脑来控制我们的身体一般。\n
+\n
+具体的设置跟随的你意愿。如tail命令的-f选项等。：-）\n
+\n
+下面的列表列出了一些有用的快捷键：\n
+\n
+[CTRL]+a c  > 创建新窗口\n
+[CTRL]+a a  > 移动到最后使用的窗口\n
+[CTRL]+a n  > 移动到下一个窗口\n
+[CTRL]+a p  > 移动到以前的窗口\n
+[CTRL]+a [Window Number]  > 窗口移动到指定的窗口\n
+\n
+[CTRL]+a |  > 水平拆分窗口\n
+[CTRL]+a -  > 垂直拆分窗口\n
+[CTRL]+a o  > 移动到下一个窗格中的\n
+[CTRL]+a [Arrow Key] > 移动窗格到箭头方向\n
+[CTRL]+a q  >显示窗格中的号码\n
+\n
+[CTRL]+a ,  > 重命名当前窗口\n
+[CTRL]+a ?  > 列表显示快捷键\n
+[CTRL]+a [  > 滚动模式 [按ESC或CTRL+C退出]\n
+[CTRL]+a w  > 列表窗口显示\n
+\n
+这有许多关于快捷键设置请自行谷歌\n
+\n</string>
+    <!-- 叶志龙部分结束 -->
+
+
+    <!--                                            -->
+    <!--                                            -->
+    <!--      新的主界面string                        -->
+    <!--                                            -->
+    <!--                                            -->
+    <string name="wh_main_welcome">欢迎使用 <b>Terminal IDE</b>\n  \t\t请选择您想进行的操作：</string>
+    <string name="wh_main_run_title">运行</string>
+    <string name="wh_main_run_summary">此处您能运行命令行终端，它是所有强大功能的入口。</string>
+    <string name="wh_main_install_title">安装</string>
+    <string name="wh_main_install_summary">Terminal IDE带有一个功能完整而强大的二进制库系统，您可以选择安装它来拓展Terminal IDE的功能，使其更为强大。</string>
+    <string name="wh_main_keyboard_title">键盘</string>
+    <string name="wh_main_keyboard_summary">此处可以配置Terminal IDE提供的ANSI键盘，该键盘需要在设备设置中开启。</string>
+    <string name="wh_main_setting_title">设置</string>
+    <string name="wh_main_setting_summary">此处可以配置Terminal IDE的键盘、字体等个性化设置。</string>
+    <string name="wh_main_help_title">帮助</string>
+    <string name="wh_main_help_summary">此处可以浏览、学习软件的工作原理以及一些基本的功能入门教程。</string>
+    <string name="wh_main_exit_title">退出</string>
+    <string name="wh_main_exit_summary">关闭所有终端以及后台服务完全退出Terminal IDE。</string>
+    <string name="wh_main_system_noinstall">您可能没有安装二进制库系统，请点击<b>安装</b>来使Terminal IDE功能更为强大!</string>
+
+    <!-- 菜单部分 -->
+    <string name="wh_menu_about">关于</string>
+    <string name="wh_menu_git_tut">Git教程</string>
+    <string name="wh_menu_exit">退出</string>
+    <string name="wh_menu_copy"></string>
+    <string name="wh_actionbar_title_help">帮助</string>
+    <string name="wh_actionbar_title_setting">设置</string>
+    <string name="wh_actionbar_title_keyboard_setting">键盘设置</string>
+    <string name="wh_actionbar_title_remote">远程连接</string>
+    <string name="wh_actionbar_title_tut">教程集</string>
+    <string name="wh_actionbar_title_install">安装</string>
+    <string name="wh_pricate">在终端中练习</string>
+
+    <!-- 关于部分 -->
+    <string name="wh_about_developers_label">项目成员：</string>
+    <string name="wh_about_developers"><a href="http://weibo.com/wanghao19940820">夏末未己 </a>与 <a href="http://user.qzone.qq.com/522793528/">白</a></string>
+    <string name="wh_about_developers_warning">请不要通过直接通过社交帐号与我们联系，而是使用下面的链接。</string>
+    <string name="wh_about_translator_label">汉化人员：</string>
+    <string name="wh_translator">王豪、叶志龙</string>
+    <string name="wh_about_teacher_label">指导老师：</string>
+    <string name="wh_about_teacher">\t\t<a href="http://user.qzone.qq.com/308337370/">杨铸</a></string>
+    <string name="wh_about_source_label">源代码：</string>
+    <string name="wh_about_source">https://code.google.com/p/terminal-ide</string>
+    <string name="wh_about_support_label">本版本源码：</string>
+    <string name="wh_about_support">https://git.oschina.net/doublemine/Terminal-IDE</string>
+    <string name="wh_about_support_warning">本链接只适用于本版本，如果你对程序有其他的功能性建议，请联系本程序的原作者。</string>
+    <string name="wh_about_libraries_label">使用到的库：</string>
+    <string name="wh_about_libraries">Android-Support-v7</string>
+    <string name="wh_about_title">关于</string>
+    <!-- 通知栏按钮 -->
+    <string name="notification_open_termianl">进入终端</string>
+    <string name="notification_exit_app">退出程序</string>
+
+    <string name="aboutActivity_app_name"><b>Terminal IDE</b></string>
+    <string name="aboutActivity_app_verison">V 3.0.1 Alpha</string>
+
+    <!--设置的actionbar标题 -->
+    <string name="main_Preference_title">设置</string>
+    <string name="main_keyboard_title">键盘设置</string>
+
+
+    <!-- 以下为新的帮助界面主题字符串 -->
+    <!-- 此处国际化请做以下更改：
+                            1.html_file_url的数值。例如:中文:file:///android_asset/html/cn/ 英文:file:///android_asset/html/en/
+                            2.在assets目录在的html文件夹中新建一个国家缩写代码的文件夹，将html文件置于该文件夹中
+
+     -->
+    <string name="html_file_url">file:///android_asset/html/zh/</string>
+    <!-- 请慎重更改该值 -->
+    <string name="help_html_introduction">introduction.html</string>
+    <string name="help_html_tutorial"></string>
+    <string name="help_html_bash">Bash.html</string>
+    <string name="help_html_busybox">Busybox.html</string>
+    <string name="help_html_vim">Vim.html</string>
+    <string name="help_html_java"></string>
+    <string name="help_html_gcc">gcc.html</string>
+    <string name="help_html_telnet"></string>
+    <string name="help_html_ssh"></string>
+    <string name="help_html_rsync"></string>
+    <string name="help_html_git">Git.html</string>
+    <string name="help_html_mc"></string>
+    <string name="help_html_tmux"></string>
+    <string name="help_html_bitchx"></string>
+    <string name="help_html_additional_apps"></string>
+    <string name="help_html_gplv2"></string>
+    <string name="help_html_keyboard">keyboard.html</string>
+
+    <string name="help_html_introduction_title">应用概述</string>
+    <string name="help_html_tutorial_title">入门教程</string>
+    <string name="help_html_bash_title">Bash</string>
+    <string name="help_html_busybox_title">Busybox</string>
+    <string name="help_html_vim_title">Vim</string>
+    <string name="help_html_java_title">JAVA</string>
+    <string name="help_html_gcc_title">GCC</string>
+    <string name="help_html_telnet_title">Telnet</string>
+    <string name="help_html_ssh_title">Secure Shell</string>
+    <string name="help_html_rsync_title">Rsync</string>
+    <string name="help_html_git_title">Git</string>
+    <string name="help_html_mc_title">Midnight Commander</string>
+    <string name="help_html_tmux_title">TMUX</string>
+    <string name="help_html_bitchx_title">BitchX</string>
+    <string name="help_html_additional_apps_title">更多应用</string>
+    <string name="help_html_gplv2_title">许可协议</string>
+    <string name="help_html_keyboard_title">键盘</string>
+
+    <string name="help_html_introduction_summary">总体简介</string>
+    <string name="help_html_tutorial_summary">快速入门教程</string>
+    <string name="help_html_bash_summary">应用内置shell简介</string>
+    <string name="help_html_busybox_summary">集成了一百多个最常用linux命令集</string>
+    <string name="help_html_vim_summary">基于终端的文本编辑器</string>
+    <string name="help_html_java_summary">java工具集</string>
+    <string name="help_html_gcc_summary">GNU编译器套件</string>
+    <string name="help_html_telnet_summary">通过Telnet协议连接到PC</string>
+    <string name="help_html_ssh_summary">通过ssh协议连接到PC</string>
+    <string name="help_html_rsync_summary">数据镜像备份工具</string>
+    <string name="help_html_git_summary">分布式版本控制工具</string>
+    <string name="help_html_mc_summary">命令行下的文件管理工具</string>
+    <string name="help_html_tmux_summary">终端多路复用器</string>
+    <string name="help_html_bitchx_summary">IRC协议的聊天程序</string>
+    <string name="help_html_additional_apps_summary">自定义添加应用</string>
+    <string name="help_html_gplv2_summary">本程序授权许可</string>
+    <string name="help_html_keyboard_summary">Terminal IDE专有键盘介绍</string>
+
+</resources>
