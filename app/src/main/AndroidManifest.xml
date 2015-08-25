@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.terminal.ide"
+      android:versionCode="412"
+      android:versionName="@string/aboutActivity_app_verison">
+    
+ <uses-sdk
+        android:minSdkVersion="10"
+        />
+    
+ <supports-screens  
+      android:anyDensity="false"  
+      android:largeScreens="true"  
+      android:normalScreens="true"  
+      android:resizeable="true"  
+      android:smallScreens="true" />  
+      
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <application android:icon="@drawable/ic_launcher"
+        		 android:hardwareAccelerated="false"
+       			 android:label="Terminal IDE" 
+      			 android:theme="@style/Theme.Doublemine"
+      			 android:allowBackup="false">
+        
+        <activity   android:name="com.terminal.ide.ui.mainAvtivity"
+                   	android:launchMode="singleTask"
+                   	android:exported="true">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name="com.terminal.ide.Term"
+                 
+                  android:configChanges="keyboard|keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize|stateVisible"/>
+
+        <activity android:name="com.terminal.ide.TermPreferences"
+            />
+        <activity android:name="com.terminal.ide.WindowList"/>
+		<activity android:name=".ui.aboutActivity"/>
+        <activity android:name=".startup.tutorial.tutlist"/>
+        <activity android:name=".startup.tutorial.vimlist"/>
+        <activity android:name=".startup.tutorial.tutview"/>
+        <activity android:name=".startup.tutorial.remotelist"/>
+         <activity android:name=".startup.introscreen"/>
+         
+         <!-- 测试activity -->
+          <activity android:name=".ui.testhelpactivity"/>
+         <!-- 测试activity -->
+         <activity android:name=".ui.installSystemActivity"
+                android:configChanges="keyboardHidden|orientation"/>
+
+        <activity android:name=".startup.TerminalIDEPrefs"
+           
+            />
+
+        <activity android:name=".keyboard.KeyboardPrefs"/>
+
+        <service android:name="TermService" />
+
+        <service android:name=".keyboard.TerminalKeyboard" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+        
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        
+        <service android:name=".Services.ExitService">
+            
+        </service>
+    </application>
+    
+</manifest> 
